@@ -1,0 +1,83 @@
+/* 
+    Document   : detailproduct
+    Created on : 01-07-2012, 14:08:15
+    Author     : LVTD
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#detailproduct { 
+    margin: auto;
+    width:1000px; 
+    background: url(../images/bg-detail.jpg) no-repeat;
+    background-position: center top;
+    display: inline-block;
+    text-align: justify;
+} 
+#dpr_center { 
+    float:left; 
+    width:450px; 
+    margin: 10px 0;
+
+
+    height:201px; 
+    border:#609 1px solid; 
+    background-color: blue; } 
+#dpr_left { 
+    float:left; 
+    width:260px; 
+    margin: 10px 0 10px 10px;
+} 
+#dpr_right { 
+    float:right; 
+    width:260px;
+    margin: 10px 10px 10px 0;
+
+    height:311px; 
+    border:#609 1px solid; 
+    background-color: orange; } 
+#dpr_carousel li{
+    text-decoration:none;
+    display: inline-block;
+}
+
+/*
+#detailproduct{
+    text-align: center;
+    width: 1000px;
+    margin: auto;
+    height: 500px;
+}
+.dpr_center{
+    width: 390px;
+        margin-left: 305px;
+    display: inline;
+    margin: 0 auto;
+    position:relative;
+    background: #0000FF;
+    height: 500px;
+}
+.dpr_left{
+    width: 300px;
+    float: left;
+
+    background: crimson;
+    height: 500px;
+}
+.dpr_right{
+    width: 300px;
+    float: right;
+
+    background: orange;
+    height: 500px;
+}*/

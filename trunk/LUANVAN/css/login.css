@@ -1,0 +1,186 @@
+/* 
+    Document   : login
+    Created on : Jun 23, 2012, 5:59:42 PM
+    Author     : LVTD
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+/*register*/
+
+/*.ui-widget,.ui-datepicker{
+    font-size: 0.8em;     tại đây ko hiểu
+}*/
+#ui-datepicker-div{
+    font-size: 0.8em;
+    width: 220px;
+}
+
+.register_form{
+    color: #4C4C4C;
+    text-align: justify;
+    line-height:22px;
+    width: 800px;
+    margin-top: 35px;
+    padding: 10px 35px;
+    border: 0.5px solid #ddd;
+    box-shadow: 0px 0px 5px #ccc;
+    display: inline-block;
+    background: #fff;
+    /*    position: relative;*/
+}
+.register_form .rg_left{
+    /*    float: left;*/
+    width: 400px;
+    display: inline-block;
+}
+.register_form .rg_right{
+    float: right;
+    width: 350px; /* chrome ko nhận được 400*/
+    padding-left: 20px;
+    border-left: #ddd 1px dotted;
+    display: inline-block;
+}
+.register_form .rg_title{
+    margin: -35px -30px 0 -30px;
+    padding: 10px 25px;
+
+    font-size: 18px;
+    font-weight: bold;
+    color: #2D427B;
+    text-shadow: 0.5px 0.5px 0.5px #4188D2;
+    /*    color: #666;*/
+    background: #eee;
+
+    border-radius: 4px 4px 0px 0px;
+    -moz-border-radius: 4px 4px 0px 0px;
+    -webkit-border-radius: 4px 4px 0px 0px;
+    border: #D6D6D6 0.5px solid;
+}
+.register_form form div.rg_left div{
+    margin: 10px;
+    float: left;
+}
+.register_form .rg_left label{
+    width: 120px;
+    text-align: right;
+    float: left;
+    padding-right: 5px;
+    position: relative;
+}
+/*label first name*/
+.register_form .rg_left label.rg_lfn{
+    margin-left: -10px; 
+    width: 27px;
+}
+.register_form .rg_left label.rg_lbirth{
+    margin-left: -10px; 
+    width: 70px;
+}
+.register_form .rg_left input[type="text"]{
+    height: 20px;
+    width: 250px;
+    color: #666;
+    text-align: right;
+}
+
+#rg_lastname{
+    width: 135px;
+}
+#rg_firstname{
+    width: 70px;
+}
+#rg_phone{
+    width: 92px;
+}
+#rg_birthday{
+    width: 70px;
+}
+#rg_district, #rg_province{
+    height: 26px;
+    width: 170px;
+    color: #4C4C4C;
+    text-align: center;
+    float: right;
+    line-height: 23px;
+    margin-right: 15px;
+    padding: 3px;
+    margin: 10px;
+}
+.register_form .rg_right .rg_captcha {
+}
+.register_form .rg_right .rg_captcha label{
+    font-weight: bold;
+}
+.register_form .rg_right .rg_captcha input[type="text"]{
+    width: 200px;
+    height: 22px;
+}
+.register_form .rg_right .rg_captcha  #rg_captcha_reload_btn{
+    background: url(../images/recaptcha_reload_btn.png);
+    float: right;
+    margin-right: 120px;
+    margin-top: -22px;
+}
+.register_form .rg_right .rg_captcha  #rg_captcha_reload_btn:hover{
+    background: url(../images/recaptcha_reload_btn_hover.png);
+}
+.register_form .rg_right .rg_captcha  .rg_captcha_reload_btn a{
+    display: inline-block;
+    height: 21px;
+    width: 22px;
+}
+.register_form .rg_right .rg_captcha .rg_captcha_reload_btn span{
+    position: absolute;
+    left: -99999em;
+}
+
+
+.register_form .rg_right .rg_agree {
+    margin-top: 20px;
+}
+.register_form .rg_right .rg_agree label{
+    font-weight: normal;
+}
+.register_form .rg_right  .rg_agree a{
+    text-decoration: none;
+}
+.register_form .rg_right .rg_warn{
+    color: #333;
+    background-color: #FFF0D6;
+    border: 1px solid #FFC586;
+    padding: 7px 5px 5px 30px;
+    margin: 20px 0;
+    background-position: -277px -523px;
+    width: 303px; display: block;
+/*
+tạo bieu tuong canh báo
+background-image: url(../images/skin.gif);
+background-repeat: no-repeat;*/
+}
+/*------------------------------button Register----------------------------------*/
+.rg_button{
+    position: relative;
+    line-height: 32px;
+    font-family:Arial;
+    font-size: 18px;
+    color: white;
+    height: 36px;
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    background: url(../images/button_rg_bg.jpg) repeat-x;
+    cursor: pointer;
+    border:  #293b6d solid 1px;
+    padding: 0px 20px;
+    margin: 0px 100px;
+}
+.rg_button:hover {
+    opacity:0.8;
+    filter:alpha(opacity=80);
+}

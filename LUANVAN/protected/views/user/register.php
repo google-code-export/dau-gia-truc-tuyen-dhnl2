@@ -5,7 +5,24 @@
 	<!--  datepicker-->
 	<!--<link rel="stylesheet" href="jqueryApp/datepicker/datepicker.css"/>-->
 	<link rel="stylesheet" href="jqueryApp/datepicker/themes/base/jquery.ui.all.css">
-	
+	<script type="text/javascript" src="js/alogin.js"></script>
+	<script src="jqueryApp/jqueryLibs/jquery-1.7.2.js"></script>
+    <script src="jqueryApp/datepicker/jquery.ui.core.js"></script>
+    <script src="jqueryApp/datepicker/jquery.ui.widget.js"></script>
+    <script src="jqueryApp/datepicker/jquery.ui.datepicker.js"></script>
+    <script src="jqueryApp/datepicker/jquery.ui.datepicker-vi.js"></script>
+    <script>
+//            $(function() {
+//                $( "#rg_birthday" ).datepicker();
+//            });
+        $(function() {
+	$( "#rg_birthday" ).datepicker({
+		changeMonth: true,
+		changeYear: true
+	});
+            $( "#datepicker" ).datepicker( $.datepicker.regional[ "vi" ] );
+});
+    </script>
         <!---  Team --->
 <div id="wrapper">
 
@@ -95,7 +112,8 @@
                             <div class="rg_warn">Có 5 thông tin chưa hoàn tất.
                                 Vui lòng nhập đầy đủ thông tin yêu cầu</div>
                             <div>
-                                <input type="button" value="Đăng ký" onClick="return register();"  class="rg_button"/>
+                               
+								<?php echo CHtml::submitButton($model->isNewRecord ? 'Đăng ký' : 'Save',array('class'=>'rg_button')); ?>
                             </div>
                         </div>
                 </div>

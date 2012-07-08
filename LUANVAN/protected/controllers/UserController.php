@@ -48,7 +48,13 @@ class UserController extends Controller
 	 * 
 	 */
 	public function actionRegister(){
+		
 		$model = new User;
+		if(isset($_POST['ajax']) && $_POST['ajax']==='user-form')
+		{
+			echo CActiveForm::validate($model);
+			Yii::app()->end();
+		}
 		$this->render('register',array('model'=>$model));
 	}
 	
@@ -180,5 +186,7 @@ class UserController extends Controller
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
+		
+		
 	}
 }

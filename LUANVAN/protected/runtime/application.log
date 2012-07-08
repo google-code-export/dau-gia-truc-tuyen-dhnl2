@@ -423,3 +423,105 @@ Stack trace:
 #21 D:\AppServ\www\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
 #22 D:\AppServ\www\LUANVAN\index.php(13): CApplication->run()
 #23 {main} REQUEST_URI=/luanvan/?r=user/register
+2012/07/08 21:53:54 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\AppServ\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\AppServ\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\AppServ\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\AppServ\www\yii\framework\web\CWebApplication.php(276): CController->run('register')
+#9 D:\AppServ\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/register')
+#10 D:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\AppServ\www\LUANVAN\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/luanvan/?r=user/register
+---
+2012/07/08 21:53:56 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\AppServ\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\AppServ\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\AppServ\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\AppServ\www\yii\framework\web\CWebApplication.php(276): CController->run('register')
+#9 D:\AppServ\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/register')
+#10 D:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\AppServ\www\LUANVAN\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/luanvan/?r=user/register
+---
+2012/07/08 21:54:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\AppServ\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\AppServ\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\AppServ\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\AppServ\www\yii\framework\web\CWebApplication.php(276): CController->run('register')
+#9 D:\AppServ\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/register')
+#10 D:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\AppServ\www\LUANVAN\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/luanvan/?r=user/register
+---
+2012/07/08 21:54:44 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\AppServ\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\AppServ\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\AppServ\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\AppServ\www\yii\framework\web\CWebApplication.php(276): CController->run('register')
+#9 D:\AppServ\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/register')
+#10 D:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\AppServ\www\LUANVAN\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/luanvan/?r=user/register
+---
+2012/07/08 22:06:16 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\AppServ\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\AppServ\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\AppServ\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\AppServ\www\yii\framework\web\CWebApplication.php(276): CController->run('register')
+#9 D:\AppServ\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/register')
+#10 D:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\AppServ\www\LUANVAN\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/luanvan/?r=user/register
+---
+2012/07/08 22:08:36 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\AppServ\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\AppServ\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\AppServ\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\AppServ\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\AppServ\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\AppServ\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\AppServ\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\AppServ\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\AppServ\www\yii\framework\web\CWebApplication.php(276): CController->run('register')
+#9 D:\AppServ\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/register')
+#10 D:\AppServ\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\AppServ\www\LUANVAN\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/luanvan/?r=user/register
+---

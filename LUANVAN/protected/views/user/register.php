@@ -1,15 +1,11 @@
 ﻿<!---  Team --->
-	<script type="text/javascript" src="js/alogin.js"></script>
+	
 	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="css/login.css" media="screen" />
 	<!--  datepicker-->
 	<!--<link rel="stylesheet" href="jqueryApp/datepicker/datepicker.css"/>-->
 	<link rel="stylesheet" href="jqueryApp/datepicker/themes/base/jquery.ui.all.css">
-	<script src="jqueryApp/jqueryLibs/jquery-1.7.2.js"></script>
-	<script src="jqueryApp/datepicker/jquery.ui.core.js"></script>
-	<script src="jqueryApp/datepicker/jquery.ui.widget.js"></script>
-	<script src="jqueryApp/datepicker/jquery.ui.datepicker.js"></script>
-	<script src="jqueryApp/datepicker/jquery.ui.datepicker-vi.js"></script>
+	
         <!---  Team --->
 <div id="wrapper">
 
@@ -18,9 +14,9 @@
                     <div class="rg_title">Đăng Ký Thành Viên</div>
 					<?php $form=$this->beginWidget('CActiveForm', array(
 						'id'=>'user-form',
-						'enableAjaxValidation'=>false,
 					)); ?>
                     <!--<form action="" >-->
+					<?php echo $form->errorSummary($model); ?>
                         <div class="rg_left">
                             <div> 
                                 <label>Họ:</label>
@@ -107,15 +103,4 @@
 				<?php $this->endWidget(); ?>
             </div>
         </div><!-- close content -->
-		<script>
-//            $(function() {
-//                $( "#rg_birthday" ).datepicker();
-//            });
-			$(function() {
-				$( "#rg_birthday" ).datepicker({
-					changeMonth: true,
-					changeYear: true
-					});
-				$( "#datepicker" ).datepicker( $.datepicker.regional[ "vi" ] );
-			});
-        </script>
+		

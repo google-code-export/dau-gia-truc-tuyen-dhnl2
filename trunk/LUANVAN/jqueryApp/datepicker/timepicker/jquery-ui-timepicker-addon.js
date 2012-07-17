@@ -50,7 +50,7 @@ function Timepicker() {
 		timeOnly: false,
 		showHour: true,
 		showMinute: true,
-		showSecond: false,
+		showSecond: true,
 		showMillisec: false,
 		showTimezone: false,
 		showTime: true,

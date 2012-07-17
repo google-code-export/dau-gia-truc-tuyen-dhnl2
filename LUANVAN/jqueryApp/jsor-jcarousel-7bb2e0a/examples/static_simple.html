@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us">
+    <head>
+        <title>jCarousel Examples</title>
+        <link href="../style.css" rel="stylesheet" type="text/css" />
+        <!--
+          jQuery library
+        -->
+        <script type="text/javascript" src="../lib/jquery-1.4.2.min.js"></script>
+        <!--
+          jCarousel library
+        -->
+        <script type="text/javascript" src="../lib/jquery.jcarousel.min.js"></script>
+        <!--
+          jCarousel skin stylesheet
+        -->
+        <link rel="stylesheet" type="text/css" href="../skins/tango/skin.css" />
+
+        <script type="text/javascript">
+
+            jQuery(document).ready(function() {
+                jQuery('#mycarousel').jcarousel();
+            });
+
+        </script>
+
+    </head>
+    <body>
+        <div id="wrap">
+            <h1>jCarousel</h1>
+            <h2>Riding carousels with jQuery</h2>
+
+            <h3>Simple carousel</h3>
+            <p>
+                This is the most simple usage of the carousel with no configuration options.
+            </p>
+
+            <ul id="mycarousel" class="jcarousel-skin-tango">
+                <li><a class="zoomThumbActive" href='javascript:void(0);' 
+                       rel="{gallery: 'gal1', smallimage: '../../../../../images/product/s_letuan_001.jpg',largeimage: '../../../../../images/product/l_letuan_001.jpg'}">
+                        <img src='../../../../../images/product/t_letuan_001.jpg'></a></li>
+		<li><a href='javascript:void(0);' 
+                       rel="{gallery: 'gal1', smallimage: '../../../../../images/product/s_letuan_002.jpg',largeimage: '../../../../../images/product/l_letuan_002.jpg'}">
+                        <img src='../../../../../images/product/t_letuan_002.jpg'></a></li>
+		<li><a  href='javascript:void(0);' 
+                        rel="{gallery: 'gal1', smallimage: '../../../../../images/product/s_letuan_003.jpg',largeimage: '../../../../../images/product/l_letuan_002.jpg'}">
+                        <img src='../../../../../images/product/t_letuan_003.jpg'></a></li>
+	</ul>
+                
+<!--                <li><img src="../../../../../images/product/t_letuan_001.jpg" width="75" height="75" alt="" /></li>
+                <li><img src="../../../../../images/product/t_letuan_001.jpg" width="75" height="75" alt="" /></li>
+                <li><img src="../../../../../images/product/t_letuan_001.jpg" width="75" height="75" alt="" /></li>
+                <li><img src="../../../../../images/product/t_letuan_001.jpg" width="75" height="75" alt="" /></li>
+                <li><img src="../../../../../images/product/t_letuan_001.jpg" width="75" height="75" alt="" /></li>
+                <li><img src="../../../../../images/product/t_letuan_001.jpg" width="75" height="75" alt="" /></li>
+                <li><img src="../../../../../images/product/t_letuan_001.jpg" width="75" height="75" alt="" /></li>
+                <li><img src="../../../../../images/product/t_letuan_001.jpg" width="75" height="75" alt="" /></li>
+                <li><img src="../../../../../images/product/t_letuan_001.jpg" width="75" height="75" alt="" /></li>
+                <li><img src="../../../../../images/product/t_letuan_001.jpg" width="75" height="75" alt="" /></li>-->
+            </ul>
+
+        </div>
+    </body>
+</html>

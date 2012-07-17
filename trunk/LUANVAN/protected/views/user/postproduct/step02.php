@@ -19,6 +19,7 @@ You are using &lt;a href="http://ckeditor.com/"&gt;CKEditor&lt;/a&gt;.&lt;/p&gt;
                 //]]>
             </script>
             <input type="submit" value="lưu"/>
+            <input type="button" value="tiếp"/>
         </form>
     </div>
 </div>

@@ -16,6 +16,7 @@
                 //]]>
             </script>
             <input type="submit" value="lưu"/>
+            <input type="button" value="tiếp"/>
         </form>
     </div>
 </div>

@@ -1,0 +1,130 @@
+/* 
+    Document   : manage
+    Created on : 14-07-2012, 15:45:19
+    Author     : LVTD
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+*{
+    margin: 0; padding: 0;
+}
+body{
+    background: #000;
+    background: url(../images/bg_mn.jpg) no-repeat;
+    background-attachment: fixed;
+}
+/*manage category*/
+#content_manage{
+    color: #fff;
+    /*width: 1000px;*/
+    width: 95%;
+    /* min-height: 540px;*/
+    padding: 20px 0;
+    margin: auto;
+    margin-top: -5px;
+    text-align: center;
+    margin-bottom: 10px;
+
+    /* -moz-border-radius: 10px 10px 10px 10px;
+       -webkit-border-radius: 10px 10px 10px 10px;
+        border: 1px solid #666;
+        box-shadow:  0px 2px 5px #999;*/
+
+    border-bottom-right-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
+
+    /* RGBa with 0.6 opacity */
+    background: rgba(0, 0, 0, 0.8);
+    /* For IE 5.5 - 7 */
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+
+}
+#content_manage .manage_category{
+    /*width: 1000px;*/
+    width: 95%;
+    display: inline-block;
+    text-align: justify;
+}
+#content_manage .mnc_level01,
+#content_manage .mnc_level02,
+#content_manage .mnc_level03
+{
+    float: left;
+    /*width: 320px;*/
+    width: 32%;
+    text-align: center;
+    margin: 10px 0 10px 10px;
+}
+#content_manage .mnc_level01 .mnc_level01_lb,
+#content_manage .mnc_level02 .mnc_level02_lb,
+#content_manage .mnc_level03 .mnc_level03_lb
+{
+    height:400px;
+    /*width: 300px;*/
+    width: 95%;
+}
+#content_manage .mnc_level01 .mnc_level01_buttongroup,
+#content_manage .mnc_level02 .mnc_level02_buttongroup,
+#content_manage .mnc_level03 .mnc_level03_buttongroup
+{
+
+}
+/*---header---*/
+.manage_header{
+    height: 45px;
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    background: #000;
+    margin-bottom: -5px;
+}
+.manage_header .manage_header_title{
+    /*width: 1000px;*/
+    width: 95%;
+    margin: auto;
+    text-align: left;
+    text-shadow: 1px 1px 2px #ddd;
+    padding-top: 10px;
+}
+/*---menu---*/
+div#menu {
+    /*    text-align: center;*/
+}
+div#menu ul.menu{
+    /* width: 1000px;*/
+    width: 95%;
+    margin: auto;
+}
+div#menu ul.menu a{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+div#menu .menu_right{
+    float: right;
+    margin-right: 2%;
+}
+div#menu .menu_right a:hover{
+    text-shadow: 2px 2px 2px #0004FF;
+    text-decoration: underline;
+    color: #4c4ffc;
+}
+div#menu .menu_right .mn_logout{
+    padding-left: 18px;
+    background: url(../images/bg_mn_logoutbt.png) no-repeat;
+}
+/*---footer---*/
+.mn_footer{
+    color: #fff; 
+    font: normal 12px Trebuchet MS;        
+    text-align: center; 
+    padding-bottom: 2px;
+}

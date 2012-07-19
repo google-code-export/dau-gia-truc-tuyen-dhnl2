@@ -1,0 +1,8 @@
+﻿Đấu giá kiểu Anh English Auctions
+Đấu giá kiểu Hà lan Dutch Auctions
+Đấu giá và chọn giá cao nhất (First-price sealed-pid)
+Đấu giá Vicrey
+
+Embed -> kêu gọi đấu giá.
+
+Dau giá phải có đặt cọc để tránh ko tham gia đấu giá, tránh phá hoại, tiền đặt cọc phải tùy vào sản phẩm

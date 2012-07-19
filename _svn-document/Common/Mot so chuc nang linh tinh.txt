@@ -1,0 +1,19 @@
+﻿Project 
+Các chức năng linh tinh
+Embed -> code nhúng vào web khác
+Search with highlight
+Paging
+Favicon
+Back button
+Rating
+Polling
+Counting User -> online, Vistited, 
+Web Site Map
+SEO
+text editor for Typing Functions.
+Date , time : current time, last time member visited, Using DatePicker
+Ghi lại log
+Trong mua bán sách, hoặc đồ ảo. Thì đánh dấu đã mua quyển sách đó. Và sau đó cho download sẽ hay hơn là số lần download trong ngày.
+Chức năng báo lỗi cho bài viết, hoặc bài hát, tham khảo mp3.zing
+Chức năng thêm mục yêu thích/ hoặc là theo dõi sản phẩm
+

@@ -130,9 +130,7 @@
                     <li>Địa chỉ: 47 đường số 7 tổ 2 khu phố 2 phường Tăng Nhơn Phú B, quận Thủ Đức, tp.Hồ Chí Minh</li>
                 </ul>
             </div>
-            <div class="dpr_boxchat">
-                box chat: để người bán và người mua trò chuyện với nhau
-            </div>
+            
 
         </div>
 

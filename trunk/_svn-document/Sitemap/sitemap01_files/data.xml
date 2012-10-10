@@ -1,0 +1,1451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisioDocument>
+	<DocumentProperties>
+		<Title></Title>
+		<HyperlinkBase href=""></HyperlinkBase>
+	</DocumentProperties>
+	<Pages>
+		<Page ID="0" Name="Static Structure-1" NameU="Static Structure-1">
+			<Layer IX="0">
+				<Name>Connector</Name>
+				<NameUniv>Connector</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="1">
+				<Name>Conceptual Web Site Shapes</Name>
+				<NameUniv>Conceptual Web Site Shapes</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="4" UniqueID="{AFC3A941-D0E2-44A6-A977-F1D8ABF71792}" Name="Watermark Title" NameU="Watermark Title" Master="20">
+					<Text>Static Structure</Text>
+					<XForm>
+						<PinX Unit="MM">11.442913385826772</PinX>
+						<PinY Unit="MM">16.035433070866141</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="7" UniqueID="{4E6E092C-05E3-43A1-A4E3-61F2C4865E5B}" Name="Home page" NameU="Home page" Master="25">
+					<XForm>
+						<PinX Unit="MM">1.001476377952756</PinX>
+						<PinY Unit="MM">15.440452755905515</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>TrangChu.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\TrangChu.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="1" UniqueID="{F75DD48E-EBAD-401E-9AEF-91A7017DC2AB}" Name="Web page" NameU="Web page" Master="26">
+					<Text>Create Account</Text>
+					<XForm>
+						<PinX Unit="MM">2.170426582859121</PinX>
+						<PinY Unit="MM">14.803149606299211</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>create-account.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\create-account.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="14" UniqueID="{5CDDBC66-022D-4161-B84A-8F6045D57E78}" Name="2-Way data connection" NameU="2-Way data connection" Master="34">
+					<XForm>
+						<PinX Unit="MM">1.001476377952756</PinX>
+						<PinY Unit="MM">8.432578740157481</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="6" UniqueID="{740E7A71-3A30-4AE6-A47F-32406019AE9D}" Name="1-Way data connection" NameU="1-Way data connection" Master="35">
+					<XForm>
+						<PinX Unit="MM">1.291755212507448</PinX>
+						<PinY Unit="MM">14.803149606299211</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="15" UniqueID="{10A1C8B5-950B-4B4E-ADBA-B7ADB17DC10D}" Name="1-Way data connection.15" NameU="1-Way data connection.15" Master="35">
+					<XForm>
+						<PinX Unit="MM">1.289370078740157</PinX>
+						<PinY Unit="MM">14.397880718884844</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="16" UniqueID="{C7E3DB7C-D3F5-4E65-BC0E-FFA9E0D12DAA}" Name="1-Way data connection.16" NameU="1-Way data connection.16" Master="35">
+					<XForm>
+						<PinX Unit="MM">1.289370078740157</PinX>
+						<PinY Unit="MM">14.008551728258260</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="17" UniqueID="{7F41B1E4-CD0C-4847-AB30-818BA33EA474}" Name="1-Way data connection.17" NameU="1-Way data connection.17" Master="35">
+					<XForm>
+						<PinX Unit="MM">1.291645122135440</PinX>
+						<PinY Unit="MM">13.614850940856686</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="18" UniqueID="{A7AF39AA-FE1E-406D-B5C9-EC69072C72D7}" Name="Sheet.18" NameU="Sheet.18">
+					<XForm>
+						<PinX Unit="MM">2.078740157480315</PinX>
+						<PinY Unit="MM">11.791338582677170</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="19" UniqueID="{CD539418-AA4A-4C55-BDA3-D370F3ACCB48}" Name="Sheet.19" NameU="Sheet.19">
+					<XForm>
+						<PinX Unit="MM">3.149606299212598</PinX>
+						<PinY Unit="MM">9.586614173228345</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="60" UniqueID="{A7A334E1-8696-4D25-B233-70E54FAE1050}" Name="1-Way data connection.60" NameU="1-Way data connection.60" Master="35">
+					<Text>Manage Own Shop</Text>
+					<XForm>
+						<PinX Unit="MM">4.813415204446146</PinX>
+						<PinY Unit="MM">10.871708387839373</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="20" UniqueID="{309EE829-4A1D-4591-9B42-D77705336C29}" Name="Web page.20" NameU="Web page.20" Master="26">
+					<Text>Profile</Text>
+					<XForm>
+						<PinX Unit="MM">4.336001094311797</PinX>
+						<PinY Unit="MM">13.172550633946463</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>HSCN - ThongTinCaNhan.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\HSCN - ThongTinCaNhan.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="21" UniqueID="{68C02A94-6DDA-4479-95A4-E98E48D8C343}" Name="Web page.21" NameU="Web page.21" Master="26">
+					<Text>Login</Text>
+					<XForm>
+						<PinX Unit="MM">1.875371173051955</PinX>
+						<PinY Unit="MM">14.397880718884844</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="2" UniqueID="{519A60F5-DAA8-4ED2-B7C1-8B9BADD1C7A6}" Name="Web page.2" NameU="Web page.2" Master="26">
+					<Text>Search</Text>
+					<XForm>
+						<PinX Unit="MM">1.876967644260488</PinX>
+						<PinY Unit="MM">14.008551728258260</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>header01.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\header01.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="22" UniqueID="{FD498573-4946-4EF3-B713-8F4D87562015}" Name="Web page.22" NameU="Web page.22" Master="26">
+					<Text>Help</Text>
+					<XForm>
+						<PinX Unit="MM">1.875371173051955</PinX>
+						<PinY Unit="MM">13.614850940856686</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="3" UniqueID="{AE27A132-0DD9-44C9-ADB8-681760F5B108}" Name="1-Way data connection.3" NameU="1-Way data connection.3" Master="35">
+					<XForm>
+						<PinX Unit="MM">3.592519685039370</PinX>
+						<PinY Unit="MM">13.170920986264573</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="24" UniqueID="{F20B12DE-327C-4C85-9D02-E6C7969AE089}" Name="Web page.24" NameU="Web page.24" Master="26">
+					<Text>Product List</Text>
+					<XForm>
+						<PinX Unit="MM">2.049494957492910</PinX>
+						<PinY Unit="MM">4.860300854066122</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>SanPham.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\SanPham.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="25" UniqueID="{2835E221-B8E2-4EEE-A688-A26D359F7166}" Name="1-Way data connection.25" NameU="1-Way data connection.25" Master="35">
+					<XForm>
+						<PinX Unit="MM">1.289370078740157</PinX>
+						<PinY Unit="MM">4.860300854066122</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="27" UniqueID="{FC7E4C1B-E68B-42A6-9C56-42BA850FEB23}" Name="Dynamic connector.36" NameU="Dynamic connector.36" Master="36">
+					<XForm>
+						<PinX Unit="MM">5.566316054941719</PinX>
+						<PinY Unit="MM">13.869739883902366</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="26" UniqueID="{DDC81412-DDDE-49FF-8122-5B643C54F5AD}" Name="Web page.26" NameU="Web page.26" Master="26">
+					<Text>View Feedback Profile</Text>
+					<XForm>
+						<PinX Unit="MM">7.318617043664938</PinX>
+						<PinY Unit="MM">14.566929133858268</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>HSCN - feedback profile.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\HSCN - feedback profile.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="28" UniqueID="{201A0EC7-201B-426A-A3B4-7105E8BA57B8}" Name="Web page.28" NameU="Web page.28" Master="26">
+					<Text>Change Password</Text>
+					<XForm>
+						<PinX Unit="MM">7.166431603601462</PinX>
+						<PinY Unit="MM">14.173228346456694</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>HSCN - changePassword.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\HSCN - changePassword.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="29" UniqueID="{32FA7FB6-E23C-438D-B052-78495983FD6D}" Name="1-Way data connection.29" NameU="1-Way data connection.29" Master="35">
+					<XForm>
+						<PinX Unit="MM">6.003937007874016</PinX>
+						<PinY Unit="MM">14.173228346456694</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="30" UniqueID="{09329B56-CA4F-4A60-B3BC-F19B0BA71729}" Name="1-Way data connection.30" NameU="1-Way data connection.30" Master="35">
+					<XForm>
+						<PinX Unit="MM">1.291338582677165</PinX>
+						<PinY Unit="MM">13.224748305074014</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="31" UniqueID="{A173042E-9920-4E31-A49C-486F4D6B1A55}" Name="Web page.31" NameU="Web page.31" Master="26">
+					<Text>Recover Account</Text>
+					<XForm>
+						<PinX Unit="MM">2.220231270359121</PinX>
+						<PinY Unit="MM">13.221150153455113</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="32" UniqueID="{C0B8B026-53C4-46CC-BCE4-72BD8F495ED2}" Name="1-Way data connection.32" NameU="1-Way data connection.32" Master="35">
+					<XForm>
+						<PinX Unit="MM">6.102362204724409</PinX>
+						<PinY Unit="MM">13.090551181102363</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="33" UniqueID="{AB759701-ACC7-465C-9F4C-2194E6D2982D}" Name="Web page.33" NameU="Web page.33" Master="26">
+					<Text>Basic Info of Product</Text>
+					<XForm>
+						<PinX Unit="MM">7.269500909021383</PinX>
+						<PinY Unit="MM">13.484251968503939</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>AddNewProduct.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\AddNewProduct.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="34" UniqueID="{41B174E5-14B9-4003-B01E-CD5526D90927}" Name="Dynamic connector.34" NameU="Dynamic connector.34" Master="36">
+					<Text>Add New Product</Text>
+					<XForm>
+						<PinX Unit="MM">4.822834645669291</PinX>
+						<PinY Unit="MM">13.041338582677163</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="35" UniqueID="{CEB9D2E9-1E13-46C1-AFB2-1F53D4493CE7}" Name="Web page.35" NameU="Web page.35" Master="26">
+					<Text>Discribe Detail of Product</Text>
+					<XForm>
+						<PinX Unit="MM">7.433607278039938</PinX>
+						<PinY Unit="MM">13.090551181102363</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="36" UniqueID="{8F1A86E2-4E10-45CF-9133-14964CDB9DFE}" Name="Web page.36" NameU="Web page.36" Master="26">
+					<Text>Contact Info and Checkout Guide</Text>
+					<XForm>
+						<PinX Unit="MM">7.689792809656149</PinX>
+						<PinY Unit="MM">12.696850393700787</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="37" UniqueID="{6B992F73-2289-471D-B086-4388FA14D1F0}" Name="1-Way data connection.37" NameU="1-Way data connection.37" Master="35">
+					<XForm>
+						<PinX Unit="MM">6.102362204724409</PinX>
+						<PinY Unit="MM">12.696850393700789</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="39" UniqueID="{A9360C15-C503-467A-AF75-979CA17E92B1}" Name="Web page.39" NameU="Web page.39" Master="26">
+					<Text>Basic Shop Info</Text>
+					<XForm>
+						<PinX Unit="MM">7.084320244958883</PinX>
+						<PinY Unit="MM">12.014118383814170</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>Shop - MoShop01.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\Shop - MoShop01.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="40" UniqueID="{0A5EEB80-88BA-4FF5-A799-7D68052D9675}" Name="Dynamic connector.40" NameU="Dynamic connector.40" Master="36">
+					<XForm>
+						<PinX Unit="MM">6.102362204724409</PinX>
+						<PinY Unit="MM">11.719318760848822</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="41" UniqueID="{94DAD83D-481C-49EE-9B99-EF8E74045E87}" Name="Web page.41" NameU="Web page.41" Master="26">
+					<Text>Buy UP Product</Text>
+					<XForm>
+						<PinX Unit="MM">10.838435702568766</PinX>
+						<PinY Unit="MM">11.818219925285046</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>Shop - MoShop03 - Mua luot up.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\Shop - MoShop03 - Mua luot up.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="42" UniqueID="{F2A2FE2D-F527-497A-ADA7-D6A37B44B304}" Name="Web page.42" NameU="Web page.42" Master="26">
+					<Text>Plused Shop Info</Text>
+					<XForm>
+						<PinX Unit="MM">7.135915932825094</PinX>
+						<PinY Unit="MM">11.607928860280319</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>Shop - MoShop02.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\Shop - MoShop02.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="43" UniqueID="{36DF6C4B-19E2-427B-8457-45DD5A96897F}" Name="1-Way data connection.43" NameU="1-Way data connection.43" Master="35">
+					<XForm>
+						<PinX Unit="MM">9.803149606299211</PinX>
+						<PinY Unit="MM">11.818219925285046</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="44" UniqueID="{185E2970-187F-46A5-B263-C1324AC339F3}" Name="Dynamic connector.44" NameU="Dynamic connector.44" Master="36">
+					<Text>Create Shop</Text>
+					<XForm>
+						<PinX Unit="MM">4.822834645669292</PinX>
+						<PinY Unit="MM">11.912571002930704</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="45" UniqueID="{DC574CF6-09B6-4A56-BFB4-AB6C0D7845AE}" Name="Web page.45" NameU="Web page.45" Master="26">
+					<Text>BillList</Text>
+					<XForm>
+						<PinX Unit="MM">4.336001094311797</PinX>
+						<PinY Unit="MM">9.294597878040946</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>HSCN - xemhoadon01.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\HSCN - xemhoadon01.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="46" UniqueID="{4F9DCD69-82C1-43D1-A87C-562B58EDD653}" Name="1-Way data connection.46" NameU="1-Way data connection.46" Master="35">
+					<XForm>
+						<PinX Unit="MM">3.592519685039370</PinX>
+						<PinY Unit="MM">9.296566381977957</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="47" UniqueID="{EFBDE37A-B35D-42DF-8B0C-A5D0CAC0BF41}" Name="1-Way data connection.47" NameU="1-Way data connection.47" Master="35">
+					<XForm>
+						<PinX Unit="MM">5.566316054941719</PinX>
+						<PinY Unit="MM">9.296566381977957</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="48" UniqueID="{BD6379DF-FDB2-4F8C-97DF-0765BFD4D2A5}" Name="Web page.48" NameU="Web page.48" Master="26">
+					<Text>Bill Detail</Text>
+					<XForm>
+						<PinX Unit="MM">6.890840706995016</PinX>
+						<PinY Unit="MM">9.298534885914966</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>HSCN - xemhoadon02.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\HSCN - xemhoadon02.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="50" UniqueID="{06F98CE6-CF72-48EB-984F-54AE07F153D4}" Name="Dynamic connector.50" NameU="Dynamic connector.50" Master="36">
+					<XForm>
+						<PinX Unit="MM">7.724173185657994</PinX>
+						<PinY Unit="MM">11.811023622047244</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="49" UniqueID="{35D107A7-EA83-42D6-828A-A51336EC7071}" Name="Dynamic connector.49" NameU="Dynamic connector.49" Master="36">
+					<XForm>
+						<PinX Unit="MM">10.541265095378872</PinX>
+						<PinY Unit="MM">10.659448818897637</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="51" UniqueID="{D4FD8B35-FE02-41E9-9066-9E11EBD8E014}" Name="Decision" NameU="Decision" Master="39">
+					<XForm>
+						<PinX Unit="MM">10.374015748031496</PinX>
+						<PinY Unit="MM">13.090551181102361</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="52" UniqueID="{33B319EA-A5BC-420F-8C42-A2252FBB2B1C}" Name="1-Way data connection.52" NameU="1-Way data connection.52" Master="35">
+					<XForm>
+						<PinX Unit="MM">8.760919447152496</PinX>
+						<PinY Unit="MM">9.298534885914966</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="53" UniqueID="{77CE8151-ABA5-492C-AA5A-6DD4F5E182CD}" Name="Dynamic connector.53" NameU="Dynamic connector.53" Master="36">
+					<XForm>
+						<PinX Unit="MM">8.463230726551549</PinX>
+						<PinY Unit="MM">13.090551181102363</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="54" UniqueID="{1C1ED8F0-4BDB-453F-9C51-90F5254D5BAE}" Name="2-Way data connection.54" NameU="2-Way data connection.54" Master="34">
+					<XForm>
+						<PinX Unit="MM">9.803149606299211</PinX>
+						<PinY Unit="MM">13.090551181102361</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="56" UniqueID="{A1D318FB-48AE-4FE0-8D1D-6B48D9FF735D}" Name="Dynamic connector.56" NameU="Dynamic connector.56" Master="36">
+					<Text>[ not choose shop ]</Text>
+					<XForm>
+						<PinX Unit="MM">10.374015748031496</PinX>
+						<PinY Unit="MM">11.171259842519685</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="57" UniqueID="{4C7B5BDE-02C4-4231-A4E5-ED62CA048C48}" Name="2-Way data connection.57" NameU="2-Way data connection.57" Master="34">
+					<XForm>
+						<PinX Unit="MM">10.236220472440944</PinX>
+						<PinY Unit="MM">9.294597878040952</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="59" UniqueID="{DBACC8AE-A5B4-44A7-A003-93A4B342861F}" Name="Web page.59" NameU="Web page.59" Master="26">
+					<Text>Own Shop List </Text>
+					<XForm>
+						<PinX Unit="MM">7.051157174280172</PinX>
+						<PinY Unit="MM">10.873338035521265</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>Shop - QLShop01.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\Shop - QLShop01.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="61" UniqueID="{651AE88C-6ABE-4DB2-AB68-CC0FADCB167A}" Name="1-Way data connection.61" NameU="1-Way data connection.61" Master="35">
+					<Text>[ choose shop ]</Text>
+					<XForm>
+						<PinX Unit="MM">8.930655355660797</PinX>
+						<PinY Unit="MM">10.873338035521265</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="62" UniqueID="{AFE2C52A-31A7-46C0-931C-95FF7A775A0A}" Name="Web page.62" NameU="Web page.62" Master="26">
+					<Text>Trading Circumstances</Text>
+					<XForm>
+						<PinX Unit="MM">11.078673892266032</PinX>
+						<PinY Unit="MM">10.873338035521265</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>Shop - QLShop02.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\Shop - QLShop02.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="63" UniqueID="{155BA855-30D3-4286-9764-73A2B860FD66}" Name="Dynamic connector.63" NameU="Dynamic connector.63" Master="36">
+					<XForm>
+						<PinX Unit="MM">9.881889763779526</PinX>
+						<PinY Unit="MM">10.666983978390558</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="64" UniqueID="{D89557F9-4EB9-4B99-8CA4-E1A9E668D3F7}" Name="Web page.64" NameU="Web page.64" Master="26">
+					<Text>Change Basic Shop Info</Text>
+					<XForm>
+						<PinX Unit="MM">11.097917132622477</PinX>
+						<PinY Unit="MM">10.463889216623633</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>Shop - QLShop03.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\Shop - QLShop03.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="65" UniqueID="{ABFF7FA9-B386-4526-BDB1-5595B774FC2F}" Name="1-Way data connection.65" NameU="1-Way data connection.65" Master="35">
+					<XForm>
+						<PinX Unit="MM">12.456184849157911</PinX>
+						<PinY Unit="MM">10.463889216623633</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="66" UniqueID="{5653F340-BCED-4FC1-97B7-5ED0C865D09F}" Name="Dynamic connector.66" NameU="Dynamic connector.66" Master="36">
+					<XForm>
+						<PinX Unit="MM">11.991966240313774</PinX>
+						<PinY Unit="MM">10.452755905511811</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="23" UniqueID="{075220E0-7F75-4809-8F43-329BE2DD559E}" Name="Dynamic connector.23" NameU="Dynamic connector.23" Master="36">
+					<XForm>
+						<PinX Unit="MM">9.881889763779526</PinX>
+						<PinY Unit="MM">10.429472714522831</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="38" UniqueID="{BFBC6DE7-BBFB-4E3D-AC13-DAEEF36A6F1B}" Name="Web page.38" NameU="Web page.38" Master="26">
+					<Text>Change Plused Shop Info</Text>
+					<XForm>
+						<PinX Unit="MM">11.149512820488688</PinX>
+						<PinY Unit="MM">10.032173775502356</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>Shop - QLShop04.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\Shop - QLShop04.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="5" UniqueID="{C044E81F-E125-4FA8-9416-B77CC6F9E95F}" Name="Dynamic connector.5" NameU="Dynamic connector.5" Master="36">
+					<XForm>
+						<PinX Unit="MM">12.196703419104200</PinX>
+						<PinY Unit="MM">11.141393427209451</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="58" UniqueID="{C5D03764-B332-4287-99E6-98286AF3EA6D}" Name="1-Way data connection.58" NameU="1-Way data connection.58" Master="35">
+					<Text>Manage Own Product</Text>
+					<XForm>
+						<PinX Unit="MM">4.822834645669291</PinX>
+						<PinY Unit="MM">8.507874015748035</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="69" UniqueID="{96F8C052-8ED7-47D9-8E2D-05866E1376E9}" Name="Web page.69" NameU="Web page.69" Master="26">
+					<Text>List of Uncompleted Auction Products</Text>
+					<XForm>
+						<PinX Unit="MM">7.731229958704001</PinX>
+						<PinY Unit="MM">8.507874015748035</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>QLSP - chuadaugia01.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\QLSP - chuadaugia01.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="70" UniqueID="{27E1067F-94A1-4441-8712-186A52A28F8F}" Name="Dynamic connector.70" NameU="Dynamic connector.70" Master="36">
+					<XForm>
+						<PinX Unit="MM">6.102362204724409</PinX>
+						<PinY Unit="MM">8.304779253981110</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="71" UniqueID="{193E22EE-5F5F-4F39-B0CB-77BAAC67490D}" Name="Web page.71" NameU="Web page.71" Master="26">
+					<Text>List of Products at Auction </Text>
+					<XForm>
+						<PinX Unit="MM">7.430305657556540</PinX>
+						<PinY Unit="MM">8.101684492214185</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>QLSP - dangdaugia01.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\QLSP - dangdaugia01.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="73" UniqueID="{3D3A75ED-E95D-4627-AB55-12324F448EC6}" Name="Dynamic connector.73" NameU="Dynamic connector.73" Master="36">
+					<Text>[ choose shop ]</Text>
+					<XForm>
+						<PinX Unit="MM">6.534341367277036</PinX>
+						<PinY Unit="MM">8.792016295187395</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="74" UniqueID="{4F4E91CE-A146-4AD3-8D2B-0D10442609A4}" Name="Dynamic connector.74" NameU="Dynamic connector.74" Master="36">
+					<XForm>
+						<PinX Unit="MM">6.102362204724409</PinX>
+						<PinY Unit="MM">8.067267990113383</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="75" UniqueID="{348F7899-D0F6-44C4-AAA6-5C5692628F89}" Name="Web page.75" NameU="Web page.75" Master="26">
+					<Text>List of Completed Auction Products</Text>
+					<XForm>
+						<PinX Unit="MM">7.659357247522360</PinX>
+						<PinY Unit="MM">7.669969051092908</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>QLSP - dadaugiaxong01.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\QLSP - dadaugiaxong01.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="67" UniqueID="{556F4B2D-699D-47B2-B598-57396A57AC75}" Name="1-Way data connection.67" NameU="1-Way data connection.67" Master="35">
+					<Text>[ choose product ]</Text>
+					<XForm>
+						<PinX Unit="MM">9.601308698861480</PinX>
+						<PinY Unit="MM">8.509503663429925</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="68" UniqueID="{53B2DFFB-DDA0-4468-A926-3A1A451AA722}" Name="Dynamic connector.68" NameU="Dynamic connector.68" Master="36">
+					<XForm>
+						<PinX Unit="MM">10.049212598425196</PinX>
+						<PinY Unit="MM">8.307086614173228</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="76" UniqueID="{3285B4D9-A4BB-40DC-895A-A00BAACCA092}" Name="Dynamic connector.76" NameU="Dynamic connector.76" Master="36">
+					<XForm>
+						<PinX Unit="MM">10.049212598425196</PinX>
+						<PinY Unit="MM">7.890102635782673</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="77" UniqueID="{C2BB2A02-800D-4E1F-8AF0-B1E077FEB7C8}" Name="Web page.77" NameU="Web page.77" Master="26">
+					<Text>Change Basic Info of Product</Text>
+					<XForm>
+						<PinX Unit="MM">11.283097796684977</PinX>
+						<PinY Unit="MM">8.511133311111816</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>QLSP - chuadaugia02.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\QLSP - chuadaugia02.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="78" UniqueID="{8DEF98A0-CEB7-4B29-8CE3-953D8587C474}" Name="Web page.78" NameU="Web page.78" Master="26">
+					<Text>Change Detail Description of Product</Text>
+					<XForm>
+						<PinX Unit="MM">11.562846713310954</PinX>
+						<PinY Unit="MM">8.103039917234639</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>QLSP - chuadaugia03.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\QLSP - chuadaugia03.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="79" UniqueID="{40FD4B2F-B69E-49BB-B3B0-CA5B409648F6}" Name="Web page.79" NameU="Web page.79" Master="26">
+					<Text>Change Contact Info and Checkout Guide</Text>
+					<XForm>
+						<PinX Unit="MM">11.701394610649821</PinX>
+						<PinY Unit="MM">7.669969051092907</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="80" UniqueID="{F095DC42-E582-4ACF-98BC-0C3B3AC857C0}" Name="Web page.80" NameU="Web page.80" Master="26">
+					<Text>Auction Info</Text>
+					<XForm>
+						<PinX Unit="MM">10.725640826470134</PinX>
+						<PinY Unit="MM">7.040047791250387</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>QLSP - dangdaugia02.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\QLSP - dangdaugia02.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="81" UniqueID="{CDA7A4E3-F497-4137-8F9C-3217F2E5F355}" Name="Web page.81" NameU="Web page.81" Master="26">
+					<Text>Detail Offer</Text>
+					<XForm>
+						<PinX Unit="MM">12.084794754250646</PinX>
+						<PinY Unit="MM">6.646347003848812</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>QLSP - dangdaugia03 - detail offer.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\QLSP - dangdaugia03 - detail offer.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="82" UniqueID="{C0A655C6-5AC1-4B2B-A467-1420757C10F2}" Name="Dynamic connector.82" NameU="Dynamic connector.82" Master="36">
+					<Text>[ choose product ]</Text>
+					<XForm>
+						<PinX Unit="MM">9.300384397714019</PinX>
+						<PinY Unit="MM">7.570866141732286</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="83" UniqueID="{554255EE-94D8-4E75-AA37-3B3D217006FC}" Name="Web page.83" NameU="Web page.83" Master="26">
+					<Text>Buyer List Waiting To Feedback</Text>
+					<XForm>
+						<PinX Unit="MM">11.369609408623454</PinX>
+						<PinY Unit="MM">5.619912808123301</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>QLSP - dadaugiaxong03 - cho Feedback.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\QLSP - dadaugiaxong03 - cho Feedback.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="84" UniqueID="{1BC0D0E3-04F9-4450-8D00-7F4ABFF6037D}" Name="Dynamic connector.84" NameU="Dynamic connector.84" Master="36">
+					<Text>[ choose 
+product ]</Text>
+					<XForm>
+						<PinX Unit="MM">9.529435987679840</PinX>
+						<PinY Unit="MM">6.193591098337002</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="85" UniqueID="{2076942E-7EF7-49A6-AAFF-B31D6306B13B}" Name="Web page.85" NameU="Web page.85" Master="26">
+					<Text>All Buyer List</Text>
+					<XForm>
+						<PinX Unit="MM">10.748796038872477</PinX>
+						<PinY Unit="MM">4.717213145581097</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>QLSP - dadaugiaxong04 - tat ca san pham.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\QLSP - dadaugiaxong04 - tat ca san pham.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="87" UniqueID="{1EF69BCA-12CC-44A8-96E4-03CB75F62DA7}" Name="Dynamic connector.87" NameU="Dynamic connector.87" Master="36">
+					<XForm>
+						<PinX Unit="MM">11.515748031496063</PinX>
+						<PinY Unit="MM">6.842858541294485</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="88" UniqueID="{93FB856A-3D0F-44CA-8C1B-4FE5BA6958DF}" Name="Web page.88" NameU="Web page.88" Master="26">
+					<Text>View Own Auction History</Text>
+					<XForm>
+						<PinX Unit="MM">5.068897637795275</PinX>
+						<PinY Unit="MM">6.594488188976379</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>LichSuDauGia02.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\LichSuDauGia02.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="89" UniqueID="{2C1C766A-8C65-4FA9-B90F-4AD68EE797DC}" Name="1-Way data connection.89" NameU="1-Way data connection.89" Master="35">
+					<XForm>
+						<PinX Unit="MM">3.609287046005944</PinX>
+						<PinY Unit="MM">6.594488188976379</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="90" UniqueID="{8DF10F82-BF06-4C85-8B8A-41BA1C2A7ABE}" Name="Web page.90" NameU="Web page.90" Master="26">
+					<Text>Favorite Product List</Text>
+					<XForm>
+						<PinX Unit="MM">4.864928376824034</PinX>
+						<PinY Unit="MM">6.102362204724410</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="91" UniqueID="{8B5EE39E-9852-4F54-A6CF-6F863B1F6C75}" Name="1-Way data connection.91" NameU="1-Way data connection.91" Master="35">
+					<XForm>
+						<PinX Unit="MM">3.614925601013050</PinX>
+						<PinY Unit="MM">6.104330720404244</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="92" UniqueID="{8DD9F4FE-8EA6-4534-B344-8DE366C75DEC}" Name="Web page.92" NameU="Web page.92" Master="26">
+					<Text>Product Detail</Text>
+					<XForm>
+						<PinX Unit="MM">2.135826771653544</PinX>
+						<PinY Unit="MM">4.355686133681877</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>ProductDetail.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\ProductDetail.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="93" UniqueID="{307C7431-6698-47E3-BA05-4966C3DF2EFA}" Name="1-Way data connection.93" NameU="1-Way data connection.93" Master="35">
+					<XForm>
+						<PinX Unit="MM">1.291553485918370</PinX>
+						<PinY Unit="MM">4.355686133681877</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="94" UniqueID="{86D7C5A8-CCF0-475E-94BD-0134B6F7EE96}" Name="Web page.94" NameU="Web page.94" Master="26">
+					<Text>Shop</Text>
+					<XForm>
+						<PinX Unit="MM">2.426552275414159</PinX>
+						<PinY Unit="MM">3.897637795275592</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>Shop.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\Shop.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="95" UniqueID="{A504AD8D-C599-4704-B02B-72381942F4B1}" Name="1-Way data connection.95" NameU="1-Way data connection.95" Master="35">
+					<XForm>
+						<PinX Unit="MM">1.948818897637795</PinX>
+						<PinY Unit="MM">3.897637795275592</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="96" UniqueID="{4F783D66-2363-4608-AB7D-E0732D16DFDE}" Name="Web page.96" NameU="Web page.96" Master="26">
+					<Text>Seller Info</Text>
+					<XForm>
+						<PinX Unit="MM">2.541918277872692</PinX>
+						<PinY Unit="MM">3.457370625896057</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>ThongtinSeller02.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\ThongtinSeller02.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+									<HLURL:Hyperlink ID="2">
+										<HLURL:Description>ThongtinSeller01.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\ThongtinSeller01.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="97" UniqueID="{C380B870-BE71-4C8C-AD4C-7AD2D6F35A18}" Name="1-Way data connection.97" NameU="1-Way data connection.97" Master="35">
+					<XForm>
+						<PinX Unit="MM">1.948818897637795</PinX>
+						<PinY Unit="MM">3.457370625896057</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="98" UniqueID="{4B02DDCB-A639-46FD-A70E-E172A90409F4}" Name="2-Way data connection.98" NameU="2-Way data connection.98" Master="34">
+					<XForm>
+						<PinX Unit="MM">1.771653543307087</PinX>
+						<PinY Unit="MM">3.020701608135424</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="72" UniqueID="{288F5C5F-B598-47F6-A83E-FADAA9C6220B}" Name="Dynamic connector.72" NameU="Dynamic connector.72" Master="36">
+					<XForm>
+						<PinX Unit="MM">2.836896532296059</PinX>
+						<PinY Unit="MM">4.607993493874000</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="99" UniqueID="{2D7A709F-B72F-4F52-B9A2-6B6E986A297E}" Name="1-Way data connection.99" NameU="1-Way data connection.99" Master="35">
+					<XForm>
+						<PinX Unit="MM">4.864928376824034</PinX>
+						<PinY Unit="MM">5.141393427209453</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="100" UniqueID="{9426FBC9-96B3-47F3-B0AE-5DD4B98516E9}" Name="Web page.100" NameU="Web page.100" Master="26">
+					<Text>Feedback Buyer</Text>
+					<XForm>
+						<PinX Unit="MM">13.503937007874015</PinX>
+						<PinY Unit="MM">5.619912808123302</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>Feedback - Buyer.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\Feedback - Buyer.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="101" UniqueID="{FC529263-6258-4577-BAD0-76732707AC76}" Name="2-Way data connection.101" NameU="2-Way data connection.101" Master="34">
+					<XForm>
+						<PinX Unit="MM">12.696255591976762</PinX>
+						<PinY Unit="MM">5.619912808123301</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="102" UniqueID="{7DA13E3D-1CB9-4833-BF2A-9BEFDD02BAEC}" Name="Web page.102" NameU="Web page.102" Master="26">
+					<Text>Feedback Seller</Text>
+					<XForm>
+						<PinX Unit="MM">6.988878847239389</PinX>
+						<PinY Unit="MM">6.594488188976379</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>Feedback - Seller.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\Feedback - Seller.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="103" UniqueID="{D16F36BB-3C6E-4C91-9EE3-CDAA65CB9DB4}" Name="2-Way data connection.103" NameU="2-Way data connection.103" Master="34">
+					<XForm>
+						<PinX Unit="MM">6.223390119348387</PinX>
+						<PinY Unit="MM">6.594488188976379</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="104" UniqueID="{20624081-33D7-4C24-867E-19D46C0964EE}" Name="Web page.104" NameU="Web page.104" Master="26">
+					<Text>Buyer Info</Text>
+					<XForm>
+						<PinX Unit="MM">12.028333904236320</PinX>
+						<PinY Unit="MM">7.040047791250388</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>ThongtinBuyer.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\ThongtinBuyer.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="105" UniqueID="{94C518B7-6E6C-424D-9BE0-D5B6A1E9663B}" Name="2-Way data connection.105" NameU="2-Way data connection.105" Master="34">
+					<XForm>
+						<PinX Unit="MM">11.408318427670121</PinX>
+						<PinY Unit="MM">7.040047791250387</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="106" UniqueID="{07FD117F-058F-47DA-AC8B-D7C50D4B699A}" Name="Web page.106" NameU="Web page.106" Master="26">
+					<Text>Add Comment</Text>
+					<XForm>
+						<PinX Unit="MM">2.689707279337536</PinX>
+						<PinY Unit="MM">3.009907153278721</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>comment.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\comment.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="107" UniqueID="{75D80C26-6129-4B27-BDBA-708FDBEE18A6}" Name="1-Way data connection.107" NameU="1-Way data connection.107" Master="35">
+					<XForm>
+						<PinX Unit="MM">1.948818897637795</PinX>
+						<PinY Unit="MM">3.009907153278721</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="110" UniqueID="{9514EFFB-C935-4C8E-AAE2-1621C5DDA5B1}" Name="Web page.110" NameU="Web page.110" Master="26">
+					<Text>Report Sanction</Text>
+					<XForm>
+						<PinX Unit="MM">2.741674900187145</PinX>
+						<PinY Unit="MM">2.526881342607882</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="111" UniqueID="{B6C29EAA-8212-4B31-8567-EB28B2C6B0DF}" Name="1-Way data connection.111" NameU="1-Way data connection.111" Master="35">
+					<XForm>
+						<PinX Unit="MM">1.948818897637795</PinX>
+						<PinY Unit="MM">2.526881342607882</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="114" UniqueID="{D12B1D4C-9A48-4D03-92D5-BC28D28A88DA}" Name="Web page.114" NameU="Web page.114" Master="26">
+					<Text>Choose Buyer</Text>
+					<XForm>
+						<PinX Unit="MM">10.787131839043377</PinX>
+						<PinY Unit="MM">6.102362204724409</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>QLSP - dadaugiaxong02 - sp chon Buyer.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\QLSP - dadaugiaxong02 - sp chon Buyer.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="115" UniqueID="{F317398D-C593-481A-8CBE-2D32D31CCD02}" Name="1-Way data connection.115" NameU="1-Way data connection.115" Master="35">
+					<XForm>
+						<PinX Unit="MM">9.842519685039370</PinX>
+						<PinY Unit="MM">6.102362204724409</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="55" UniqueID="{1454AA3F-FB9D-4888-AD96-BFA2CCE5BE59}" Name="1-Way data connection.55" NameU="1-Way data connection.55" Master="35">
+					<XForm>
+						<PinX Unit="MM">9.842519685039370</PinX>
+						<PinY Unit="MM">5.619912808123301</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="86" UniqueID="{6CE8323D-8D37-44E8-9397-584ECFCDB933}" Name="Dynamic connector.86" NameU="Dynamic connector.86" Master="36">
+					<XForm>
+						<PinX Unit="MM">6.301032017402900</PinX>
+						<PinY Unit="MM">6.358267716535433</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="116" UniqueID="{5B9A446A-92AB-4366-8052-4AF20B80AE71}" Name="Web page.116" NameU="Web page.116" Master="26">
+					<Text>Detail Offer</Text>
+					<XForm>
+						<PinX Unit="MM">6.852213119765104</PinX>
+						<PinY Unit="MM">6.141732283464568</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>LichSuDauGia03.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\LichSuDauGia03.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="117" UniqueID="{B7EAE178-32AB-4BDE-81E5-C8E5C723BBD1}" Name="Web page.117" NameU="Web page.117" Master="26">
+					<Text>Cancel Transaction</Text>
+					<XForm>
+						<PinX Unit="MM">10.944881889763781</PinX>
+						<PinY Unit="MM">5.164676618198433</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>QLSP - dadaugiaxong07 - huy giao dich .jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\QLSP - dadaugiaxong07 - huy giao dich .jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="118" UniqueID="{F687EFE8-D702-4077-B1E2-E28072254990}" Name="1-Way data connection.118" NameU="1-Way data connection.118" Master="35">
+					<XForm>
+						<PinX Unit="MM">9.836134165092453</PinX>
+						<PinY Unit="MM">5.164676618198433</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="119" UniqueID="{857EE225-BB45-4081-90E0-A3AE4264E68D}" Name="Web page.119" NameU="Web page.119" Master="26">
+					<Text>Confirm</Text>
+					<XForm>
+						<PinX Unit="MM">12.654481970154670</PinX>
+						<PinY Unit="MM">5.164676618198433</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>QLSP - dadaugiaxong08 - xac nhan huy giao dich03.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\QLSP - dadaugiaxong08 - xac nhan huy giao dich03.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="120" UniqueID="{2D159B63-7C1A-48DE-B113-11A388404E21}" Name="2-Way data connection.120" NameU="2-Way data connection.120" Master="34">
+					<XForm>
+						<PinX Unit="MM">11.974609125119233</PinX>
+						<PinY Unit="MM">5.164676618198433</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="108" UniqueID="{FC9AA441-573E-4F88-B431-CEDB77259D76}" Name="1-Way data connection.108" NameU="1-Way data connection.108" Master="35">
+					<XForm>
+						<PinX Unit="MM">1.286723862292921</PinX>
+						<PinY Unit="MM">12.831047517672440</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="109" UniqueID="{8EBB4C54-6DE9-4BC4-89F9-2AC53C93FE02}" Name="Web page.109" NameU="Web page.109" Master="26">
+					<Text>Menu</Text>
+					<XForm>
+						<PinX Unit="MM">1.889763779527559</PinX>
+						<PinY Unit="MM">12.827449366053539</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description>megamenu.jpg</HLURL:Description>
+										<HLURL:Address>../giaodien\megamenu.jpg</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+			</Shapes>
+		</Page>
+	</Pages>
+</VisioDocument>

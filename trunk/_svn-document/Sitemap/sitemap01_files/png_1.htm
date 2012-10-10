@@ -1,0 +1,199 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+sitemap01
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="png_1.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	if( (parent.isSVG) || 
+		(parent.isVML && parent.vmlSupported) || 
+		(parent.isXAML && parent.isUpLevel)) 
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 0;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.782193;
+	viewMgr.visBBoxRight = 14.965838;
+	viewMgr.visBBoxBottom = 1.648335;
+	viewMgr.visBBoxTop = 15.674500;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Shows the location of the selected shape" src="arrow.png"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+<script type="text/javascript" language="javascript">
+// Displays the banner prompt to install Silverlight
+if (parent.slSupported && !parent.slInstalled)
+{
+	var slBanner = document.createElement("div");
+	slBanner.className = "banner";
+	slBanner.innerHTML = 'To enable full functionality such as Pan and Zoom, <a href="http://www.microsoft.com/silverlight/resources/install.aspx" target="parent">click here</a> to install the Silverlight plug-in.';
+
+	document.body.appendChild(slBanner);
+	document.body.style.paddingTop = "2.5em";
+}
+</script>
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="png_1.png" ALT="Static Structure-1" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="Menu" origTitle="Menu" TITLE="Menu" HREF="../giaodien%5Cmegamenu.jpg" target="_top" COORDS="51,164,70,164,73,164,75,162,77,160,77,157,77,155,77,152,75,150,73,148,70,148,51,148,48,148,46,150,45,152,44,155,44,157,45,160,46,162,48,164,51,164" onmouseover="UpdateTooltip(this,0,109,event)" onfocus="UpdateTooltip(this,0,109,event)" onclick="return OnShapeClick(0,109,event);" onkeyup="OnShapeKey(0,109,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Confirm" origTitle="Confirm" TITLE="Confirm" HREF="../giaodien%5CQLSP%20-%20dadaugiaxong08%20-%20xac%20nhan%20huy%20giao%20dich03.jpg" target="_top" COORDS="638,584,663,584,666,583,668,582,670,580,670,577,670,574,670,572,668,570,666,568,663,568,638,568,635,568,633,570,631,572,631,574,631,577,631,580,633,582,635,583,638,584" onmouseover="UpdateTooltip(this,0,119,event)" onfocus="UpdateTooltip(this,0,119,event)" onclick="return OnShapeClick(0,119,event);" onkeyup="OnShapeKey(0,119,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Cancel Transaction" origTitle="Cancel Transaction" TITLE="Cancel Transaction" HREF="../giaodien%5CQLSP%20-%20dadaugiaxong07%20-%20huy%20giao%20dich%20.jpg" target="_top" COORDS="524,584,589,584,592,583,594,582,596,580,596,577,596,574,596,572,594,570,592,568,589,568,524,568,521,568,519,570,518,572,517,574,517,577,518,580,519,582,521,583,524,584" onmouseover="UpdateTooltip(this,0,117,event)" onfocus="UpdateTooltip(this,0,117,event)" onclick="return OnShapeClick(0,117,event);" onkeyup="OnShapeKey(0,117,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Detail Offer" origTitle="Detail Offer" TITLE="Detail Offer" HREF="../giaodien%5CLichSuDauGia03.jpg" target="_top" COORDS="314,530,351,530,354,530,356,528,358,526,358,524,358,521,358,518,356,516,354,515,351,514,314,514,311,515,309,516,307,518,307,521,307,524,307,526,309,528,311,530,314,530" onmouseover="UpdateTooltip(this,0,116,event)" onfocus="UpdateTooltip(this,0,116,event)" onclick="return OnShapeClick(0,116,event);" onkeyup="OnShapeKey(0,116,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Choose Buyer" origTitle="Choose Buyer" TITLE="Choose Buyer" HREF="../giaodien%5CQLSP%20-%20dadaugiaxong02%20-%20sp%20chon%20Buyer.jpg" target="_top" COORDS="525,533,571,533,574,532,576,531,578,528,578,526,578,523,578,520,576,518,574,517,571,516,525,516,522,517,520,518,518,520,518,523,518,526,518,528,520,531,522,532,525,533" onmouseover="UpdateTooltip(this,0,114,event)" onfocus="UpdateTooltip(this,0,114,event)" onclick="return OnShapeClick(0,114,event);" onkeyup="OnShapeKey(0,114,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Add Comment" origTitle="Add Comment" TITLE="Add Comment" HREF="../giaodien%5Ccomment.jpg" target="_top" COORDS="80,702,129,702,131,701,133,700,135,698,135,695,135,692,135,690,133,688,131,686,129,686,80,686,78,686,76,688,74,690,74,692,74,695,74,698,76,700,78,701,80,702" onmouseover="UpdateTooltip(this,0,106,event)" onfocus="UpdateTooltip(this,0,106,event)" onclick="return OnShapeClick(0,106,event);" onkeyup="OnShapeKey(0,106,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Buyer Info" origTitle="Buyer Info" TITLE="Buyer Info" HREF="../giaodien%5CThongtinBuyer.jpg" target="_top" COORDS="600,481,633,481,635,481,637,479,639,477,639,474,639,472,639,469,637,467,635,465,633,465,600,465,597,465,595,467,593,469,593,472,593,474,593,477,595,479,597,481,600,481" onmouseover="UpdateTooltip(this,0,104,event)" onfocus="UpdateTooltip(this,0,104,event)" onclick="return OnShapeClick(0,104,event);" onkeyup="OnShapeKey(0,104,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Feedback Seller" origTitle="Feedback Seller" TITLE="Feedback Seller" HREF="../giaodien%5CFeedback%20-%20Seller.jpg" target="_top" COORDS="313,506,367,506,369,505,371,504,373,501,373,499,373,496,373,493,371,491,369,490,367,489,313,489,311,490,309,491,307,493,307,496,307,499,307,501,309,504,311,505,313,506" onmouseover="UpdateTooltip(this,0,102,event)" onfocus="UpdateTooltip(this,0,102,event)" onclick="return OnShapeClick(0,102,event);" onkeyup="OnShapeKey(0,102,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Feedback Buyer" origTitle="Feedback Buyer" TITLE="Feedback Buyer" HREF="../giaodien%5CFeedback%20-%20Buyer.jpg" target="_top" COORDS="670,559,724,559,726,559,729,557,730,555,731,552,731,549,730,547,729,545,726,543,724,543,670,543,667,543,665,545,664,547,663,549,663,552,664,555,665,557,667,559,670,559" onmouseover="UpdateTooltip(this,0,100,event)" onfocus="UpdateTooltip(this,0,100,event)" onclick="return OnShapeClick(0,100,event);" onkeyup="OnShapeKey(0,100,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Seller Info" origTitle="Seller Info" TITLE="Seller Info" HREF="../giaodien%5CThongtinSeller02.jpg" target="_top" COORDS="80,678,112,678,115,677,117,675,119,673,119,671,119,668,119,665,117,663,115,662,112,661,80,661,78,662,76,663,74,665,74,668,74,671,74,673,76,675,78,677,80,678" onmouseover="UpdateTooltip(this,0,96,event)" onfocus="UpdateTooltip(this,0,96,event)" onclick="return OnShapeClick(0,96,event);" onkeyup="OnShapeKey(0,96,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Shop" origTitle="Shop" TITLE="Shop" HREF="../giaodien%5CShop.jpg" target="_top" COORDS="80,653,100,653,102,653,105,651,106,649,107,647,107,644,106,641,105,639,102,637,100,637,80,637,78,637,76,639,74,641,74,644,74,647,74,649,76,651,78,653,80,653" onmouseover="UpdateTooltip(this,0,94,event)" onfocus="UpdateTooltip(this,0,94,event)" onclick="return OnShapeClick(0,94,event);" onkeyup="OnShapeKey(0,94,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Product Detail" origTitle="Product Detail" TITLE="Product Detail" HREF="../giaodien%5CProductDetail.jpg" target="_top" COORDS="50,628,98,628,101,628,103,626,104,624,105,621,105,619,104,616,103,614,101,612,98,612,50,612,48,612,46,614,44,616,44,619,44,621,44,624,46,626,48,628,50,628" onmouseover="UpdateTooltip(this,0,92,event)" onfocus="UpdateTooltip(this,0,92,event)" onclick="return OnShapeClick(0,92,event);" onkeyup="OnShapeKey(0,92,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="View Own Auction History" origTitle="View Own Auction History" TITLE="View Own Auction History" HREF="../giaodien%5CLichSuDauGia02.jpg" target="_top" COORDS="187,506,283,506,285,505,288,504,289,501,290,499,290,496,289,493,288,491,285,490,283,489,187,489,184,490,182,491,181,493,180,496,180,499,181,501,182,504,184,505,187,506" onmouseover="UpdateTooltip(this,0,88,event)" onfocus="UpdateTooltip(this,0,88,event)" onclick="return OnShapeClick(0,88,event);" onkeyup="OnShapeKey(0,88,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="All Buyer List" origTitle="All Buyer List" TITLE="All Buyer List" HREF="../giaodien%5CQLSP%20-%20dadaugiaxong04%20-%20tat%20ca%20san%20pham.jpg" target="_top" COORDS="525,608,567,608,570,608,572,606,574,604,574,602,574,599,574,596,572,594,570,593,567,592,525,592,522,593,520,594,518,596,518,599,518,602,518,604,520,606,522,608,525,608" onmouseover="UpdateTooltip(this,0,85,event)" onfocus="UpdateTooltip(this,0,85,event)" onclick="return OnShapeClick(0,85,event);" onkeyup="OnShapeKey(0,85,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Buyer List Waiting To Feedback" origTitle="Buyer List Waiting To Feedback" TITLE="Buyer List Waiting To Feedback" HREF="../giaodien%5CQLSP%20-%20dadaugiaxong03%20-%20cho%20Feedback.jpg" target="_top" COORDS="525,559,635,559,638,559,640,557,642,555,642,552,642,549,642,547,640,545,638,543,635,543,525,543,522,543,520,545,518,547,518,549,518,552,518,555,520,557,522,559,525,559" onmouseover="UpdateTooltip(this,0,83,event)" onfocus="UpdateTooltip(this,0,83,event)" onclick="return OnShapeClick(0,83,event);" onkeyup="OnShapeKey(0,83,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Detail Offer" origTitle="Detail Offer" TITLE="Detail Offer" HREF="../giaodien%5CQLSP%20-%20dangdaugia03%20-%20detail%20offer.jpg" target="_top" COORDS="600,503,638,503,641,502,643,501,644,499,645,496,645,493,644,491,643,488,641,487,638,486,600,486,598,487,595,488,594,491,593,493,593,496,594,499,595,501,598,502,600,503" onmouseover="UpdateTooltip(this,0,81,event)" onfocus="UpdateTooltip(this,0,81,event)" onclick="return OnShapeClick(0,81,event);" onkeyup="OnShapeKey(0,81,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Auction Info" origTitle="Auction Info" TITLE="Auction Info" HREF="../giaodien%5CQLSP%20-%20dangdaugia02.jpg" target="_top" COORDS="525,481,565,481,567,481,570,479,571,477,572,474,572,472,571,469,570,467,567,465,565,465,525,465,522,465,520,467,518,469,518,472,518,474,518,477,520,479,522,481,525,481" onmouseover="UpdateTooltip(this,0,80,event)" onfocus="UpdateTooltip(this,0,80,event)" onclick="return OnShapeClick(0,80,event);" onkeyup="OnShapeKey(0,80,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Change Detail Description of Product" origTitle="Change Detail Description of Product" TITLE="Change Detail Description of Product" HREF="../giaodien%5CQLSP%20-%20chuadaugia03.jpg" target="_top" COORDS="525,423,656,423,659,422,661,421,663,419,663,416,663,413,663,411,661,409,659,407,656,407,525,407,522,407,520,409,518,411,518,413,518,416,518,419,520,421,522,422,525,423" onmouseover="UpdateTooltip(this,0,78,event)" onfocus="UpdateTooltip(this,0,78,event)" onclick="return OnShapeClick(0,78,event);" onkeyup="OnShapeKey(0,78,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Change Basic Info of Product" origTitle="Change Basic Info of Product" TITLE="Change Basic Info of Product" HREF="../giaodien%5CQLSP%20-%20chuadaugia02.jpg" target="_top" COORDS="525,401,626,401,628,400,631,399,632,396,633,394,633,391,632,388,631,386,628,385,626,384,525,384,522,385,520,386,518,388,518,391,518,394,518,396,520,399,522,400,525,401" onmouseover="UpdateTooltip(this,0,77,event)" onfocus="UpdateTooltip(this,0,77,event)" onclick="return OnShapeClick(0,77,event);" onkeyup="OnShapeKey(0,77,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="List of Completed Auction Products" origTitle="List of Completed Auction Products" TITLE="List of Completed Auction Products" HREF="../giaodien%5CQLSP%20-%20dadaugiaxong01.jpg" target="_top" COORDS="320,447,434,447,436,446,438,445,440,443,440,440,440,437,440,434,438,432,436,431,434,430,320,430,317,431,315,432,314,434,313,437,313,440,314,443,315,445,317,446,320,447" onmouseover="UpdateTooltip(this,0,75,event)" onfocus="UpdateTooltip(this,0,75,event)" onclick="return OnShapeClick(0,75,event);" onkeyup="OnShapeKey(0,75,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="List of Products at Auction" origTitle="List of Products at Auction" TITLE="List of Products at Auction" HREF="../giaodien%5CQLSP%20-%20dangdaugia01.jpg" target="_top" COORDS="320,423,409,423,411,423,413,421,415,419,415,416,415,413,415,411,413,409,411,407,409,407,320,407,317,407,315,409,314,411,313,413,313,416,314,419,315,421,317,423,320,423" onmouseover="UpdateTooltip(this,0,71,event)" onfocus="UpdateTooltip(this,0,71,event)" onclick="return OnShapeClick(0,71,event);" onkeyup="OnShapeKey(0,71,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="List of Uncompleted Auction Products" origTitle="List of Uncompleted Auction Products" TITLE="List of Uncompleted Auction Products" HREF="../giaodien%5CQLSP%20-%20chuadaugia01.jpg" target="_top" COORDS="320,401,441,401,444,400,446,399,448,397,448,394,448,391,448,389,446,386,444,385,441,384,320,384,317,385,315,386,314,389,313,391,313,394,314,397,315,399,317,400,320,401" onmouseover="UpdateTooltip(this,0,69,event)" onfocus="UpdateTooltip(this,0,69,event)" onclick="return OnShapeClick(0,69,event);" onkeyup="OnShapeKey(0,69,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Change Plused Shop Info" origTitle="Change Plused Shop Info" TITLE="Change Plused Shop Info" HREF="../giaodien%5CShop%20-%20QLShop04.jpg" target="_top" COORDS="525,317,611,317,614,317,616,315,617,313,618,310,618,308,617,305,616,303,614,301,611,301,525,301,522,301,520,303,518,305,518,308,518,310,518,313,520,315,522,317,525,317" onmouseover="UpdateTooltip(this,0,38,event)" onfocus="UpdateTooltip(this,0,38,event)" onclick="return OnShapeClick(0,38,event);" onkeyup="OnShapeKey(0,38,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Change Basic Shop Info" origTitle="Change Basic Shop Info" TITLE="Change Basic Shop Info" HREF="../giaodien%5CShop%20-%20QLShop03.jpg" target="_top" COORDS="525,294,605,294,608,293,610,292,612,289,612,287,612,284,612,281,610,279,608,278,605,277,525,277,522,278,520,279,518,281,518,284,518,287,518,289,520,292,522,293,525,294" onmouseover="UpdateTooltip(this,0,64,event)" onfocus="UpdateTooltip(this,0,64,event)" onclick="return OnShapeClick(0,64,event);" onkeyup="OnShapeKey(0,64,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Trading Circumstances" origTitle="Trading Circumstances" TITLE="Trading Circumstances" HREF="../giaodien%5CShop%20-%20QLShop02.jpg" target="_top" COORDS="525,271,603,271,606,271,608,269,610,267,610,264,610,262,610,259,608,257,606,255,603,255,525,255,522,255,520,257,518,259,518,262,518,264,518,267,520,269,522,271,525,271" onmouseover="UpdateTooltip(this,0,62,event)" onfocus="UpdateTooltip(this,0,62,event)" onclick="return OnShapeClick(0,62,event);" onkeyup="OnShapeKey(0,62,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Own Shop List" origTitle="Own Shop List" TITLE="Own Shop List" HREF="../giaodien%5CShop%20-%20QLShop01.jpg" target="_top" COORDS="319,271,368,271,371,271,373,269,374,267,375,264,375,262,374,259,373,257,371,255,368,255,319,255,316,255,314,257,313,259,312,262,312,264,313,267,314,269,316,271,319,271" onmouseover="UpdateTooltip(this,0,59,event)" onfocus="UpdateTooltip(this,0,59,event)" onclick="return OnShapeClick(0,59,event);" onkeyup="OnShapeKey(0,59,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Bill Detail" origTitle="Bill Detail" TITLE="Bill Detail" HREF="../giaodien%5CHSCN%20-%20xemhoadon02.jpg" target="_top" COORDS="320,358,349,358,352,357,354,356,356,353,356,351,356,348,356,345,354,343,352,342,349,341,320,341,317,342,315,343,314,345,313,348,313,351,314,353,315,356,317,357,320,358" onmouseover="UpdateTooltip(this,0,48,event)" onfocus="UpdateTooltip(this,0,48,event)" onclick="return OnShapeClick(0,48,event);" onkeyup="OnShapeKey(0,48,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="BillList" origTitle="BillList" TITLE="BillList" HREF="../giaodien%5CHSCN%20-%20xemhoadon01.jpg" target="_top" COORDS="185,358,204,358,207,357,209,356,211,354,211,351,211,348,211,345,209,343,207,342,204,341,185,341,182,342,180,343,179,345,178,348,178,351,179,354,180,356,182,357,185,358" onmouseover="UpdateTooltip(this,0,45,event)" onfocus="UpdateTooltip(this,0,45,event)" onclick="return OnShapeClick(0,45,event);" onkeyup="OnShapeKey(0,45,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Plused Shop Info" origTitle="Plused Shop Info" TITLE="Plused Shop Info" HREF="../giaodien%5CShop%20-%20MoShop02.jpg" target="_top" COORDS="320,231,376,231,379,230,381,229,383,227,383,224,383,221,383,219,381,217,379,215,376,215,320,215,317,215,315,217,314,219,313,221,313,224,314,227,315,229,317,230,320,231" onmouseover="UpdateTooltip(this,0,42,event)" onfocus="UpdateTooltip(this,0,42,event)" onclick="return OnShapeClick(0,42,event);" onkeyup="OnShapeKey(0,42,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Buy UP Product" origTitle="Buy UP Product" TITLE="Buy UP Product" HREF="../giaodien%5CShop%20-%20MoShop03%20-%20Mua%20luot%20up.jpg" target="_top" COORDS="525,219,577,219,580,219,582,217,583,215,584,213,584,210,583,207,582,205,580,204,577,203,525,203,522,204,520,205,518,207,518,210,518,213,518,215,520,217,522,219,525,219" onmouseover="UpdateTooltip(this,0,41,event)" onfocus="UpdateTooltip(this,0,41,event)" onclick="return OnShapeClick(0,41,event);" onkeyup="OnShapeKey(0,41,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Basic Shop Info" origTitle="Basic Shop Info" TITLE="Basic Shop Info" HREF="../giaodien%5CShop%20-%20MoShop01.jpg" target="_top" COORDS="320,209,371,209,373,208,375,207,377,205,377,202,377,199,377,197,375,194,373,193,371,192,320,192,317,193,315,194,314,197,313,199,313,202,314,205,315,207,317,208,320,209" onmouseover="UpdateTooltip(this,0,39,event)" onfocus="UpdateTooltip(this,0,39,event)" onclick="return OnShapeClick(0,39,event);" onkeyup="OnShapeKey(0,39,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Basic Info of Product" origTitle="Basic Info of Product" TITLE="Basic Info of Product" HREF="../giaodien%5CAddNewProduct.jpg" target="_top" COORDS="320,128,391,128,394,128,396,126,397,124,398,121,398,119,397,116,396,114,394,112,391,112,320,112,317,112,315,114,314,116,313,119,313,121,314,124,315,126,317,128,320,128" onmouseover="UpdateTooltip(this,0,33,event)" onfocus="UpdateTooltip(this,0,33,event)" onclick="return OnShapeClick(0,33,event);" onkeyup="OnShapeKey(0,33,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Change Password" origTitle="Change Password" TITLE="Change Password" HREF="../giaodien%5CHSCN%20-%20changePassword.jpg" target="_top" COORDS="320,90,380,90,382,90,384,88,386,86,386,84,386,81,386,78,384,76,382,75,380,74,320,74,317,75,315,76,314,78,313,81,313,84,314,86,315,88,317,90,320,90" onmouseover="UpdateTooltip(this,0,28,event)" onfocus="UpdateTooltip(this,0,28,event)" onclick="return OnShapeClick(0,28,event);" onkeyup="OnShapeKey(0,28,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="View Feedback Profile" origTitle="View Feedback Profile" TITLE="View Feedback Profile" HREF="../giaodien%5CHSCN%20-%20feedback%20profile.jpg" target="_top" COORDS="320,69,396,69,399,68,401,67,403,65,403,62,403,59,403,57,401,54,399,53,396,52,320,52,317,53,315,54,314,57,313,59,313,62,314,65,315,67,317,68,320,69" onmouseover="UpdateTooltip(this,0,26,event)" onfocus="UpdateTooltip(this,0,26,event)" onclick="return OnShapeClick(0,26,event);" onkeyup="OnShapeKey(0,26,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Product List" origTitle="Product List" TITLE="Product List" HREF="../giaodien%5CSanPham.jpg" target="_top" COORDS="50,601,89,601,91,600,93,599,95,596,95,594,95,591,95,588,93,586,91,585,89,584,50,584,48,585,45,586,44,588,43,591,43,594,44,596,45,599,48,600,50,601" onmouseover="UpdateTooltip(this,0,24,event)" onfocus="UpdateTooltip(this,0,24,event)" onclick="return OnShapeClick(0,24,event);" onkeyup="OnShapeKey(0,24,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Search" origTitle="Search" TITLE="Search" HREF="../giaodien%5Cheader01.jpg" target="_top" COORDS="50,99,70,99,72,99,75,97,76,95,77,93,77,90,76,87,75,85,72,84,70,83,50,83,48,84,45,85,44,87,43,90,43,93,44,95,45,97,48,99,50,99" onmouseover="UpdateTooltip(this,0,2,event)" onfocus="UpdateTooltip(this,0,2,event)" onclick="return OnShapeClick(0,2,event);" onkeyup="OnShapeKey(0,2,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Profile" origTitle="Profile" TITLE="Profile" HREF="../giaodien%5CHSCN%20-%20ThongTinCaNhan.jpg" target="_top" COORDS="185,145,204,145,207,145,209,143,211,141,211,138,211,136,211,133,209,131,207,129,204,129,185,129,182,129,180,131,179,133,178,136,178,138,179,141,180,143,182,145,185,145" onmouseover="UpdateTooltip(this,0,20,event)" onfocus="UpdateTooltip(this,0,20,event)" onclick="return OnShapeClick(0,20,event);" onkeyup="OnShapeKey(0,20,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Create Account" origTitle="Create Account" TITLE="Create Account" HREF="../giaodien%5Ccreate-account.jpg" target="_top" COORDS="50,56,102,56,104,55,107,54,108,52,109,49,109,46,108,44,107,42,104,40,102,40,50,40,48,40,45,42,44,44,43,46,43,49,44,52,45,54,48,55,50,56" onmouseover="UpdateTooltip(this,0,1,event)" onfocus="UpdateTooltip(this,0,1,event)" onclick="return OnShapeClick(0,1,event);" onkeyup="OnShapeKey(0,1,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="../giaodien%5CTrangChu.jpg" target="_top" COORDS="16,1,16,1,16,0,8,0,8,5,12,9,16,9,16,1" onmouseover="UpdateTooltip(this,0,7,event)" onfocus="UpdateTooltip(this,0,7,event)" onclick="return OnShapeClick(0,7,event);" onkeyup="OnShapeKey(0,7,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="../giaodien%5CTrangChu.jpg" target="_top" COORDS="6,23,6,25,11,25,16,25,22,25,22,15,24,15,20,12,20,6,18,6,18,10,16,9,16,5,12,0,0,0,0,23,6,23" onmouseover="UpdateTooltip(this,0,7,event)" onfocus="UpdateTooltip(this,0,7,event)" onclick="return OnShapeClick(0,7,event);" onkeyup="OnShapeKey(0,7,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>

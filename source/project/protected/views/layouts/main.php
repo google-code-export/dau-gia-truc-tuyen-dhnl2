@@ -13,8 +13,15 @@
 
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
-
+        
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+        <script src="./js/ckeditor/ckeditor.js"></script>
+        <script type="text/javascript" src="js/ckeditor/config.js?t=D08E"></script>
+        <link rel="stylesheet" type="text/css" href="js/ckeditor/skins/moono/editor.css?t=D08E"/>
+        <script type="text/javascript" src="js/ckeditor/lang/en.js?t=D08E"></script>
+        <script type="text/javascript" src="js/ckeditor/styles.js?t=D08E"></script>
+        <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+</head>
 </head>
 
 <body>

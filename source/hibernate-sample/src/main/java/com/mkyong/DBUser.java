@@ -69,5 +69,11 @@ public class DBUser implements java.io.Serializable {
 	public void setCreatedDate(Date createdDate) {
 		this.createdDate = createdDate;
 	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return String.format(" (%s  %s) ",userId, username);
+	}
  
 }

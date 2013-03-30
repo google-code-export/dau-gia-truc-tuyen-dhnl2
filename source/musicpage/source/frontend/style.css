@@ -23,8 +23,8 @@ a.expand {
 	display: block;
 	margin: 10px 0 0;
 }
-a.expand:hover {
-	height: 500px;
+li {
+    list-style-type: none;
 }
 /* End of of styles for the demonstration */
 p {
@@ -63,7 +63,7 @@ input {
 	display: table;
 }
 #container {
-	width: 100%;
+	width: 550px;
 	float: left;
 	overflow: hidden;
 	margin-right: -100%;
@@ -71,19 +71,40 @@ input {
 #content {
 	padding: 0 20px;
 }
+#container #categoriesList{
+    height: 25px;
+    border-bottom: 1px solid black;
+}
+#container #categoriesList li{
+    float: left;
+    min-width: 75px;
+    border-right: 1px solid black;
+    padding-left: 10px;
+    line-height: 25px;
+}
+#container #categoriesList li:last-child{
+    border: none;
+}
+#container #categoriesList li:first-child{
+    border-left: 1px solid black;
+}
 
-
+#container #songsResultList li{
+    
+}
 /* Sidebar Right
 -----------------------------------------------------------------------------*/
 #sideRight {
 	float: right;
 	margin-right: -250px;
-	width: 250px;
+	width: 350px;
 	position: relative;
 	background: #FFACAA;
 }
 
-
+#sideRight #playingMark{
+    background: red;
+}
 /* Footer
 -----------------------------------------------------------------------------*/
 #footer {

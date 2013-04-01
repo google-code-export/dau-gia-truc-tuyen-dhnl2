@@ -40,7 +40,9 @@ input {
 	width: 1000px;
 	margin: 0 auto;
 }
-
+.undisplayed{
+    display: none;
+}
 
 /* Header
 -----------------------------------------------------------------------------*/

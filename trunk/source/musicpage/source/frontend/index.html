@@ -6,10 +6,27 @@
 	<title></title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
-	<link rel="stylesheet" href="style.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+        <script src="js/jquery-1.9.1.min.js"></script>
+        
+        <script src="js/IndexModel.js"></script>
+        
+        <script src="js/IndexController.js"></script>
+        
+        
+        <script>
+            templateUrl = 'pages/templates.html';
+            onLoad = function(){
+                controllers = new Array();
+                c = new IndexController;
+                c.init();
+                controllers.push(c);
+            }
+        </script>
+        <script src="js/TemplateManager.js"></script>
 </head>
 
-<body>
+    <body onload="onLoad()">
 
 <div id="wrapper">
 
@@ -59,8 +76,8 @@
                             <!--<source src="horse.mp3" type="audio/mpeg">-->
                             Your browser does not support the audio tag.
                         </audio>
-                        <div id="listSongsPlaying" >
-                            <ul>
+                        <div id="listSongsPlayingPanel" >
+                            <ul id="listSongsPlaying">
                                 <li>Em con nho hay da quen <input class="" type="button" value="menu"> <span id="playingMark" > playing </span>  </li>
                                 <li> sutekidane  <input class="" type="button" value="menu"/> </li>
                                 <li> em oi ha noi pho <input class="" type="button" value="menu"/> </li>

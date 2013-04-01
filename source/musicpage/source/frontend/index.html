@@ -7,15 +7,17 @@
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+        <link rel="stylesheet" href="css/jquery.jscrollpane.css" type="text/css" media="screen, projection" />
+        
         <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.jscrollpane.min.js"></script>
         
         <script src="js/IndexModel.js"></script>
         
         <script src="js/IndexController.js"></script>
         
-        
+        <script src="js/Conf.js"></script>
         <script>
-            templateUrl = 'pages/templates.html';
             onLoad = function(){
                 controllers = new Array();
                 c = new IndexController;
@@ -71,18 +73,14 @@
                         </div>
                         
                     <div id="playerPanel" >
-                        <audio controls>
+                        <audio controls id="playerObject" >
                             <source src="http://data.chiasenhac.com/stream/1043/6/1042453-ee7d89cc/m4a/Em%20Oi%20Ha%20Noi%20Pho%20-%20Bang%20Kieu.m4a.csn" type="audio/ogg">
                             <!--<source src="horse.mp3" type="audio/mpeg">-->
                             Your browser does not support the audio tag.
                         </audio>
                         <div id="listSongsPlayingPanel" >
                             <ul id="listSongsPlaying">
-                                <li>Em con nho hay da quen <input class="" type="button" value="menu"> <span id="playingMark" > playing </span>  </li>
-                                <li> sutekidane  <input class="" type="button" value="menu"/> </li>
-                                <li> em oi ha noi pho <input class="" type="button" value="menu"/> </li>
-                                <li> Chut nang <input class="" type="button" value="menu"/> </li>
-                                <li> Mua buon <input class="" type="button" value="menu"/> </li>
+                                
                             </ul>
                         </div>
                     </div>

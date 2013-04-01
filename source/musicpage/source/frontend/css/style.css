@@ -104,8 +104,41 @@ input {
 	background: #FFACAA;
 }
 
-#sideRight #playingMark{
-    background: red;
+#sideRight .playingButton{
+    background: url("../img/playing/playButton.png");
+    right: 70px;
+}
+
+#sideRight .downloadButton{
+    background: url("../img/playing/download.png");
+    right: 50px;
+}
+
+#sideRight .addButton{
+    background: url("../img/playing/add.png");
+    right: 30px;
+}
+
+#sideRight .removeButton{
+    background: url("../img/playing/remove.png");
+    right: 10px;
+}
+#sideRight #listSongsPlaying .playingButton, 
+#sideRight #listSongsPlaying .downloadButton, 
+#sideRight #listSongsPlaying .addButton, 
+#sideRight #listSongsPlaying .removeButton{
+    background-size: 100% 100%;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+}
+#sideRight #listSongsPlaying .playingMark {
+    background: blue;
+    color: white;
+}
+
+#sideRight #listSongsPlaying{
+    height: 70px;
 }
 /* Footer
 -----------------------------------------------------------------------------*/

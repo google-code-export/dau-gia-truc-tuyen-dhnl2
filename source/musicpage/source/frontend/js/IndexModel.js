@@ -1,12 +1,13 @@
 function IndexModel () {
+    this.selectedIndexSong = 0,
     this.createOfflineData = function(){
+        var srcO = "http://data.chiasenhac.com/downloads/1078/1/1078000-8a14e570/320/Sun%20-%20Belinda%20Carlisle%20[MP3%20300kbps].mp3";
         this.playingSongsList = [
-            {title:"abcd",src:"http://,..."},
-            {title:"12314",src:"http://,..."},
-            {title:"xcxzxzc",src:"http://,..."},
-            {title:"ttttt",src:"http://,..."},
-            {title:"yyywtqtqt",src:"http://,..."},
-            {title:"hhhhaahahaa",src:"http://,..."},
+            {title:"Just dance - LadyGaga",src:srcO},
+            {title:"Poker face - LadyGaga",src:srcO},
+            {title:"Bad romance - LadyGaga",src:"http://,..."},
+            {title:"Paparazzi - LadyGaga",src:"http://,..."},
+            {title:"TelePhone - LadyGaga",src:"http://,..."},
             ];
 
         this.songsResultList = [

@@ -8,6 +8,11 @@ function IndexModel () {
             {title:"Bad romance - LadyGaga",src:"http://,..."},
             {title:"Paparazzi - LadyGaga",src:"http://,..."},
             {title:"TelePhone - LadyGaga",src:"http://,..."},
+            {title:"Just dance - LadyGaga",src:srcO},
+            {title:"Poker face - LadyGaga",src:srcO},
+            {title:"Bad romance - LadyGaga",src:"http://,..."},
+            {title:"Paparazzi - LadyGaga",src:"http://,..."},
+            {title:"TelePhone - LadyGaga",src:"http://,..."},
             ];
 
         this.songsResultList = [

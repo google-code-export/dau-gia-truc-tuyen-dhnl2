@@ -7,14 +7,22 @@
         </div>
     </div>
     <div id="wraperProcessbar" >
-         <progress id="processbarPlayer" value="10" max="100" ></progress>
+        <div id="processbarPlayer" class="meter">
+			<span style="width: 118px;"></span>
+		</div>
     </div>
     <div id="wraperControlButtons" >
         <div id="previous"></div>
         <div id="play" ></div>
-        <div id="time" ></div>
-        <div id="repeat" ></div>
+        <div id="next" ></div>
+        <div id="time" >0:45:05 / 3:12:00</div>
         <div id="volume" ></div>
-
+        <div id="repeat" ></div>
     </div>
+    <audio id="playerObject">
+        <source src="http://data.chiasenhac.com/stream/1043/6/1042453-ee7d89cc/m4a/Em%20Oi%20Ha%20Noi%20Pho%20-%20Bang%20Kieu.m4a.csn"
+            type="audio/ogg">
+        <!--<source src="horse.mp3" type="audio/mpeg">-->
+        Your browser does not support the audio tag.
+    </audio>
 </div>

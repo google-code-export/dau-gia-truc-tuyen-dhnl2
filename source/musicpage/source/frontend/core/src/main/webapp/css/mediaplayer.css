@@ -1,0 +1,22 @@
+#mediaPlayerPanel{
+    font-weight: bold;
+}
+#mediaPlayerPanel #albumThumbnail {
+    background: #F00;
+    height: 80px;
+    width: 80px;
+    float: left;
+}
+#mediaPlayerPanel #albumTitle {
+    text-indent: 10px;
+    padding-top: 40px;
+}
+#mediaPlayerPanel #albumArtist {
+    text-indent: 10px;
+}
+
+#mediaPlayerPanel #wraperRight:after {
+    content: '';
+    clear: both;
+    display: table;
+}

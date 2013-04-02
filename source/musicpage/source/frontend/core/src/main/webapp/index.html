@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+        <link rel="stylesheet" href="css/jquery.jscrollpane.css" type="text/css" media="screen, projection" />
+        
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.jscrollpane.min.js"></script>
+        
+        <script src="js/IndexModel.js"></script>
+        
+        <script src="js/IndexController.js"></script>
+        
+        <script src="js/Conf.js"></script>
+        <script>
+            onLoad = function(){
+                controllers = new Array();
+                c = new IndexController;
+                c.init();
+                controllers.push(c);
+            }
+        </script>
+        <script src="js/TemplateManager.js"></script>
+</head>
+
+    <body onload="onLoad()">
+
+<div id="wrapper">
+
+	<header id="header">
+		<strong>Header:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor. Praesent dictum, libero ut tempus dictum, neque eros elementum mauris, quis mollis arcu velit ac diam. Etiam neque. Quisque nec turpis. Aliquam arcu nulla, dictum et, lacinia a, mollis in, ante. Sed eu felis in elit tempor venenatis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut ultricies porttitor purus. Proin non tellus at ligula fringilla tristique. Fusce vehicula quam. Curabitur vel tortor vitae pede imperdiet ultrices. Sed tortor.
+	</header><!-- #header-->
+
+	<section id="middle">
+
+		<div id="container">
+			<div id="content">
+                            <div id="categoryPanel" >
+                                <ul id="categoriesList" >
+                                    <li>POP</li>
+                                    <li>ROCK</li>
+                                    <li>DAN CA</li>
+                                    <li>HOA TAU</li>
+                                    <li> <input placeholder="Search" type="text" /> </li>
+                                </ul>
+                            </div>
+                            <div id="songsResultList" >
+                                <ul>
+                                    <li>Em con nho hay da quen <input class="" type="button" value="download"> <input class="" type="button" value="add">  </li>
+                                    <li> sutekidane  <input class="" type="button" value="download"> <input class="" type="button" value="add">  </li>
+                                    <li> em oi ha noi pho <input class="" type="button" value="download"> <input class="" type="button" value="add">  </li>
+                                    <li> Chut nang <input class="" type="button" value="download"> <input class="" type="button" value="add">  </li>
+                                    <li> Mua buon <input class="" type="button" value="download"> <input class="" type="button" value="add">  </li>
+                                </ul>
+                            </div>    
+			<strong>Content:</strong> Sed placerat accumsan ligula. Aliquam felis magna, congue quis, tempus eu, aliquam vitae, ante. Cras neque justo, ultrices at, rhoncus a, facilisis eget, nisl. Quisque vitae pede. Nam et augue. Sed a elit. Ut vel massa. Suspendisse nibh pede, ultrices vitae, ultrices nec, mollis non, nibh. In sit amet pede quis leo vulputate hendrerit. Cras laoreet leo et justo auctor condimentum. Integer id enim. Suspendisse egestas, dui ac egestas mollis, libero orci hendrerit lacus, et malesuada lorem neque ac libero. Morbi tempor pulvinar pede. Donec vel elit.
+                        <a href="#" class="expand">Expand column</a>			</div><!-- #content-->
+		</div><!-- #container-->
+
+		<aside id="sideRight">
+                    <strong>Right Sidebar:</strong> 
+                        <div id="sessionPanel" >
+                            <div id="sessionForm" >
+                                <input id="sessionInput" type="text" placeholder="Number" />
+                                <input value="Submit"  id="sessionSubmit" type="button" />
+                            </div>
+                            <span>Please input your session number</span>
+                        </div>
+                        
+                    <div id="playerPanel" >
+                        <audio controls id="playerObject" >
+                            <source src="http://data.chiasenhac.com/stream/1043/6/1042453-ee7d89cc/m4a/Em%20Oi%20Ha%20Noi%20Pho%20-%20Bang%20Kieu.m4a.csn" type="audio/ogg">
+                            <!--<source src="horse.mp3" type="audio/mpeg">-->
+                            Your browser does not support the audio tag.
+                        </audio>
+                        <div id="listSongsPlayingPanel" >
+                            <ul id="listSongsPlaying">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <p></p>
+                    <a href="#" class="expand">Expand column</a>		</aside><!-- #sideRight -->
+
+	</section><!-- #middle-->
+
+	<footer id="footer">
+		<strong>Footer:</strong> Mus elit Morbi mus enim lacus at quis Nam eget morbi. Et semper urna urna non at cursus dolor vestibulum neque enim. Tellus interdum at laoreet laoreet lacinia lacinia sed Quisque justo quis. Hendrerit scelerisque lorem elit orci tempor tincidunt enim Phasellus dignissim tincidunt. Nunc vel et Sed nisl Vestibulum odio montes Aliquam volutpat pellentesque. Ut pede sagittis et quis nunc gravida porttitor ligula.
+	</footer><!-- #footer -->
+
+</div><!-- #wrapper -->
+
+</body>
+</html>

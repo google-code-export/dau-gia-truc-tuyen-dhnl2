@@ -1,5 +1,6 @@
 @import url("mediaplayer.css");
 @import url("rightSide.css");
+@import url("footer.css");
 * {
 	margin: 0;
 	padding: 0;
@@ -102,5 +103,4 @@ input {
 -----------------------------------------------------------------------------*/
 #footer {
 	height: 100px;
-	background: #BFF08E;
 }

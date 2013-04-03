@@ -1,0 +1,22 @@
+#footer #titleCategory{
+    line-height: 40px;
+    width: 100px;
+    border: solid 1px #669CB1;
+    border-left: none;
+    text-indent: 10px;
+    border-radius: 0px 10px 10px 0px;
+    font-size: 20px;
+    color: #4CA8CC;
+    float:left;
+}
+
+#footer #lineCategory {
+    width: 899px;
+    float: right;
+    border-bottom: solid 1px #669CB1;
+    margin-top: 41px;
+}
+
+#footer #listSongsResult {
+    padding-top: 70px;
+}

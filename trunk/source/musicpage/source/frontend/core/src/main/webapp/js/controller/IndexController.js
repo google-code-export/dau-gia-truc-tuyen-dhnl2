@@ -19,8 +19,20 @@ function IndexController (){
             $(li.children[2]).removeClass("undisplayed");
             $(li.children[3]).removeClass("undisplayed");
         }
-        
         $('#listSongsPlaying').jScrollPane();
+
+        var ulListSongsResult = $("#listSongsResult")[0];
+        ulListSongsResult.innerHTML = "";
+        var songsResultList = this.model.songsResultList;
+        for(var i = 0 ; i < songsResultList.length;i++){
+            var stringLi =  templateManager.t("templateListSongOfCategories");
+            stringLi = stringLi.replace("#title#",songsResultList[i].title);
+            stringLi = stringLi.replace("#artist#",songsResultList[i].artist);
+            stringLi = stringLi.replace("#listenCount#",songsResultList[i].listenCount);
+            var li = $(stringLi)[0];
+            ulListSongsResult.appendChild(li);
+        }
+        $('#listSongsResult').jScrollPane();
     },
     this.loadOfflineData = function(){
         this.model = new IndexModel;

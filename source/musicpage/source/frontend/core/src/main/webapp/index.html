@@ -6,26 +6,12 @@
 	<title>Music Store</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+	    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
         <link rel="stylesheet" href="css/jquery.jscrollpane.css" type="text/css" media="screen, projection" />
         
-        <script src="js/jquery-1.9.1.min.js"></script>
-        <script src="js/jquery.jscrollpane.min.js"></script>
-        
-        <script src="js/IndexModel.js"></script>
-        
-        <script src="js/IndexController.js"></script>
-        
-        <script src="js/Conf.js"></script>
-        <script>
-            onLoad = function(){
-                controllers = new Array();
-                c = new IndexController;
-                c.init();
-                controllers.push(c);
-            }
-        </script>
-        <script src="js/TemplateManager.js"></script>
+        <!--#include virtual="js/includeJS.html" -->
+
+
 </head>
 
     <body onload="onLoad()">

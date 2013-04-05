@@ -13,9 +13,9 @@ body {
 	width: 100%;
 }
 a {
-	color: blue;
+	color: white;
 	outline: none;
-	text-decoration: underline;
+	text-decoration: none;
 }
 a:hover {
 	text-decoration: none;

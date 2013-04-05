@@ -16,12 +16,12 @@ function IndexModel () {
             ];
 
         this.songsResultList = [
-            {title:"jjjjjjjjjjjj",src:"http://,..."},
-            {title:"5555515151",src:"http://,..."},
-            {title:"15151515",src:"http://,..."},
-            {title:"3312341212",src:"http://,..."},
-            {title:"7778787878",src:"http://,..."},
-            {title:"09090909090909",src:"http://,..."},
+            {title:"jjjjjjjjjjjj",src:"http://,...",artist:"abcx",listenCount:213124},
+            {title:"5555515151",src:"http://,...",artist:"abcx",listenCount:213124},
+            {title:"15151515",src:"http://,...",artist:"abcx",listenCount:213124},
+            {title:"3312341212",src:"http://,...",artist:"abcx",listenCount:213124},
+            {title:"7778787878",src:"http://,...",artist:"abcx",listenCount:213124},
+            {title:"09090909090909",src:"http://,...",artist:"abcx",listenCount:213124},
         ];
 
         this.categories = [

@@ -47,3 +47,4 @@ function IndexView() {
         }
     }
 }
+BaseView.inherits(IndexView);

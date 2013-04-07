@@ -3,18 +3,22 @@
 
 <script src="js/model/IndexModel.js"></script>
 
+<script src="js/controller/BaseController.js"></script>
 <script src="js/controller/IndexController.js"></script>
 
+<script src="js/view/BaseView.js"></script>
 <script src="js/view/IndexView.js"></script>
 
 
 <script src="js/Conf.js"></script>
 <script src="js/common/Pages.js"></script>
 <script src="js/common/PagesManager.js"></script>
+<script src="js/common/EventManager.js"></script>
 
 <script>
 	onLoad = function(){
 		pagesManager.showPage(Pages.index);
+        eventManager.init();
 	}
 </script>
 <script src="js/common/TemplateManager.js"></script>

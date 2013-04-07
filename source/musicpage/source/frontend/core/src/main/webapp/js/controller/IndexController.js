@@ -27,4 +27,6 @@ function IndexController (){
         this.player.play();
     }
 }
+BaseController.inherits(IndexController);
+
 

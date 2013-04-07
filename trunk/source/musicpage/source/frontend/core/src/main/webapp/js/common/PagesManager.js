@@ -7,12 +7,14 @@
  */
 pagesManager = {
     controllers:new Array(),
-    showPage:function(page){
+    currentPage:null,
+    showPage:function(page) {
+        this.currentPage = page;
         for (var i = 0; i < page.length; i++) {
-            if (this.controllers.indexOf(page[i])==-1) {
-                this.controllers.push(new page[i]);
+            if (this.controllers.indexOf(page[i]) == -1) {
+                this.controllers[page[i]] = new page[i];
             }
-            var ctrl = this.controllers[this.controllers.indexOf(page[i])];
+            var ctrl = this.controllers[page[i]];
             var view = ctrl.createView();
             view.ctrl = ctrl;
             ctrl.view = view;
@@ -25,10 +27,4 @@ pagesManager = {
         }
 
     }
-}
-pagesManager.controllers.indexOf = function(ctrlClass){
-    for(var i = 0;i < this.length; i++){
-         if(this[i] instanceof ctrlClass) return i;
-    }
-    return -1;
 }

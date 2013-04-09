@@ -61,6 +61,7 @@ input {
 #middle {
 	height: 1%;
 	position: relative;
+    margin-top: 25px;
 }
 #middle:after {
 	content: '';

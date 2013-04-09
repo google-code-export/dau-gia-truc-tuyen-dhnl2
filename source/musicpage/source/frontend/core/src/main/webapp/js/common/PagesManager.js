@@ -11,7 +11,7 @@ pagesManager = {
     showPage:function(page) {
         this.currentPage = page;
         for (var i = 0; i < page.length; i++) {
-            if (this.controllers.indexOf(page[i]) == -1) {
+            if (!this.controllers[page[i]]) {
                 this.controllers[page[i]] = new page[i];
             }
             var ctrl = this.controllers[page[i]];

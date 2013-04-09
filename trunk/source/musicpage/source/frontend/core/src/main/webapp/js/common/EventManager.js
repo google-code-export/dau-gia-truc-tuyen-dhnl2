@@ -13,7 +13,7 @@ eventManager = {
         //e.taget
         var currentPage = pagesManager.currentPage;
         for(var i = 0;i < currentPage.length;i++){
-            pagesManager.controllers[currentPage[i]].onclick(e);
+            pagesManager.controllers[currentPage[i]].onClick(e);
         }
     }
 }

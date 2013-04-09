@@ -25,6 +25,9 @@ function IndexController (){
         this.model.selectedIndexSong = index;
         this.player.src = this.model.playingSongsList[index].src;
         this.player.play();
+    },
+    this.onClick = function(e){
+
     }
 }
 BaseController.inherits(IndexController);

@@ -8,6 +8,17 @@
 function TopAlbumController(){
     this.init = function(){
 
+    },
+    this.createModel = function(){
+        var model = new TopAlbumModel();
+        model.createOfflineData();
+        return model;
+    },
+    this.onClick = function(){
+
+    },
+    this.createView = function(){
+        return new TopAlbumView();
     }
 }
 BaseController.inherits(TopAlbumController);

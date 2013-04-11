@@ -7,4 +7,4 @@
  */
 
 Pages = {}
-Pages.index = [IndexController,TopAlbumController];
+Pages.index = [];

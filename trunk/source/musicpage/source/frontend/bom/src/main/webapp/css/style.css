@@ -1,0 +1,102 @@
+@import url("mediaplayer.css");
+@import url("rightSide.css");
+@import url("footer.css");
+@import url("jquery.Jcrop.min.css");
+* {
+	margin: 0;
+	padding: 0;
+}
+header, nav, section, article, aside, footer {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, Tahoma, Verdana, sans-serif;
+	width: 100%;
+    background: black;
+}
+a {
+	color: white;
+	outline: none;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+/* Begin of styles for the demonstration (you can remove them) */
+a.expand {
+	width: 150px;
+	display: block;
+	margin: 10px 0 0;
+}
+li {
+    list-style-type: none;
+}
+/* End of of styles for the demonstration */
+p {
+	margin: 0 0 18px
+}
+img {
+	border: none;
+}
+input {
+	vertical-align: middle;
+}
+#wrapper {
+	width: 1000px;
+	margin: 0 auto;
+    background: black;
+    color: white;
+}
+.undisplayed{
+    display: none;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#middle {
+	height: 1%;
+	position: relative;
+    margin-top: 25px;
+}
+#middle:after {
+	content: '';
+	clear: both;
+	display: table;
+}
+#container {
+	width: 550px;
+	float: left;
+	overflow: hidden;
+	margin-right: -100%;
+}
+#content {
+	padding: 0 20px;
+}
+#container #categoriesList{
+    height: 25px;
+    border-bottom: 1px solid black;
+}
+#container #categoriesList li{
+    float: left;
+    min-width: 75px;
+    border-right: 1px solid black;
+    padding-left: 10px;
+    line-height: 25px;
+}
+#container #categoriesList li:last-child{
+    border: none;
+}
+#container #categoriesList li:first-child{
+    border-left: 1px solid black;
+}
+
+#container #songsResultList li{
+
+}
+

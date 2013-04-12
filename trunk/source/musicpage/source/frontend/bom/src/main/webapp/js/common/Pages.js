@@ -7,4 +7,4 @@
  */
 
 Pages = {}
-Pages.index = [];
+Pages.index = [BannerImageDetailController];

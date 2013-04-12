@@ -14,7 +14,7 @@ BaseController = {
     }
 }
 BaseController.prototype = {
-    onclick:function(){},
+    onClick:function(){},
     createView:function(){},
     createModel:function(){},
     init:function(){}

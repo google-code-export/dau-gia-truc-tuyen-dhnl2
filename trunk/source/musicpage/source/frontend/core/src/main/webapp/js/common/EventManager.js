@@ -10,10 +10,12 @@ eventManager = {
         $("body").click(this.onclick);
     },
     onclick : function (e){
-        //e.taget
-        var currentPage = pagesManager.currentPage;
-        for(var i = 0;i < currentPage.length;i++){
-            pagesManager.controllers[currentPage[i]].onClick(e);
-        }
+        //TODO: Delay 200 to make effect of class active
+        setTimeout(function(){
+            var currentPage = pagesManager.currentPage;
+            for(var i = 0;i < currentPage.length;i++){
+                pagesManager.controllers[currentPage[i]].onClick(e);
+            }
+        },200);
     }
 }

@@ -1,4 +1,6 @@
 @import url("bannerImageDetail.less");
+@import url("/core-musicpage/css/jquery.jscrollpane.css");
+@import url("/core-musicpage/css/jquery.Jcrop.min.css");
 * {
 	margin: 0;
 	padding: 0;
@@ -22,6 +24,22 @@ img {
 }
 input {
 	vertical-align: middle;
+/*we will first set the border styles.*/
+    border-width: 1px;
+    border-style: solid;
+    border-color: #999999;
+    /*we are now going to add in the shadow image that we created earlier*/
+    background-image: url(back_field.gif);
+    background-repeat: repeat-x;
+    /*I am going to add some text formatting of my own*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #333333;
+    width: 200px;
+    height: 15px;
+}
+.undisplayed{
+    display: none;
 }
 #wrapper {
 	width: 100%;

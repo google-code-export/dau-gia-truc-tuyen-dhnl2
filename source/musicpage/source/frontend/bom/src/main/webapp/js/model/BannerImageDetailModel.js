@@ -5,3 +5,7 @@
  * Time: 2:42 PM
  * To change this template use File | Settings | File Templates.
  */
+function BannerImageDetailModel(){
+    this.listAlbumTags = [];
+    this.tempTag = null;
+}

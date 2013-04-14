@@ -7,6 +7,16 @@
             background: #F00;
             line-height: 50px;
             text-indent: 5px;
+            float: left;
+        }
+
+        #buttonSave{
+            height: 50px;
+            width: 50px;
+            background: #adff2f;
+            line-height: 50px;
+            text-indent: 5px;
+            float: left;
         }
     }
     #content{
@@ -34,9 +44,14 @@
                     }
                     .editTagButton{
                         background: url("../img/editTag.png");
-
                     }
-                    .selectTagButton , .editTagButton{
+                    .removeTagButton{
+                        background: url("../img/removeTag.png");
+                    }
+                    .addTagButton{
+                        background: url("../img/addTag.png");
+                    }
+                    .selectTagButton , .editTagButton ,.removeTagButton,.addTagButton{
                         height: 20px;
                         width: 20px;
                         float: right;
@@ -44,8 +59,25 @@
                         background-position: center;
                         background-repeat: no-repeat;
                     }
+                    .activeButton{
+                        background-color: red;
+                    }
+                }
+                li:active{
+                    background: #adff2f;
                 }
             }
         }
+    }
+
+    @-webkit-keyframes effectActiveButtonTag /* Safari and Chrome */
+    {
+        from {background-color: "";}
+        to {background-color: red;}
+    }
+    @-webkit-keyframes effectDeactiveButtonTag /* Safari and Chrome */
+    {
+        from {background-color: red;}
+        to {background-color: "";}
     }
 }

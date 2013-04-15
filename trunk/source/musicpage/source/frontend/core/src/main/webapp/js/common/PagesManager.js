@@ -16,6 +16,7 @@ pagesManager = {
             }
             var ctrl = this.controllers[page[i]];
             var view = ctrl.createView();
+            $("#"+view.getMainNode()).removeClass("undisplayed")
             view.ctrl = ctrl;
             ctrl.view = view;
             ctrl.model = ctrl.createModel();

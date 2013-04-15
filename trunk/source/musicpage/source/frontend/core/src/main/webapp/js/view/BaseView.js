@@ -13,5 +13,6 @@ BaseView = {
     }
 }
 BaseView.prototype = {
-    updateView:function(){}
+    updateView:function(){},//this mothod will be call every show page or init controller
+    getMainNode:function(){}//this method to determine main div contain components of the page
 }

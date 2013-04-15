@@ -17,6 +17,9 @@ function BannerImageDetailView(){
             self.model.currentImageEditor = this;
         });
     }
+    this.getMainNode =function(){
+        return "bannerImageDetail";
+    }
     this.onSelectFirstTime = function(e){
         // occurred when drag and release mouse complete
         //onSelect{"x":283,"y":51,"x2":816,"y2":191,"w":533,"h":140}
@@ -127,9 +130,13 @@ function BannerImageDetailView(){
         this.model.currentImageEditor.release();
     }
     this.updateRemoveEvent = function(e){
+        //remove item in listAlbumTags
         e.target.parentNode.remove();
         var api = $("#listAlbumTags").data('jsp');
         api.reinitialise();
+
+        //release position box
+        this.model.currentImageEditor.release();
     }
 }
 BaseView.inherits(BannerImageDetailView);

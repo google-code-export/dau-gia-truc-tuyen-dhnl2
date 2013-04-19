@@ -1,8 +1,7 @@
 function IndexController (){
     this.init = function(){
         //whenever controller is new, it will be called
-        this.player = $("#playerObject")[0];
-        this.playSong(0);
+
     },
     /**
      * Create view for controling View html

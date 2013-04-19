@@ -48,6 +48,7 @@
     border-top: solid rgb(48, 48, 48) 1px;
     line-height: 30px;
     text-indent: 30px;
+    -webkit-transition:2s;
 }
 #sideRight #listSongsPlaying li:last-child{
     border-bottom: solid rgb(75, 75, 75) 1px;
@@ -61,4 +62,13 @@
     background: rgb(94, 94, 99);
     border-radius: 8px;
     margin: 0px 3px;
+}
+
+#sideRight{
+    #listSongsPlaying {
+        .selectedSong {
+            box-shadow: #FFF 0px 0px 30px 0px inset;
+            border-radius: 5px;
+        }
+    }
 }

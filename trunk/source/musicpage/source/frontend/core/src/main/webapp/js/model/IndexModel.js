@@ -1,7 +1,7 @@
 function IndexModel () {
-    this.PlayingIndexSong = 0,
+    this.playingIndexSong = 0,
     this.createOfflineData = function(){
-        var srcO = "http://data.chiasenhac.com/downloads/1078/1/1078000-8a14e570/320/Sun%20-%20Belinda%20Carlisle%20[MP3%20300kbps].mp3";
+        var srcO = "http://localhost/core-musicpage/a.m4a";
         this.playingSongsList = [
             {title:"Just dance - LadyGaga",src:srcO},
             {title:"Poker face - LadyGaga",src:srcO},

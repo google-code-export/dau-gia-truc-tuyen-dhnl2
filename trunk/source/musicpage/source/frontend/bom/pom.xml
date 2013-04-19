@@ -16,6 +16,36 @@
     </dependency>
   </dependencies>
   <build>
+	<plugins>
+		<plugin>
+			<groupId>net.alchim31.maven</groupId>
+			<artifactId>yuicompressor-maven-plugin</artifactId>
+			<version>1.1</version>
+			<executions>
+			  <execution>
+				<goals>
+				  <goal>compress</goal>
+				</goals>
+			  </execution>
+			</executions>   
+		</plugin>  
+		<plugin>
+          <groupId>com.tunyk.mvn.plugins.htmlcompressor</groupId>
+          <artifactId>htmlcompressor-maven-plugin</artifactId>
+          <version>1.2</version>
+          <configuration>
+            <goalPrefix>htmlcompressor</goalPrefix>
+          </configuration>
+        </plugin>
+	</plugins>
     <finalName>bom-musicpage</finalName>
   </build>
+  
+    <pluginRepositories>
+    <pluginRepository>
+      <name>oss.sonatype.org</name>
+      <id>oss.sonatype.org</id>
+      <url>http://oss.sonatype.org/content/groups/public</url>
+    </pluginRepository>
+  </pluginRepositories>
 </project>

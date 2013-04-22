@@ -1,7 +1,7 @@
 function IndexModel () {
     this.playingIndexSong = 0,
     this.createOfflineData = function(){
-        var srcO = "http://localhost/core-musicpage/a.m4a";
+        var srcO = "http://localhost/core-musicpage/music.mp3";
         this.playingSongsList = [
             {title:"Just dance - LadyGaga",src:srcO},
             {title:"Poker face - LadyGaga",src:srcO},

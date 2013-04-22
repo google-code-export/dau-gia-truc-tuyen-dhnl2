@@ -11,7 +11,7 @@ function IndexPlayerController(){
         this.model.currentPlayIndex = 0;
         this.handlePlayButton = this.playButtonPausingState ;
         if(!this.updateProcessBarId)
-            this.updateProcessBarId = setInterval(this.updateProcessBar,500);
+            this.updateProcessBarId = setInterval(this.updateProcessBar,800);
     }
     this.createView = function(){
         return new IndexPlayerView();
@@ -78,7 +78,11 @@ function IndexPlayerController(){
         //TODO : process buffered   buffered
         console.log("duration ".concat(player.duration));
         console.log("seekable ".concat(JSON.stringify(player.seekable)));
-        console.log("buffered ".concat("{ ".concat(" "+player.buffered.start(0)).concat(" "+player.buffered.end(0))));
+        if(player.buffered.length != 0)console.log("buffered ".concat("{ ".concat(" "+player.buffered.start(0)).concat(" "+player.buffered.end(0))));
+
+        var barPlay =  $("#mediaPlayerPanel #process2");
+        var parentWidth = parseInt( barPlay.parent().css("width"),10);
+        if(!player.paused)barPlay.css("width",(  (player.currentTime/ player.duration) * parentWidth  ))  ;
     }
 }
 BaseController.inherits(IndexPlayerController);

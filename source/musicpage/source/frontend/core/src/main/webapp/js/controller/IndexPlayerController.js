@@ -10,8 +10,17 @@ function IndexPlayerController(){
         this.model.playingSongsList = pagesManager.controllers[IndexController].model.playingSongsList;
         this.model.currentPlayIndex = 0;
         this.handlePlayButton = this.playButtonPausingState ;
-        if(!this.updateProcessBarId)
-            this.updateProcessBarId = setInterval(this.updateProcessBar,800);
+//        if(!this.updateProcessBarId)
+//            this.updateProcessBarId = setInterval(this.updateProcessBar,800);
+        this.model.player.addEventListener("durationchange", function(e) {
+            console.log("durationchange ".concat(e))
+        });
+        this.model.player.addEventListener("progress", function(e) {
+            console.log("progress ".concat(e))
+        });
+        this.model.player.addEventListener("ratechange", function(e) {
+            console.log("ratechange ".concat(e))
+        });
     }
     this.createView = function(){
         return new IndexPlayerView();

@@ -12,15 +12,19 @@ function IndexPlayerController(){
         this.handlePlayButton = this.playButtonPausingState ;
 //        if(!this.updateProcessBarId)
 //            this.updateProcessBarId = setInterval(this.updateProcessBar,800);
+        var self = this;
         this.model.player.addEventListener("durationchange", function(e) {
             console.log("durationchange ".concat(e))
         });
         this.model.player.addEventListener("progress", function(e) {
-            console.log("progress ".concat(e))
+            //process occur continously
+            console.log("progress ".concat(e));
+            self.updateProcessBar();
         });
         this.model.player.addEventListener("ratechange", function(e) {
             console.log("ratechange ".concat(e))
         });
+        this.view.deactiveProcessBar();
     }
     this.createView = function(){
         return new IndexPlayerView();
@@ -55,6 +59,7 @@ function IndexPlayerController(){
                 this.playCurrentSong();
                 this.view.updateCssPlayingIndex();
                 this.handlePlayButton = this.playButtonPlayingState;
+                this.view.activeProcessBar();
                 break;
             default:
                 break;
@@ -66,7 +71,7 @@ function IndexPlayerController(){
             case "play":
                 this.view.togglePlayButton(e);
                     //TODO: pause song
-
+                this.view.deactiveProcessBar();
                 this.handlePlayButton = this.playButtonPausingState;
                 break;
             default:
@@ -85,8 +90,8 @@ function IndexPlayerController(){
         var player = self.model.player;
         //TODO : calculate current process playing -> currentTime , duration
         //TODO : process buffered   buffered
-        console.log("duration ".concat(player.duration));
-        console.log("seekable ".concat(JSON.stringify(player.seekable)));
+//        console.log("duration ".concat(player.duration));
+//        console.log("seekable ".concat(JSON.stringify(player.seekable)));
         if(player.buffered.length != 0)console.log("buffered ".concat("{ ".concat(" "+player.buffered.start(0)).concat(" "+player.buffered.end(0))));
 
         var barPlay =  $("#mediaPlayerPanel #process2");

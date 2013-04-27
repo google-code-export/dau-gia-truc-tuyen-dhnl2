@@ -30,6 +30,11 @@ function IndexPlayerView(){
             }
         }
     }
-
+    this.activeProcessBar = function(){
+        $("#mediaPlayerPanel #process2").removeClass ("deactive");
+    }
+    this.deactiveProcessBar = function(){
+        $("#mediaPlayerPanel #process2").addClass ("deactive");
+    }
 }
 BaseView.inherits(IndexPlayerView)

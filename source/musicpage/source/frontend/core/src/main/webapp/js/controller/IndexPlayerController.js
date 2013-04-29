@@ -14,15 +14,25 @@ function IndexPlayerController(){
 //            this.updateProcessBarId = setInterval(this.updateProcessBar,800);
         var self = this;
         this.model.player.addEventListener("durationchange", function(e) {
-            console.log("durationchange ".concat(e))
+            console.log("durationchange ".concat(e));
+            self.view.activeProcessBar();
         });
         this.model.player.addEventListener("progress", function(e) {
             //process occur continously
             console.log("progress ".concat(e));
-            self.updateProcessBar();
+            self.view.updateProcessBar();
         });
         this.model.player.addEventListener("ratechange", function(e) {
-            console.log("ratechange ".concat(e))
+            console.log("ratechange ".concat(e));
+        });
+        this.model.player.addEventListener("ended",function(e){
+            console.log("ended ".concat(e));
+            self.handleEnd(e);
+        });
+        //error
+        this.model.player.addEventListener("error",function(e){
+            console.log("error ".concat(e));
+            self.handleError(e);
         });
         this.view.deactiveProcessBar();
     }
@@ -36,7 +46,7 @@ function IndexPlayerController(){
                 this.handlePlayButton(e);
                 break;
             case "next":
-                this.model.currentPlayIndex < this.model.playingSongsList.length-1 ? this.model.currentPlayIndex++ : false;
+                this.model.currentPlayIndex < this.model.playingSongsList.length - 1 ? this.model.currentPlayIndex++ : false;
                 this.view.updateCssPlayingIndex();
                 this.playCurrentSong();
                 this.view.togglePauseButton();
@@ -46,6 +56,15 @@ function IndexPlayerController(){
                 this.view.updateCssPlayingIndex();
                 this.playCurrentSong();
                 this.view.togglePauseButton();
+                break;
+            case "processbarPlayer":
+                this.handleSeek(e);
+                break;
+            case "process1":
+                this.handleSeek(e);
+                break;
+            case "process2":
+                this.handleSeek(e);
                 break;
             default:
                 break;
@@ -85,18 +104,23 @@ function IndexPlayerController(){
         this.model.player.src = this.model.playingSongsList[this.model.currentPlayIndex].src;
         this.model.player.play();
     }
-    this.updateProcessBar = function(){
-        var self = pagesManager.controllers[IndexPlayerController];
-        var player = self.model.player;
-        //TODO : calculate current process playing -> currentTime , duration
-        //TODO : process buffered   buffered
-//        console.log("duration ".concat(player.duration));
-//        console.log("seekable ".concat(JSON.stringify(player.seekable)));
-        if(player.buffered.length != 0)console.log("buffered ".concat("{ ".concat(" "+player.buffered.start(0)).concat(" "+player.buffered.end(0))));
+    this.handleSeek = function(e){
+        var player = this.model.player;
+        var _x = e.clientX - $("#mediaPlayerPanel")[0].getBoundingClientRect().left;
+        var fullWidth  = parseInt ($("#mediaPlayerPanel").css("width"),10);
+        player.currentTime = (_x/fullWidth)*player.duration;
+        this.view.updateProcessBar();
+    }
+    this.handleEnd = function(e){
+        this.view.deactiveProcessBar();
+        this.model.currentPlayIndex < this.model.playingSongsList.length - 1 ? this.model.currentPlayIndex++ : false;
+        this.playCurrentSong();
+        this.view.updateCssPlayingIndex();
 
-        var barPlay =  $("#mediaPlayerPanel #process2");
-        var parentWidth = parseInt( barPlay.parent().css("width"),10);
-        if(!player.paused)barPlay.css("width",(  (player.currentTime/ player.duration) * parentWidth  ))  ;
+    }
+    this.handleError = function(e){
+        //TODO:  update css for the song which can not be loaded
+
     }
 }
 BaseController.inherits(IndexPlayerController);

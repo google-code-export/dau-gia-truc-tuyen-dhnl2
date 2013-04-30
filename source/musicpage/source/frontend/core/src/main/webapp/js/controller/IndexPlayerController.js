@@ -10,16 +10,19 @@ function IndexPlayerController(){
         this.model.playingSongsList = pagesManager.controllers[IndexController].model.playingSongsList;
         this.model.currentPlayIndex = 0;
         this.handlePlayButton = this.playButtonPausingState ;
-//        if(!this.updateProcessBarId)
-//            this.updateProcessBarId = setInterval(this.updateProcessBar,800);
         var self = this;
         this.model.player.addEventListener("durationchange", function(e) {
             console.log("durationchange ".concat(e));
             self.view.activeProcessBar();
         });
         this.model.player.addEventListener("progress", function(e) {
-            //process occur continously
+            //process occur wh
             console.log("progress ".concat(e));
+            self.view.updateBufferBar();
+        });
+        this.model.player.addEventListener("timeupdate", function(e) {
+            //process occur continously
+            console.log("timeupdate ".concat(e));
             self.view.updateProcessBar();
         });
         this.model.player.addEventListener("ratechange", function(e) {
@@ -35,6 +38,7 @@ function IndexPlayerController(){
             self.handleError(e);
         });
         this.view.deactiveProcessBar();
+        this.model.player.load();
     }
     this.createView = function(){
         return new IndexPlayerView();
@@ -108,7 +112,10 @@ function IndexPlayerController(){
         var player = this.model.player;
         var _x = e.clientX - $("#mediaPlayerPanel")[0].getBoundingClientRect().left;
         var fullWidth  = parseInt ($("#mediaPlayerPanel").css("width"),10);
+        player.src = "";
         player.currentTime = (_x/fullWidth)*player.duration;
+        this.model.player.src = this.model.playingSongsList[this.model.currentPlayIndex].src;
+        this.model.player.load();
         this.view.updateProcessBar();
     }
     this.handleEnd = function(e){

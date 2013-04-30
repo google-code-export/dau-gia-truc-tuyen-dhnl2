@@ -44,15 +44,26 @@ function IndexPlayerView(){
         var player = self.model.player;
         //TODO : calculate current process playing -> currentTime , duration
         //TODO : process buffered   buffered
-//        console.log("duration ".concat(player.duration));
-//        console.log("seekable ".concat(JSON.stringify(player.seekable)));
-        if(player.buffered.length != 0)console.log("buffered ".concat("{ ".concat(" "+player.buffered.start(0)).concat(" "+player.buffered.end(0))));
 
         var barPlay =  $("#mediaPlayerPanel #process2");
         var parentWidth = parseInt( barPlay.parent().css("width"),10);
         var percentOfProcess = (player.currentTime/ player.duration) * parentWidth ;
         console.log("percentOfProcess ".concat(percentOfProcess) + " currentTime ".concat(player.currentTime) + " duration ".concat(player.duration));
         if(!player.paused)barPlay.css("width", percentOfProcess )  ;
+    }
+    this.updateBufferBar = function(){
+        var player = this.model.player;
+        if(player.buffered.length != 0){
+            console.log("buffered ".concat("{ ".concat(" "+player.buffered.start(0)).concat(" "+player.buffered.end(0))));
+            var barPlay =  $("#mediaPlayerPanel #process1");
+            var start = player.buffered.start(0);
+            var end = player.buffered.end(0);
+            var parentWidth = parseInt( barPlay.parent().css("width"),10);
+            var width = ((end-start)/player.duration) * parentWidth;
+            var marginLeft = (start/player.duration) * parentWidth;
+            barPlay.css("width", width )  ;
+            barPlay.css("marginLeft", marginLeft )  ;
+        }
     }
 }
 BaseView.inherits(IndexPlayerView)

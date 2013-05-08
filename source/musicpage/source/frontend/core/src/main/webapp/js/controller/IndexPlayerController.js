@@ -38,7 +38,6 @@ function IndexPlayerController(){
             self.handleError(e);
         });
         this.view.deactiveProcessBar();
-        this.model.player.load();
     }
     this.createView = function(){
         return new IndexPlayerView();
@@ -106,16 +105,15 @@ function IndexPlayerController(){
     }
     this.playCurrentSong = function(){
         this.model.player.src = this.model.playingSongsList[this.model.currentPlayIndex].src;
+        this.model.player.load();
         this.model.player.play();
     }
     this.handleSeek = function(e){
         var player = this.model.player;
         var _x = e.clientX - $("#mediaPlayerPanel")[0].getBoundingClientRect().left;
         var fullWidth  = parseInt ($("#mediaPlayerPanel").css("width"),10);
-        player.src = "";
-        player.currentTime = (_x/fullWidth)*player.duration;
-        this.model.player.src = this.model.playingSongsList[this.model.currentPlayIndex].src;
-        this.model.player.load();
+        var duration = player.duration;
+        player.currentTime = (_x/fullWidth) * duration;
         this.view.updateProcessBar();
     }
     this.handleEnd = function(e){

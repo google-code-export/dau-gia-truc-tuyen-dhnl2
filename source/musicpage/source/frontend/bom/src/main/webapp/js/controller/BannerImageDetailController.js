@@ -39,6 +39,8 @@ function BannerImageDetailController(){
     this.onClickAddingState = function(e){
         var className = e.target.className;
         if(className.indexOf("activeButton")!=-1&&className.indexOf("addTagButton")!=-1){
+            var title = $(e.target.parentElement).find('input')[0].value;
+            this.model.tempTag.title = title;
             this.model.listAlbumTags.push(this.model.tempTag);
             this.model.tempTag = undefined;
             this.view.updateAddTagEvent(e);
@@ -48,6 +50,8 @@ function BannerImageDetailController(){
     this.onClickEdittingState = function(e){
         var className = e.target.className;
         if(className.indexOf("activeButton")!=-1&&className.indexOf("editTagButton")!=-1){
+            var title = $(e.target.parentElement).find('input')[0].value;
+            this.model.tempTag.title = title;
             var index = $(e.target.parentNode).index();
             this.model.listAlbumTags[index] = this.model.tempTag;
             this.model.tempTag = undefined;

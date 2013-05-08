@@ -17,5 +17,6 @@ BaseController.prototype = {
     onClick:function(){},
     createView:function(){},
     createModel:function(){},
-    init:function(){}
+    init:function(){},
+    onKeyDown : function(){}
 }

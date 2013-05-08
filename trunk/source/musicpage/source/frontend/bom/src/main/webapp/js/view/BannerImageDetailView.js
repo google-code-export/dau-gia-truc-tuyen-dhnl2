@@ -38,6 +38,7 @@ function BannerImageDetailView(){
         //add autocomplete field
         $(li.children()[0]).addClass("undisplayed");
         var autoTextfield = document.createElement("input");
+        autoTextfield.className +=" "
         autoTextfield.type = "text";
         li.prepend(autoTextfield);
 

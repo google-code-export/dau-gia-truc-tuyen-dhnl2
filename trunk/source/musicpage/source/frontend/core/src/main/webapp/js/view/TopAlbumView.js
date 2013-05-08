@@ -10,20 +10,21 @@ function TopAlbumView(){
         var listAlbum = this.model.listAlbum;
         var ulListAlbumPosition = $("#listAlbumPosition")[0];
         ulListAlbumPosition.innerHTML = "";
-        return;
+        var widthListAlbum = $("#listAlbumPosition").width();
+        var rate = widthListAlbum/ listAlbum[0].boundWidth
         for(var i = 0; i< listAlbum.length; i++){
             var li = document.createElement("li");
-            li.style.height = listAlbum[i].height+"px";
-            li.style.width = listAlbum[i].width+"px";
-            li.style.top = listAlbum[i].top+"px";
-            li.style.left = listAlbum[i].left+"px";
+            li.style.height = listAlbum[i].height*rate+"px";
+            li.style.width = listAlbum[i].width*rate+"px";
+            li.style.top = listAlbum[i].y*rate+"px";
+            li.style.left = listAlbum[i].x*rate+"px";
             li.style.position = "absolute";
-            li.style.border = "solid red";
-
+            li.title =  listAlbum[i].title;
             ulListAlbumPosition.appendChild(li);
         }
 
     }
+
 }
 
 BaseView.inherits(TopAlbumView);

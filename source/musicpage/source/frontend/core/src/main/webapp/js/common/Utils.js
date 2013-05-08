@@ -33,3 +33,24 @@ function volumecontrolchanged(newvolume){
 	document.getElementById("volumeindicator").innerHTML = newvolume;
 //	alert(newvolume);
 }
+/**
+ *
+ * @param textfield html object
+ * @param model array of strings to display auto complete
+ */
+function makeAutoComplete (textfield, model){
+    $(textfield).addClass('dhx_combo_input');
+    var width = textfield.offsetWidth;
+    var comboList = $(".dhx_combo_list.dhx_skyblue_list");
+    comboList[0].innerHTML = "";
+    for(var i = 0 ;i<model.length; i++ ){
+        var d = document.createElement('div');
+        d.style.width = '100%';
+        d.style.overflow = 'hidden';
+        d.innerText = model[i];
+        comboList.add(d);
+        if(i == 0) {
+            d.className = "dhx_selected_option combo_dhx_skyblue_sel";
+        }
+    }
+}

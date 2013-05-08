@@ -8,8 +8,9 @@
 eventManager = {
     init : function(){
         $("body").click(this.onclick);
+        $("body").keydown(this.onClick);
     },
-    onclick : function (e){
+    onClick : function (e){
         //TODO: Delay 200 to make effect of class active
         setTimeout(function(){
             var currentPage = pagesManager.currentPage;
@@ -17,5 +18,12 @@ eventManager = {
                 pagesManager.controllers[currentPage[i]].onClick(e);
             }
         },200);
+    },
+
+    onKeyDown : function(e){
+        var currentPage = pagesManager.currentPage;
+        for (var i = 0; i < currentPage.length; i++) {
+            pagesManager.controllers[currentPage[i]].onKeyDown(e);
+        }
     }
 }

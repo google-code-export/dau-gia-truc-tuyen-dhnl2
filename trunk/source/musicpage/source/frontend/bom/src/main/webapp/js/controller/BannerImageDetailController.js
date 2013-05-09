@@ -60,7 +60,16 @@ function BannerImageDetailController(){
         }
     }
     this.createModel = function(){
-        return new BannerImageDetailModel();
+        var m= new BannerImageDetailModel();
+        m.createOfflineData();
+        return m;
+    }
+    this.onKeyDown = function(e){
+        //TODo: get e.value , search at musicstore backend
+        var target = e.target;
+        if(target.className.indexOf("autotextBannerAlbum")!=-1){
+            this.controlAutocomplete = makeAutoComplete(e.target,this.model.listAlbumName);
+        }
     }
 }
 BaseController.inherits(BannerImageDetailController);

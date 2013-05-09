@@ -39,18 +39,57 @@ function volumecontrolchanged(newvolume){
  * @param model array of strings to display auto complete
  */
 function makeAutoComplete (textfield, model){
-    $(textfield).addClass('dhx_combo_input');
-    var width = textfield.offsetWidth;
+
+    var textfield = $(textfield);
+    textfield.addClass('dhx_combo_input');
+    var width = textfield[0].offsetWidth;
+    var height = textfield[0].offsetHeight;
+    var offset = textfield.offset();
     var comboList = $(".dhx_combo_list.dhx_skyblue_list");
+    if(comboList.length == 0){
+        comboList = document.createElement('div');
+        comboList = $(comboList);
+        comboList.addClass('dhx_combo_list');
+        comboList.addClass('dhx_skyblue_list');
+        $("body").append(comboList);
+    }
+
     comboList[0].innerHTML = "";
+    comboList[0].style.top = height + offset.top+'px';
+    comboList[0].style.left = offset.left+'px';
+    comboList[0].style.width = (width-2)+'px';
+    comboList[0].style.display = 'block';
+
     for(var i = 0 ;i<model.length; i++ ){
         var d = document.createElement('div');
         d.style.width = '100%';
         d.style.overflow = 'hidden';
         d.innerText = model[i];
-        comboList.add(d);
-        if(i == 0) {
-            d.className = "dhx_selected_option combo_dhx_skyblue_sel";
+        comboList.append(d);
+    }
+
+    var control = {
+        hide:function(){
+            comboList[0].style.display = 'none';
         }
     }
+
+    //add event handler
+    comboList.click(function(e){
+        var target = e.target;
+        textfield[0].value =  target.innerText;
+        control.hide();
+    });
+    comboList.find('div').hover(function(e){
+        //handlerIn
+        if(e.target.className == "dhx_combo_list dhx_skyblue_list")return;
+        e.target.className = 'dhx_selected_option combo_dhx_skyblue_sel';
+    },function(e){
+       //HandlerOut
+        if(e.target.className == "dhx_combo_list dhx_skyblue_list")return;
+        e.target.className = '';
+    });
+
+    comboList[0].controlAutocomplete = control;
+    return control;
 }

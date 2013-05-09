@@ -7,8 +7,8 @@
  */
 eventManager = {
     init : function(){
-        $("body").click(this.onclick);
-        $("body").keydown(this.onClick);
+        $("body").click(this.onClick);
+        $("body").keydown(this.onKeyDown);
     },
     onClick : function (e){
         //TODO: Delay 200 to make effect of class active

@@ -8,4 +8,8 @@
 function BannerImageDetailModel(){
     this.listAlbumTags = [];
     this.tempTag = null;
+    this.listAlbumName; // this list call from server
+    this.createOfflineData = function(){
+        this.listAlbumName = ['Lady gaga','Trinh Cong son','Cao thai son','Phu du','Top nhac han no1','Pede la tat ca','Luyen vo tren nui ta lon','kiep co hon','Doi FA','']
+    }
 }

@@ -6,7 +6,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.core.Response;
  
 @Path("/hello2")
-public class HelloWorldService {
+public class MyHelloWorldService {
  
 	@GET
 	@Path("/{param}")

@@ -1,4 +1,4 @@
-package com.mkyong;
+package musicpage.entertainment.com.test;
  
 import java.util.Date;
 import javax.persistence.Column;

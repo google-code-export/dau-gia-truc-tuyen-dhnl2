@@ -1,4 +1,4 @@
-package musicpage.entertainment.com;
+package musicpage.entertainment.com.rest;
  
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

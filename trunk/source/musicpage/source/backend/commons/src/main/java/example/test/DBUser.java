@@ -1,4 +1,4 @@
-package musicpage.entertainment.com.test;
+package example.test;
  
 import java.util.Date;
 import javax.persistence.Column;

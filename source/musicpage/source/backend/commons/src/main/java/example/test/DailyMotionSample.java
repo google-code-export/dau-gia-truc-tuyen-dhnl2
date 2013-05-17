@@ -12,7 +12,7 @@
  * the License.
  */
 
-package musicpage.entertainment.com.test;
+package example.test;
 
 import java.awt.Desktop;
 import java.awt.Desktop.Action;

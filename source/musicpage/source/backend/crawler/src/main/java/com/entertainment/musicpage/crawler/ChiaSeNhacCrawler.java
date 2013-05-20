@@ -1,12 +1,19 @@
 package com.entertainment.musicpage.crawler;
 
-import java.io.IOException;
 
 public class ChiaSeNhacCrawler extends Crawler {
 
 
-	@Override
+	public ChiaSeNhacCrawler(String srcLink) {
+		super(srcLink);
+	}
+
 	public void processLink(String link) {
 		
+	}
+
+	public boolean isAllowToScanInside(String link) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }

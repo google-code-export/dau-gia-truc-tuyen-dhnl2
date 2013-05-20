@@ -17,15 +17,15 @@ import junit.framework.TestCase;
 
 public class CrawlerTest extends TestCase {
 	public void testGenerateLink() throws IOException {
-		String linkSrc = "http://playlist.chiasenhac.com/nhac-hot-2/thu-cuoi~yanbi-mr-t-hang-bingboong~1071071.html";
-		Document doc;
-		CrawlerDraf c = new ChiaSeNhacCrawler();
-		doc = Jsoup.connect(linkSrc).get();
-		URL host = new URL(linkSrc);
-		Elements links = doc.select("a[href]");
-		for (Element link : links) {
-			link.attr("href", c.generateLink(link.attr("href"), host));
-			System.out.println(link.attr("href"));
-		}
+//		String linkSrc = "http://playlist.chiasenhac.com/nhac-hot-2/thu-cuoi~yanbi-mr-t-hang-bingboong~1071071.html";
+//		Document doc;
+//		CrawlerDraf c = new ChiaSeNhacCrawler("");
+//		doc = Jsoup.connect(linkSrc).get();
+//		URL host = new URL(linkSrc);
+//		Elements links = doc.select("a[href]");
+//		for (Element link : links) {
+//			link.attr("href", c.generateLink(link.attr("href"), host));
+//			System.out.println(link.attr("href"));
+//		}
 	}
 }

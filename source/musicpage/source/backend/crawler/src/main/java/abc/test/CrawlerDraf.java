@@ -4,10 +4,8 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.LinkedHashSet;
-import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Set;
-import java.util.Stack;
 import java.util.concurrent.SynchronousQueue;
 
 import org.jsoup.Jsoup;
@@ -18,7 +16,7 @@ import org.jsoup.select.Elements;
 public abstract class CrawlerDraf {
 
 	Queue<Element> toScanningQueue = new SynchronousQueue<Element>();
-	Set<String> scandedLinks = new LinkedHashSet<>();
+	Set<String> scandedLinks = new LinkedHashSet<String>();
 
 	Thread queuPoller;
 

@@ -34,7 +34,7 @@ public abstract class Crawler implements Runnable{
                 System.out.println("connect to "+ popItem);
                 doc = Jsoup.connect(popItem).get();
 
-                links = doc.select("a[href]");
+                links = doc.select(getSelector());
                 for (Element link : links) {
                     String urll =link.absUrl("href") ;
                     if (urll.length() > 0
@@ -60,7 +60,9 @@ public abstract class Crawler implements Runnable{
 	public abstract void processLink(String link);
 	
 	public abstract boolean isAllowToScanInside(String link);
-	
+
+    public abstract String getSelector();
+
 	@Override
 	public void run() {
         new Thread(new WebScanner(this)).start();

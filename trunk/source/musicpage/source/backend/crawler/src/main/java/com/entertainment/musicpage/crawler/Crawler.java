@@ -13,7 +13,7 @@ import org.jsoup.select.Elements;
 
 public abstract class Crawler implements Runnable{
 	LinkedBlockingQueue<Element> toScanningQueue = new LinkedBlockingQueue<Element>();// this queue for crawler
-	Queue<Element> linksQueue = new LinkedList<>();//this queue for scanner
+	Queue<Element> linksQueue = new LinkedList<Element>();//this queue for scanner
 	private String srcLink;
 	
 	

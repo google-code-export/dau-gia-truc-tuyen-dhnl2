@@ -5,7 +5,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
 
 public class DemoBlockingQueue {
-	static LinkedBlockingQueue<String> q = new LinkedBlockingQueue <>();
+	static LinkedBlockingQueue<String> q = new LinkedBlockingQueue <String>();
 	public static void main(String[] args) throws InterruptedException  {
 		
 		new Thread(new Runnable() {

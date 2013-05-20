@@ -96,7 +96,7 @@ public class CommonAuthorization {
 		webResource.setProperty("client_id", pr.getProperty("client.id.google"));
 		
 		ClientResponse response = webResource
-                   .get(ClientResponse.class);
+                   .post(ClientResponse.class);
 		return Response.status(200).entity(response.getEntity(String.class)).build();
 		
 	}

@@ -21,7 +21,7 @@ public class WebScanner implements Runnable {
 			
 			if(popItem == null) break; // this mean scanning is complete there are not link in queue
 			
-			crawler.processLink(popItem.attr("href"));
+			crawler.processLink(popItem.absUrl("href"));
 		}
 	}
 	

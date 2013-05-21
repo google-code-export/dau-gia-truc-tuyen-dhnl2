@@ -74,17 +74,6 @@ public class CommonAuthorization {
 	@Path("/refreshtoken")
 	public Response refreshToken() throws IOException{
 		Properties pr = Configuration.getProperties();
-		HttpTransport httpTransport = new NetHttpTransport();
-		JsonFactory jsfactory = new JacksonFactory();
-		String [] scopes = pr.getProperty("drive.cope").split(",");
-		
-		String refreshTokenUrl = new AuthorizationCodeRequestUrl(pr.getProperty("token.server.url"), pr.getProperty("client.id.google"))
-									.set("refresh_token", pr.getProperty("tuanlhdnl.refresh.token"))
-									.set("client_secret", pr.getProperty("client.secret.google"))
-									.set("grant_type", "refresh_token").build();
-		
-		AuthorizationCodeFlow codeFlow;
-		
 		
 		Client client = Client.create();
 		 

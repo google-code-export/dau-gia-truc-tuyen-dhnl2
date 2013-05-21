@@ -11,7 +11,7 @@ import org.jsoup.select.Elements;
 
 import abc.test.CrawlerDraf;
 
-import com.entertainment.musicpage.crawler.ChiaSeNhacCrawler;
+import com.entertainment.musicpage.implement.ChiaSeNhacCrawler;
 
 import junit.framework.TestCase;
 

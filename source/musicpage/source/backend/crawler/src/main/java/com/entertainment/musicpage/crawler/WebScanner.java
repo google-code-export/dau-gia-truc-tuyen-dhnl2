@@ -2,8 +2,6 @@ package com.entertainment.musicpage.crawler;
 
 import java.util.concurrent.TimeUnit;
 
-import org.jsoup.nodes.Element;
-
 public class WebScanner implements Runnable {
 	// scan all child links in currentlink and add to queue
 	private Crawler crawler;
@@ -13,7 +11,7 @@ public class WebScanner implements Runnable {
 	}
 
 	private void scan() throws InterruptedException{
-		Element popItem;
+		String popItem;
 		while (true){
 			if((popItem = crawler.toScanningQueue.poll()) == null){
 				popItem = crawler.toScanningQueue.poll(5000,TimeUnit.MILLISECONDS);
@@ -21,7 +19,7 @@ public class WebScanner implements Runnable {
 			
 			if(popItem == null) break; // this mean scanning is complete there are not link in queue
 			
-			crawler.processLink(popItem.absUrl("href"));
+			crawler.processPageFromLink(popItem);
 		}
 	}
 	

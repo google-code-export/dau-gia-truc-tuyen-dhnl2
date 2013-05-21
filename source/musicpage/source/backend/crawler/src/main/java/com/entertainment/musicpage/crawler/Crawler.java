@@ -1,7 +1,6 @@
 package com.entertainment.musicpage.crawler;
 
 import java.io.IOException;
-import java.net.URL;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -14,7 +13,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 public abstract class Crawler implements Runnable{
-	LinkedBlockingQueue<Element> toScanningQueue = new LinkedBlockingQueue<Element>();// this queue for crawler
+	LinkedBlockingQueue<String> toScanningQueue = new LinkedBlockingQueue<String>();// this queue for crawler
 	Queue<String> linksQueue = new LinkedList<String>();//this queue for scanner
     Set<String> scandedLinks = new LinkedHashSet<String>();
 	private String srcLink;
@@ -31,17 +30,16 @@ public abstract class Crawler implements Runnable{
         linksQueue.add(srcLik);
         try{
             while ((popItem = linksQueue.poll()) != null) {
-                System.out.println("connect to "+ popItem);
                 doc = Jsoup.connect(popItem).get();
-
+                System.out.println("connect to "+ popItem);
                 links = doc.select(getSelector());
                 for (Element link : links) {
-                    String urll =link.absUrl("href") ;
+                    String urll =getUrl(link) ;
                     if (urll.length() > 0
                             && !scandedLinks.contains(urll)
                             && isAllowToScanInside(urll)) {
                         linksQueue.add(urll);
-                        toScanningQueue.add(link);
+                        toScanningQueue.add(urll);
                         scandedLinks.add(urll);
                     }
                 }
@@ -57,11 +55,13 @@ public abstract class Crawler implements Runnable{
         new Thread(this).start();
     }
 
-	public abstract void processLink(String link);
+	public abstract void processPageFromLink(String link);
 	
 	public abstract boolean isAllowToScanInside(String link);
 
     public abstract String getSelector();
+    
+    public abstract String getUrl(Element e);
 
 	@Override
 	public void run() {

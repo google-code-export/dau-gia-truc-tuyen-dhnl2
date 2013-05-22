@@ -28,9 +28,13 @@ public abstract class Crawler implements Runnable{
         String popItem = null;
         Document doc= null;
         linksQueue.add(srcLik);
-        try{
             while ((popItem = linksQueue.poll()) != null) {
-                doc = Jsoup.connect(popItem).get();
+                try {
+					doc = Jsoup.connect(popItem).get();
+				} catch (IOException e) {
+					e.printStackTrace();
+					System.out.println("popItem ".concat(popItem));
+				}
                 System.out.println("connect to "+ popItem);
                 links = doc.select(getSelector());
                 for (Element link : links) {
@@ -43,12 +47,8 @@ public abstract class Crawler implements Runnable{
                         scandedLinks.add(urll);
                     }
                 }
+               
             }
-            doc = Jsoup.connect(srcLik).get();
-        } catch (IOException e) {
-            e.printStackTrace();
-            System.out.println("popItem "+ popItem);
-        }
 	}
 
     public void start(){

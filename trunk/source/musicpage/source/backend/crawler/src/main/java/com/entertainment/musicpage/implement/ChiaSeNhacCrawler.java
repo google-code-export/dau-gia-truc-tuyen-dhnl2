@@ -24,19 +24,24 @@ public class ChiaSeNhacCrawler extends Crawler {
 	public ChiaSeNhacCrawler(String srcLink) {
 		super(srcLink);
 		try {
-			writer = new PrintWriter(Crawler.class.getResource("").getFile()+"data.txt");
+			writer = new PrintWriter("d:/data.txt");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
 	}
 
 	public void processPageFromLink(String link) {
-		System.out.println(link);
 		try {
 			Document doc = Jsoup.connect(link).get();
 			Elements elements = doc.select(".plt-text");
-			String title = elements.get(0).toString();
-			writer.println(link);
+			String title = null;
+			if(elements.size()>0){
+				title = elements.get(0).toString();	
+			}else{
+				title = link.split("/")[link.split("/").length-1];
+			}
+			System.out.println(link +" - "+title);
+			writer.println(link +" - "+title);
 			writer.flush();
 		} catch (IOException e) {
 			e.printStackTrace();

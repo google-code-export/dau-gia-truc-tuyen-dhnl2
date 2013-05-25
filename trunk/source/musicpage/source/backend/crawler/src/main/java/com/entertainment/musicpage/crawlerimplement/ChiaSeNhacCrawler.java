@@ -1,4 +1,4 @@
-package com.entertainment.musicpage.implement;
+package com.entertainment.musicpage.crawlerimplement;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -11,6 +11,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import com.entertainment.musicpage.crawler.Crawler;
+import com.entertainment.musicpage.dao.Song;
 
 public class ChiaSeNhacCrawler extends Crawler {
 	private final static Pattern FILTERS = Pattern
@@ -25,6 +26,8 @@ public class ChiaSeNhacCrawler extends Crawler {
 		super(srcLink);
 		try {
 			writer = new PrintWriter("d:/data.txt");
+			
+			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}

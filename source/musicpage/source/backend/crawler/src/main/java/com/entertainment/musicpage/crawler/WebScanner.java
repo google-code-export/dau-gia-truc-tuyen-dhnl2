@@ -2,16 +2,21 @@ package com.entertainment.musicpage.crawler;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
+import org.jsoup.nodes.Document;
+
 public class WebScanner implements Runnable {
 	// scan all child links in currentlink and add to queue
 	private Crawler crawler;
+	private static Logger log = Logger.getLogger(WebScanner.class.getName());
+
 	
 	public WebScanner(Crawler crawler) {
 		this.crawler = crawler;
 	}
 
 	private void scan() throws InterruptedException{
-		String popItem;
+		Document popItem;
 		while (true){
 			if((popItem = crawler.toScanningQueue.poll()) == null){
 				popItem = crawler.toScanningQueue.poll(10000,TimeUnit.MILLISECONDS);
@@ -22,7 +27,7 @@ public class WebScanner implements Runnable {
 			crawler.processPageFromLink(popItem);
 		}
 		
-		System.out.println("Finish webscanner");
+		log.info("FINISH WEB SCANNER");
 	}
 	
 	@Override

@@ -1,17 +1,11 @@
 package com.entertainment.musicpage.crawler.test;
 
 import java.io.IOException;
-import java.net.URL;
-import java.util.ArrayList;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-
-import abc.test.CrawlerDraf;
-
-import com.entertainment.musicpage.implement.ChiaSeNhacCrawler;
 
 import junit.framework.TestCase;
 
@@ -27,5 +21,20 @@ public class CrawlerTest extends TestCase {
 //			link.attr("href", c.generateLink(link.attr("href"), host));
 //			System.out.println(link.attr("href"));
 //		}
+	}
+	
+	public void testGetSongsOfPlaylist() throws IOException{
+		String url = "http://playlist.chiasenhac.com/nhac-hot-2/lang-tham-yeu~miu-le~1031185.html";
+		Document doc;
+		doc = Jsoup.connect(url).get();
+		Elements downloadLinks = doc.select("div.playlist_prv.page-dsms a[href~=chiasenhac([a-z\\/\\.])*download\\.php]");
+		System.out.println("title ".concat(doc.title()));
+		for (Element l : downloadLinks  ) {
+			System.out.println(l.absUrl("href") + " - " + l.attr("title"));
+		}	
+		
+	}
+	
+	public void testReguilarExpression(){
 	}
 }

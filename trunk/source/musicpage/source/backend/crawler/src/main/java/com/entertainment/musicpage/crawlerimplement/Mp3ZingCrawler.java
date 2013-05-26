@@ -2,6 +2,7 @@ package com.entertainment.musicpage.crawlerimplement;
 
 import java.util.regex.Pattern;
 
+import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 
 import com.entertainment.musicpage.crawler.Crawler;
@@ -17,7 +18,6 @@ public class Mp3ZingCrawler extends Crawler{
 		super(srcLink);
 	}
 
-	@Override
 	public void processPageFromLink(String link) {
 		System.out.println(link);
 	}
@@ -41,4 +41,10 @@ public class Mp3ZingCrawler extends Crawler{
     public static void main(String[ ]a){
         new Mp3ZingCrawler("http://mp3.zing.vn/").start();
     }
+
+	@Override
+	public void processPageFromLink(Document p) {
+		// TODO Auto-generated method stub
+		
+	}
 }

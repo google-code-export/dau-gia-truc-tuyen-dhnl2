@@ -7,23 +7,25 @@ import java.util.Queue;
 import java.util.Set;
 import java.util.concurrent.LinkedBlockingQueue;
 
+import org.apache.log4j.Logger;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 public abstract class Crawler implements Runnable{
-	LinkedBlockingQueue<String> toScanningQueue = new LinkedBlockingQueue<String>();// this queue for crawler
+	LinkedBlockingQueue<Document> toScanningQueue = new LinkedBlockingQueue<Document>();// this queue for crawler
 	Queue<String> linksQueue = new LinkedList<String>();//this queue for scanner
     Set<String> scandedLinks = new LinkedHashSet<String>();
 	private String srcLink;
-	
+	private static Logger log = Logger.getLogger(Crawler.class.getName());
 	
 	public Crawler(String srcLink) {
 		this.srcLink = srcLink;
 	}
 
-	public void crawl(String srcLik) {
+	protected void crawl(String srcLik) {
+		log.info("start crawl ".concat(srcLik));
         Elements links= null;
         String popItem = null;
         Document doc= null;
@@ -31,11 +33,14 @@ public abstract class Crawler implements Runnable{
             while ((popItem = linksQueue.poll()) != null) {
                 try {
 					doc = Jsoup.connect(popItem).get();
+					toScanningQueue.add(doc);
+					log.info("connect to ".concat(popItem));
 				} catch (IOException e) {
 					e.printStackTrace();
-					System.out.println("popItem ".concat(popItem));
+					log.error(" popItem ".concat(popItem));
 				}
-                System.out.println("connect to "+ popItem);
+                
+                
                 links = doc.select(getSelector());
                 for (Element link : links) {
                     String urll =getUrl(link) ;
@@ -43,7 +48,7 @@ public abstract class Crawler implements Runnable{
                             && !scandedLinks.contains(urll)
                             && isAllowToScanInside(urll)) {
                         linksQueue.add(urll);
-                        toScanningQueue.add(urll);
+                        
                         scandedLinks.add(urll);
                     }
                 }
@@ -55,7 +60,7 @@ public abstract class Crawler implements Runnable{
         new Thread(this).start();
     }
 
-	public abstract void processPageFromLink(String link);
+	public abstract void processPageFromLink(Document p);
 	
 	public abstract boolean isAllowToScanInside(String link);
 

@@ -11,7 +11,6 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import com.entertainment.musicpage.crawler.Crawler;
-import com.entertainment.musicpage.dao.Song;
 
 public class ChiaSeNhacCrawler extends Crawler {
 	private final static Pattern FILTERS = Pattern
@@ -70,5 +69,11 @@ public class ChiaSeNhacCrawler extends Crawler {
     public static void main(String[ ]a){
         new ChiaSeNhacCrawler("http://playlist.chiasenhac.com/nhac-hot-2/thu-cuoi~yanbi-mr-t-hang-bingboong~1071071.html").start();
     }
+
+	@Override
+	public void processPageFromLink(Document p) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

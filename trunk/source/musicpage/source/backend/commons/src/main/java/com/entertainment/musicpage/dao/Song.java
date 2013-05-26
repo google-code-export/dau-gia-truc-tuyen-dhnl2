@@ -14,21 +14,19 @@ public class Song implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="SONG_ID_GENERATOR" )
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="SONG_ID_GENERATOR")
 	@Column(unique=true, nullable=false)
 	private int id;
 
-	@Lob
+	@Column(length=5555)
 	private String description;
 
-	@Column(nullable=false, length=5555)
+	@Column(nullable=false, length=555)
 	private String source;
 
-	@Column(nullable=false, length=5555)
+	@Column(nullable=false, length=555)
 	private String sourceType;
 
-	@Column(nullable=false, length=5555)
+	@Column(nullable=false, length=555)
 	private String title;
 
 	public Song() {

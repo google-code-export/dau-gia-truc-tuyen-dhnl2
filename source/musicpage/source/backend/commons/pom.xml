@@ -6,11 +6,15 @@
 	<artifactId>musicpage-commons</artifactId>
 	<url>http://maven.apache.org</url>
 	<parent>
-		<groupId>com.mycompany.app</groupId>
+		<groupId>com.entertainment.musicpage</groupId>
 		<artifactId>musicpage-parent</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 	<repositories>
+		<repository>
+			<id>maven repository </id>
+			<url>http://repo1.maven.org/maven2/</url>
+		</repository>
 		<repository>
 			<id>JBoss repository</id>
 			<url>http://repository.jboss.org/nexus/content/groups/public/</url>
@@ -21,16 +25,10 @@
 			<url>http://download.java.net/maven/2/</url>
 			<layout>default</layout>
 		</repository>
+
 	</repositories>
 
 	<dependencies>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.11</version>
-		</dependency>
-
-
 		<!-- JERSEY AND JSON -->
 		<dependency>
 			<groupId>com.sun.jersey</groupId>
@@ -50,26 +48,29 @@
 
 		<!-- ORACLE JDBC driver, need install yourself -->
 
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-core</artifactId>
-			<version>3.6.3.Final</version>
-		</dependency>
 
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-validator</artifactId>
-			<version>4.3.1.Final</version>
-		</dependency>
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.10</version>
 		</dependency>
+
+
+		<!-- HIBERNATE -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>3.6.3.Final</version>
+		</dependency>
 		<dependency>
 			<groupId>javassist</groupId>
 			<artifactId>javassist</artifactId>
 			<version>3.12.1.GA</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>5.0.1.Final</version>
 		</dependency>
 
 
@@ -104,8 +105,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<build>
-	<finalName>musicpage-commons</finalName>
-	
-		
-</build>
+		<finalName>musicpage-commons</finalName>
+
+
+	</build>
 </project>

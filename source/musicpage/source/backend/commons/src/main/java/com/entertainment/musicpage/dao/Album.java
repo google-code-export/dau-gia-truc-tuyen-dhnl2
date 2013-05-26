@@ -16,16 +16,16 @@ public class Album implements Serializable {
 	@EmbeddedId
 	private AlbumPK id;
 
-	@Lob
+	@Column(length=5555)
 	private String description;
 
-	@Column(nullable=false, length=5555)
+	@Column(nullable=false, length=555)
 	private String source;
 
-	@Column(nullable=false, length=5555)
+	@Column(nullable=false, length=555)
 	private String sourceType;
 
-	@Column(nullable=false, length=5555)
+	@Column(nullable=false, length=555)
 	private String title;
 
 	public Album() {

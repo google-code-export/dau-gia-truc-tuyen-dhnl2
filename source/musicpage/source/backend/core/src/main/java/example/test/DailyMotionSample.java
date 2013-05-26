@@ -1,0 +1,177 @@
+/*
+ * Copyright (c) 2011 Google Inc.
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License. You may obtain a copy of the License at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software distributed under the License
+ * is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
+ * or implied. See the License for the specific language governing permissions and limitations under
+ * the License.
+ */
+
+package example.test;
+
+import java.awt.Desktop;
+import java.awt.Desktop.Action;
+import java.io.IOException;
+import java.net.URI;
+import java.util.Arrays;
+import java.util.List;
+
+import com.google.api.client.auth.oauth2.AuthorizationCodeFlow;
+import com.google.api.client.auth.oauth2.AuthorizationCodeRequestUrl;
+import com.google.api.client.auth.oauth2.BearerToken;
+import com.google.api.client.auth.oauth2.ClientParametersAuthentication;
+import com.google.api.client.auth.oauth2.Credential;
+import com.google.api.client.auth.oauth2.TokenResponse;
+import com.google.api.client.http.GenericUrl;
+import com.google.api.client.http.HttpRequest;
+import com.google.api.client.http.HttpRequestFactory;
+import com.google.api.client.http.HttpRequestInitializer;
+import com.google.api.client.http.HttpTransport;
+import com.google.api.client.http.javanet.NetHttpTransport;
+import com.google.api.client.json.JsonFactory;
+import com.google.api.client.json.JsonObjectParser;
+import com.google.api.client.json.jackson2.JacksonFactory;
+import com.google.api.services.samples.dailymotion.cmdline.LocalServerReceiver;
+import com.google.api.services.samples.dailymotion.cmdline.OAuth2ClientCredentials;
+import com.google.api.services.samples.dailymotion.cmdline.VerificationCodeReceiver;
+
+/**
+ * A sample application that demonstrates how the Google OAuth2 library can be
+ * used to authenticate against Daily Motion.
+ * 
+ * @author Ravi Mistry
+ */
+public class DailyMotionSample {
+
+	/** OAuth 2 scope. */
+	private static final String SCOPE1 = "https://www.googleapis.com/auth/userinfo.profile";
+	private static final String SCOPE2 = "https://www.googleapis.com/auth/drive.file";
+	private static final String[] SCOPES = { SCOPE1, SCOPE2,
+			"https://www.googleapis.com/auth/drive.metadata.readonly",
+			"https://www.googleapis.com/auth/drive.readonly",
+			"https://www.googleapis.com/auth/drive" };
+
+	/** Global instance of the HTTP transport. */
+	private static final HttpTransport HTTP_TRANSPORT = new NetHttpTransport();
+
+	/** Global instance of the JSON factory. */
+	static final JsonFactory JSON_FACTORY = new JacksonFactory();
+
+	private static final String TOKEN_SERVER_URL = "https://accounts.google.com/o/oauth2/token";
+	private static final String AUTHORIZATION_SERVER_URL = "https://accounts.google.com/o/oauth2/auth";
+
+	private static void run() throws Exception {
+		// authorization
+		VerificationCodeReceiver receiver = new LocalServerReceiver();
+		try {
+			String redirectUri = receiver.getRedirectUri();
+			launchInBrowser("google-chrome", redirectUri,
+					OAuth2ClientCredentials.CLIENT_ID, SCOPES);
+
+			final Credential credential = authorize(receiver, redirectUri);
+			System.out.println(credential.getAccessToken());
+			HttpRequestFactory requestFactory = HTTP_TRANSPORT
+					.createRequestFactory(new HttpRequestInitializer() {
+
+						public void initialize(HttpRequest request)
+								throws IOException {
+							credential.initialize(request);
+							request.setParser(new JsonObjectParser(JSON_FACTORY));
+						}
+
+					});
+
+			// DailyMotionUrl url = new
+			// DailyMotionUrl("https://api.dailymotion.com/videos/favorites");
+			// url.setFields("id,tags,title,url");
+
+			HttpRequest request = requestFactory
+					.buildGetRequest(new GenericUrl(
+							"https://www.googleapis.com/drive/v2/files"));
+			Object obj = request.execute().parseAsString();
+			System.out.println(obj);
+			// VideoFeed videoFeed = request.execute().parseAs(VideoFeed.class);
+			// if (videoFeed.list.isEmpty()) {
+			// System.out.println("No favorite videos found.");
+			// } else {
+			// if (videoFeed.hasMore) {
+			// System.out.print("First ");
+			// }
+			// System.out.println(videoFeed.list.size() +
+			// " favorite videos found:");
+			// for (Video video : videoFeed.list) {
+			// System.out.println();
+			// System.out.println("-----------------------------------------------");
+			// System.out.println("ID: " + video.id);
+			// System.out.println("Title: " + video.title);
+			// System.out.println("Tags: " + video.tags);
+			// System.out.println("URL: " + video.url);
+			// }
+			// }
+		} finally {
+			receiver.stop();
+		}
+	}
+
+	private static Credential authorize(VerificationCodeReceiver receiver,
+			String redirectUri) throws IOException {
+		String code = receiver.waitForCode();
+		AuthorizationCodeFlow codeFlow = new AuthorizationCodeFlow.Builder(
+				BearerToken.authorizationHeaderAccessMethod(), HTTP_TRANSPORT,
+				JSON_FACTORY, new GenericUrl(TOKEN_SERVER_URL),
+				new ClientParametersAuthentication(
+						OAuth2ClientCredentials.CLIENT_ID,
+						OAuth2ClientCredentials.CLIENT_SECRET),
+				OAuth2ClientCredentials.CLIENT_ID, AUTHORIZATION_SERVER_URL)
+				.setScopes(Arrays.asList(SCOPES)).build();
+
+		TokenResponse response = codeFlow.newTokenRequest(code)
+				.setRedirectUri(redirectUri)
+				.setScopes(Arrays.asList(SCOPES)).execute();
+		System.out.println("code ".concat(code));
+		return codeFlow.createAndStoreCredential(response, null);
+	}
+
+	private static void launchInBrowser(String browser, String redirectUrl,
+			String clientId, String... scope) throws IOException {
+		String authorizationUrl = new AuthorizationCodeRequestUrl(
+				AUTHORIZATION_SERVER_URL, clientId).setRedirectUri(redirectUrl)
+				.setScopes(Arrays.asList(scope)).build();
+		if (Desktop.isDesktopSupported()) {
+			Desktop desktop = Desktop.getDesktop();
+			if (desktop.isSupported(Action.BROWSE)) {
+				desktop.browse(URI.create(authorizationUrl));
+				return;
+			}
+		}
+		if (browser != null) {
+			Runtime.getRuntime().exec(
+					new String[] { browser, authorizationUrl });
+		} else {
+			System.out
+					.println("Open the following address in your favorite browser:");
+			System.out.println("  " + authorizationUrl);
+		}
+	}
+
+	public static void main(String[] args) {
+		try {
+			try {
+				OAuth2ClientCredentials.errorIfNotSpecified();
+				run();
+				// Success!
+				return;
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		} catch (Throwable t) {
+			t.printStackTrace();
+		}
+		System.exit(1);
+	}
+}

@@ -19,16 +19,25 @@ public class CustomSong extends Song{
 	private static Logger log = Logger.getLogger(Song.class.getName());
 
 	
-	public boolean insertSong(String title, String source, String sourceType, String description){
+	public Integer insertSong(String title, String source, String sourceType, String description){
 		Song s = new Song();
 		s.setTitle(title);
 		s.setSource(source);
 		s.setSourceType(sourceType);
 		s.setDescription(description);
 		
+		SessionFactory sessionFac = Configuration.loadHBConfiguration().buildSessionFactory();
+		Session session = sessionFac.openSession();
+		session.beginTransaction();
+		
+		session. save(s);
 		
 		
-		return false;
+		session.getTransaction().commit();
+		session.refresh(s);
+		session.close();
+		Integer id = s.getId();
+		return id;
 		
 	}
 	
@@ -47,4 +56,6 @@ public class CustomSong extends Song{
 		return list;
 		
 	}
+	
+	
 }

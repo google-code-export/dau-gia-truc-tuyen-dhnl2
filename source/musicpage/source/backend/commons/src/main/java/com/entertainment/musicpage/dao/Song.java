@@ -12,34 +12,27 @@ import javax.persistence.*;
 @Table(name="song")
 public class Song implements Serializable {
 	private static final long serialVersionUID = 1L;
-
-	@Id
-	@Column(unique=true, nullable=false)
-	private int id;
-
-	@Column(length=5555)
+	private Integer id;
 	private String description;
-
-	@Column(nullable=false, length=555)
 	private String source;
-
-	@Column(nullable=false, length=555)
 	private String sourceType;
-
-	@Column(nullable=false, length=555)
 	private String title;
 
 	public Song() {
 	}
 
-	public int getId() {
+
+	@Column(unique=true, nullable=false)
+	public Integer getId() {
 		return this.id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
+
+	@Column(length=5555)
 	public String getDescription() {
 		return this.description;
 	}
@@ -48,6 +41,8 @@ public class Song implements Serializable {
 		this.description = description;
 	}
 
+
+	@Column(nullable=false, length=555)
 	public String getSource() {
 		return this.source;
 	}
@@ -56,6 +51,8 @@ public class Song implements Serializable {
 		this.source = source;
 	}
 
+
+	@Column(nullable=false, length=555)
 	public String getSourceType() {
 		return this.sourceType;
 	}
@@ -64,6 +61,8 @@ public class Song implements Serializable {
 		this.sourceType = sourceType;
 	}
 
+
+	@Column(nullable=false, length=555)
 	public String getTitle() {
 		return this.title;
 	}

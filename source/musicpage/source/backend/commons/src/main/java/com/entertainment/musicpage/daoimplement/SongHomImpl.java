@@ -9,8 +9,9 @@ import org.hibernate.SessionFactory;
 
 import com.entertainment.musicpage.common.Configuration;
 import com.entertainment.musicpage.dao.Song;
+import com.entertainment.musicpage.dao.SongHome;
 
-public class CustomSong extends Song{
+public class SongHomImpl extends SongHome{
 
 	/**
 	 * 
@@ -52,7 +53,6 @@ public class CustomSong extends Song{
 		
 		session.getTransaction().commit();
 		session.close();
-		
 		return list;
 		
 	}

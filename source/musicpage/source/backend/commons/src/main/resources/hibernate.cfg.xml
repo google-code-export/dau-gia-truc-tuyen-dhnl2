@@ -27,8 +27,8 @@
         <property name="show_sql">false</property>
 
         <property name="hbm2ddl.auto">validate</property>
-        <mapping class="com.entertainment.musicpage.dao.Song"/>
-		<mapping class="com.entertainment.musicpage.dao.Album"/>
+        <mapping class="com.entertainment.musicpage.dao.models.Song"/>
+		<mapping class="com.entertainment.musicpage.dao.models.Album"/>
 		
     </session-factory>
 </hibernate-configuration>

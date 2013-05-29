@@ -1,6 +1,6 @@
-package com.entertainment.musicpage.dao;
+package com.entertainment.musicpage.dao.models;
 // default package
-// Generated May 27, 2013 7:20:04 PM by Hibernate Tools 3.4.0.CR1
+// Generated May 28, 2013 11:52:58 PM by Hibernate Tools 3.4.0.CR1
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;

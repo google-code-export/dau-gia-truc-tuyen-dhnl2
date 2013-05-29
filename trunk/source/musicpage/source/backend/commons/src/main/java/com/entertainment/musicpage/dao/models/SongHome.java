@@ -1,6 +1,6 @@
-package com.entertainment.musicpage.dao;
+package com.entertainment.musicpage.dao.models;
 // default package
-// Generated May 27, 2013 7:20:04 PM by Hibernate Tools 3.4.0.CR1
+// Generated May 28, 2013 11:52:59 PM by Hibernate Tools 3.4.0.CR1
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -9,20 +9,20 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 /**
- * Home object for domain model class Album.
- * @see .Album
+ * Home object for domain model class Song.
+ * @see .Song
  * @author Hibernate Tools
  */
 @Stateless
-public class AlbumHome {
+public class SongHome {
 
-	private static final Log log = LogFactory.getLog(AlbumHome.class);
+	private static final Log log = LogFactory.getLog(SongHome.class);
 
 	@PersistenceContext
 	private EntityManager entityManager;
 
-	public void persist(Album transientInstance) {
-		log.debug("persisting Album instance");
+	public void persist(Song transientInstance) {
+		log.debug("persisting Song instance");
 		try {
 			entityManager.persist(transientInstance);
 			log.debug("persist successful");
@@ -32,8 +32,8 @@ public class AlbumHome {
 		}
 	}
 
-	public void remove(Album persistentInstance) {
-		log.debug("removing Album instance");
+	public void remove(Song persistentInstance) {
+		log.debug("removing Song instance");
 		try {
 			entityManager.remove(persistentInstance);
 			log.debug("remove successful");
@@ -43,10 +43,10 @@ public class AlbumHome {
 		}
 	}
 
-	public Album merge(Album detachedInstance) {
-		log.debug("merging Album instance");
+	public Song merge(Song detachedInstance) {
+		log.debug("merging Song instance");
 		try {
-			Album result = entityManager.merge(detachedInstance);
+			Song result = entityManager.merge(detachedInstance);
 			log.debug("merge successful");
 			return result;
 		} catch (RuntimeException re) {
@@ -55,10 +55,10 @@ public class AlbumHome {
 		}
 	}
 
-	public Album findById(AlbumId id) {
-		log.debug("getting Album instance with id: " + id);
+	public Song findById(Integer id) {
+		log.debug("getting Song instance with id: " + id);
 		try {
-			Album instance = entityManager.find(Album.class, id);
+			Song instance = entityManager.find(Song.class, id);
 			log.debug("get successful");
 			return instance;
 		} catch (RuntimeException re) {

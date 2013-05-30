@@ -16,7 +16,7 @@ import com.entertainment.musicpage.dao.models.Song;
 public class CustomSongDAOImpl extends SongDAOImpl implements SongDAO,CustomSongDAO{
 
 	private static final long serialVersionUID = 1L;
-	private static Logger log = Logger.getLogger(Song.class.getName());
+	private static Logger log = Logger.getLogger(CustomSongDAOImpl.class.getName());
 
 	
 	public Integer insertSong(String title, String source, String sourceType, String description){
@@ -42,7 +42,6 @@ public class CustomSongDAOImpl extends SongDAOImpl implements SongDAO,CustomSong
 	}
 	
 	public List<Song> findBySource(String link){
-		SessionFactory sessionFac = Configuration.loadHBConfiguration().buildSessionFactory();
 		Session session = getDAOManager();
 		session.beginTransaction();
 		

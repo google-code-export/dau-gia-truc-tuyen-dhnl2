@@ -6,7 +6,6 @@ import java.util.Properties;
 
 public class Configuration {
 	private static Properties properties;
-	private static org.hibernate.cfg.Configuration config;
 
 	public static Properties getProperties() {
 		if (properties == null) {
@@ -21,12 +20,5 @@ public class Configuration {
 			}
 		}
 		return properties;
-	}
-
-	public static org.hibernate.cfg.Configuration loadHBConfiguration() {
-		if (config == null)
-			config = new org.hibernate.cfg.Configuration()
-					.configure("hibernate.cfg.xml");
-		return config;
 	}
 }

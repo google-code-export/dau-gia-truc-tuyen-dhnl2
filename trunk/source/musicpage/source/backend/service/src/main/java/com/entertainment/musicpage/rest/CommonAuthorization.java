@@ -27,12 +27,14 @@ import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.ClientResponse;
 import com.sun.jersey.api.client.WebResource;
 
+
 @Path("/authorize")
 public class CommonAuthorization {
 
 	@GET
 	@Path("/printaccesstoken")
 	public Response printAccessToken() throws URISyntaxException {
+
 		Properties pr = Configuration.getProperties();
 		String [] scopes = pr.getProperty("drive.cope").split(",");
 		String authorizationUrl = new AuthorizationCodeRequestUrl(

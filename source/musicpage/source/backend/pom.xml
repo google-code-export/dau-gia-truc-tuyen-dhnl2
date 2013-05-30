@@ -30,6 +30,8 @@
 
 	<modules>
 		<module>commons</module>
+		<module>service</module>
+		<module>dao</module>
 		<module>crawler</module>
 	</modules>
 

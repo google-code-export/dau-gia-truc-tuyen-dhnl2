@@ -53,6 +53,7 @@
 			<artifactId>jersey-client</artifactId>
 			<version>1.8</version>
 		</dependency>
+					
 		<!-- GOOGLE OAUTH2.0 -->
 
 		<dependency>

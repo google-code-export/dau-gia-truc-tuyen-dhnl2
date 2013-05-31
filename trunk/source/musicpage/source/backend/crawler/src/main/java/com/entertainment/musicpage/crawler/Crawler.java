@@ -33,6 +33,7 @@ public abstract class Crawler implements Runnable{
             while ((popItem = linksQueue.poll()) != null) {
                 try {
 					doc = Jsoup.connect(popItem).get();
+                    doc.setBaseUri(popItem);
 					toScanningQueue.add(doc);
 					log.info("connect to ".concat(popItem));
 				} catch (IOException e) {

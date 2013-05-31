@@ -7,6 +7,8 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import com.entertainment.musicpage.crawlerimplement.ChiaSeNhacCrawler;
+
 import junit.framework.TestCase;
 
 public class CrawlerTest extends TestCase {
@@ -35,6 +37,15 @@ public class CrawlerTest extends TestCase {
 		
 	}
 	
-	public void testReguilarExpression(){
+	public void testAllowPlayListLink() throws IOException{
+		String url = "http://chiasenhac.com";
+		Document doc;
+		doc = Jsoup.connect(url).get();
+		
+		ChiaSeNhacCrawler crawler = new ChiaSeNhacCrawler(url);
+		Elements links =  doc.select(crawler.getSelector());
+		for (Element l : links ) {
+			
+		}
 	}
 }

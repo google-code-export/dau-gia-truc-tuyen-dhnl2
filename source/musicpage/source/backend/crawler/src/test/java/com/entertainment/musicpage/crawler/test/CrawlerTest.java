@@ -12,29 +12,34 @@ import com.entertainment.musicpage.crawlerimplement.ChiaSeNhacCrawler;
 import junit.framework.TestCase;
 
 public class CrawlerTest extends TestCase {
-	public void testGenerateLink() throws IOException {
-//		String linkSrc = "http://playlist.chiasenhac.com/nhac-hot-2/thu-cuoi~yanbi-mr-t-hang-bingboong~1071071.html";
-//		Document doc;
-//		CrawlerDraf c = new ChiaSeNhacCrawler("");
-//		doc = Jsoup.connect(linkSrc).get();
-//		URL host = new URL(linkSrc);
-//		Elements links = doc.select("a[href]");
-//		for (Element link : links) {
-//			link.attr("href", c.generateLink(link.attr("href"), host));
-//			System.out.println(link.attr("href"));
-//		}
-	}
-	
-	public void testGetSongsOfPlaylist() throws IOException{
+
+    public void testGetSongsOfPlaylist() throws IOException{
 		String url = "http://playlist.chiasenhac.com/nhac-hot-2/lang-tham-yeu~miu-le~1031185.html";
 		Document doc;
 		doc = Jsoup.connect(url).get();
+        doc.setBaseUri(url);
 		Elements downloadLinks = doc.select("div.playlist_prv.page-dsms a[href~=chiasenhac([a-z\\/\\.])*download\\.php]");
 		System.out.println("title ".concat(doc.title()));
+		//System.out.println("base uri ".concat(doc.select("link[rel=canonical]").get(0).absUrl("href")));
+        //this tip above just work only playlist link
+        System.out.println("base uri ".concat(doc.baseUri()));
+
 		for (Element l : downloadLinks  ) {
 			System.out.println(l.absUrl("href") + " - " + l.attr("title"));
 		}	
 		
+	}
+
+    public void testNormallink() throws IOException{
+		String url = "http://chiasenhac.com/mp3/beat-playback/u-instrumental/";
+		Document doc;
+		doc = Jsoup.connect(url).get();
+        doc.setBaseUri(url);
+		Elements downloadLinks = doc.select("div.playlist_prv.page-dsms a[href~=chiasenhac([a-z\\/\\.])*download\\.php]");
+		System.out.println("title ".concat(doc.title()));
+        System.out.println("base uri ".concat(doc.baseUri()));
+        System.out.println("".concat(String.valueOf(downloadLinks.size())));
+
 	}
 	
 	public void testAllowPlayListLink() throws IOException{
@@ -45,7 +50,9 @@ public class CrawlerTest extends TestCase {
 		ChiaSeNhacCrawler crawler = new ChiaSeNhacCrawler(url);
 		Elements links =  doc.select(crawler.getSelector());
 		for (Element l : links ) {
-			
+            String urll =l.absUrl("href") ;
+            if(crawler.isAllowToScanInside(urll))
+                System.out.println(urll);
 		}
 	}
 }

@@ -53,7 +53,7 @@ public class ChiaSeNhacCrawler extends Crawler {
 
 	public boolean isAllowToScanInside(String link) {
 		return !FILTERS.matcher(link).matches()
-				&& link.toLowerCase().contains("chiasenhac.com");
+				&& link.toLowerCase().contains("chiasenhac.com") && !link.toLowerCase().contains("download.php") ;
 	}
 
 	public String getSelector() {
@@ -71,7 +71,7 @@ public class ChiaSeNhacCrawler extends Crawler {
 	@Override
 	public void processPageFromLink(Document p) {
 		// TODO Auto-generated method stub
-		
+        // get baseUri()
 	}
 
 }

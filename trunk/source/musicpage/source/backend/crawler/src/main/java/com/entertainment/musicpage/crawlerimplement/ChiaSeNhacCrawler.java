@@ -56,12 +56,10 @@ public class ChiaSeNhacCrawler extends Crawler {
 				&& link.toLowerCase().contains("chiasenhac.com");
 	}
 
-	@Override
 	public String getSelector() {
 		return "a[href]";
 	}
 
-	@Override
 	public String getUrl(Element e) {
 		return e.absUrl("href");
 	}

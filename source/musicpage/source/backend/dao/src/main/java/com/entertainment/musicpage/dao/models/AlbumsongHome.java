@@ -9,20 +9,20 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 /**
- * Home object for domain model class Album.
- * @see .Album
+ * Home object for domain model class Albumsong.
+ * @see .Albumsong
  * @author Hibernate Tools
  */
 @Stateless
-public class AlbumHome {
+public class AlbumsongHome {
 
-	private static final Log log = LogFactory.getLog(AlbumHome.class);
+	private static final Log log = LogFactory.getLog(AlbumsongHome.class);
 
 	@PersistenceContext
 	private EntityManager entityManager;
 
-	public void persist(Album transientInstance) {
-		log.debug("persisting Album instance");
+	public void persist(Albumsong transientInstance) {
+		log.debug("persisting Albumsong instance");
 		try {
 			entityManager.persist(transientInstance);
 			log.debug("persist successful");
@@ -32,8 +32,8 @@ public class AlbumHome {
 		}
 	}
 
-	public void remove(Album persistentInstance) {
-		log.debug("removing Album instance");
+	public void remove(Albumsong persistentInstance) {
+		log.debug("removing Albumsong instance");
 		try {
 			entityManager.remove(persistentInstance);
 			log.debug("remove successful");
@@ -43,10 +43,10 @@ public class AlbumHome {
 		}
 	}
 
-	public Album merge(Album detachedInstance) {
-		log.debug("merging Album instance");
+	public Albumsong merge(Albumsong detachedInstance) {
+		log.debug("merging Albumsong instance");
 		try {
-			Album result = entityManager.merge(detachedInstance);
+			Albumsong result = entityManager.merge(detachedInstance);
 			log.debug("merge successful");
 			return result;
 		} catch (RuntimeException re) {
@@ -55,10 +55,10 @@ public class AlbumHome {
 		}
 	}
 
-	public Album findById(int id) {
-		log.debug("getting Album instance with id: " + id);
+	public Albumsong findById(AlbumsongId id) {
+		log.debug("getting Albumsong instance with id: " + id);
 		try {
-			Album instance = entityManager.find(Album.class, id);
+			Albumsong instance = entityManager.find(Albumsong.class, id);
 			log.debug("get successful");
 			return instance;
 		} catch (RuntimeException re) {

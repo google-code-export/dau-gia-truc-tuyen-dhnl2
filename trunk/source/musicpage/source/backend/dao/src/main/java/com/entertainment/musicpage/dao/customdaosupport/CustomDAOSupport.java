@@ -5,20 +5,17 @@
  package com.entertainment.musicpage.dao.customdaosupport;
  
  import java.io.Serializable;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-
-import com.entertainment.musicpage.common.Configuration;
  
  
  public abstract class CustomDAOSupport implements Serializable {
  
  private static final long serialVersionUID = 1L;
  private static Session daoManager = new org.hibernate.cfg.Configuration()
-					.configure("hibernate.cfg.xml").buildSessionFactory().openSession();
- 
+	.configure("hibernate.cfg.xml").buildSessionFactory().openSession();
+
  public void anyMethodName(SessionFactory sessionFactory){
  	CustomDAOSupport.daoManager = sessionFactory.getCurrentSession();
  	daoManager.beginTransaction();

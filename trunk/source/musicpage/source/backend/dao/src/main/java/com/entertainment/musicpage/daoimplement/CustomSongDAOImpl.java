@@ -6,11 +6,10 @@ import java.util.List;
 import org.apache.log4j.Logger;
 import org.hibernate.Query;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 
-import com.entertainment.musicpage.common.Configuration;
 import com.entertainment.musicpage.dao.dao.SongDAO;
 import com.entertainment.musicpage.dao.dao.impl.SongDAOImpl;
+import com.entertainment.musicpage.dao.error.DuplicateException;
 import com.entertainment.musicpage.dao.models.Song;
 
 public class CustomSongDAOImpl extends SongDAOImpl implements SongDAO,CustomSongDAO{
@@ -33,27 +32,35 @@ public class CustomSongDAOImpl extends SongDAOImpl implements SongDAO,CustomSong
 		
 		session. save(s);
 		
-		
 		session.getTransaction().commit();
 		session.refresh(s);
 		Integer id = s.getId();
+		log.info("success insert song with id ".concat(id+""));
 		return id;
 		
 	}
 	
-	public List<Song> findBySource(String link){
-		Session session = getDAOManager();
-		session.beginTransaction();
-		
-		Query query = session.createQuery("from Song where source like :link"); // table name is Class Name
-		query.setParameter("link", link);
-		List<Song> list = query.list();
-		
-		System.out.println(list.get(0));
-		session.getTransaction().commit();
-		return list;
+	public List<Song> findBySource(String source){
+		Query query = getDAOManager().createQuery(" select t from Song t where t.source = :source ");
+		query.setParameter("source", source);
+
+		List<Song> results = query.list();
+
+		if (results !=null && results.size() > 0) {
+			return results;
+		}
+
+		return null;
 		
 	}
 
+	public Integer insertWithoutDuplicate(String title, String source, String sourceType, String description) throws DuplicateException{
+		
+		List<Song> listToChecking = findBySource(source);
+		if(listToChecking != null) throw new DuplicateException("Duplicate entry with source: ".concat(source));
+		log.info("success insert song without duplicated src ".concat(source));
+		return insertSong(title, source, sourceType, description);
+		
+	}
 	
 }

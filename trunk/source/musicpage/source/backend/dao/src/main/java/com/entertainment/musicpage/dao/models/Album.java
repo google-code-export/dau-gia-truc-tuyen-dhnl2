@@ -1,13 +1,14 @@
 package com.entertainment.musicpage.dao.models;
 // default package
-// Generated May 28, 2013 11:52:58 PM by Hibernate Tools 3.4.0.CR1
+// Generated Jun 1, 2013 1:34:35 AM by Hibernate Tools 3.4.0.CR1
+
+import static javax.persistence.GenerationType.IDENTITY;
 
 import java.util.Date;
-import javax.persistence.AttributeOverride;
-import javax.persistence.AttributeOverrides;
 import javax.persistence.Column;
-import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -19,7 +20,7 @@ import javax.persistence.TemporalType;
 @Table(name = "album", catalog = "musicpage")
 public class Album implements java.io.Serializable {
 
-	private AlbumId id;
+	private int id;
 	private String title;
 	private String source;
 	private String sourceType;
@@ -30,7 +31,7 @@ public class Album implements java.io.Serializable {
 	public Album() {
 	}
 
-	public Album(AlbumId id, String title, String source, String sourceType,
+	public Album(int id, String title, String source, String sourceType,
 			Date createdTime, Date modifyTime) {
 		this.id = id;
 		this.title = title;
@@ -40,7 +41,7 @@ public class Album implements java.io.Serializable {
 		this.modifyTime = modifyTime;
 	}
 
-	public Album(AlbumId id, String title, String source, String sourceType,
+	public Album(int id, String title, String source, String sourceType,
 			String description, Date createdTime, Date modifyTime) {
 		this.id = id;
 		this.title = title;
@@ -51,15 +52,14 @@ public class Album implements java.io.Serializable {
 		this.modifyTime = modifyTime;
 	}
 
-	@EmbeddedId
-	@AttributeOverrides({
-			@AttributeOverride(name = "id", column = @Column(name = "id", nullable = false)),
-			@AttributeOverride(name = "idSong", column = @Column(name = "idSong", nullable = false)) })
-	public AlbumId getId() {
+	@Id
+	@GeneratedValue(strategy = IDENTITY)
+	@Column(name = "id", unique = true, nullable = false)
+	public int getId() {
 		return this.id;
 	}
 
-	public void setId(AlbumId id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 

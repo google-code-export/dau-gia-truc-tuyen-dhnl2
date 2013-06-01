@@ -19,7 +19,7 @@
  
  /***************************************************
  *DAO interface of album table.
- *Generated on Tue May 28 23:59:52 ICT 2013
+ *Generated on Sat Jun 01 01:50:25 ICT 2013
  ***************************************************/
  
  
@@ -27,7 +27,7 @@
  
  /**
  * @return Album
- * Generated on: Tue May 28 23:59:52 ICT 2013
+ * Generated on: Sat Jun 01 01:50:25 ICT 2013
  * @See Album
  */
 	public List<Album> findAll();
@@ -35,7 +35,7 @@
  /**
  * Inserts Album
  * @param: Album
- * Generated on: Tue May 28 23:59:52 ICT 2013
+ * Generated on: Sat Jun 01 01:50:25 ICT 2013
  * @See Album
  */
 	public void save(Album arg0);
@@ -43,7 +43,7 @@
  /**
  * Updates Album
  * @param: Album
- * Generated on: Tue May 28 23:59:52 ICT 2013
+ * Generated on: Sat Jun 01 01:50:25 ICT 2013
  * @See Album
  */
 	public void update(Album arg0);
@@ -51,7 +51,7 @@
  /**
  * Removes Album
  * @param: Album
- * Generated on: Tue May 28 23:59:52 ICT 2013
+ * Generated on: Sat Jun 01 01:50:25 ICT 2013
  * @See Album
  */
 	public void delete(Album arg0);
@@ -59,7 +59,7 @@
  /**
  * @return Album
  * @param: java.lang.Integer Id
- * Generated on: Tue May 28 23:59:52 ICT 2013
+ * Generated on: Sat Jun 01 01:50:25 ICT 2013
  * @See Album
  */
 	public List<Album> getAlbumById(Integer id);
@@ -69,33 +69,15 @@
  * @param: java.lang.Integer id
  * @param: int startposition
  * @param: int maxresults
- * Generated on: Tue May 28 23:59:52 ICT 2013
+ * Generated on: Sat Jun 01 01:50:25 ICT 2013
  * @See Album
  */
 	public List<Album> getAlbumById(Integer id, int startPosition, int maxResult);
  
  /**
  * @return Album
- * @param: java.lang.Integer Idsong
- * Generated on: Tue May 28 23:59:52 ICT 2013
- * @See Album
- */
-	public List<Album> getAlbumByIdsong(Integer idsong);
-
-/**
- * @return Album
- * @param: java.lang.Integer idsong
- * @param: int startposition
- * @param: int maxresults
- * Generated on: Tue May 28 23:59:52 ICT 2013
- * @See Album
- */
-	public List<Album> getAlbumByIdsong(Integer idsong, int startPosition, int maxResult);
- 
- /**
- * @return Album
  * @param: java.lang.String Title
- * Generated on: Tue May 28 23:59:52 ICT 2013
+ * Generated on: Sat Jun 01 01:50:25 ICT 2013
  * @See Album
  */
 	public List<Album> getAlbumByTitle(String title);
@@ -105,7 +87,7 @@
  * @param: java.lang.String title
  * @param: int startposition
  * @param: int maxresults
- * Generated on: Tue May 28 23:59:52 ICT 2013
+ * Generated on: Sat Jun 01 01:50:25 ICT 2013
  * @See Album
  */
 	public List<Album> getAlbumByTitle(String title, int startPosition, int maxResult);
@@ -113,7 +95,7 @@
  /**
  * @return Album
  * @param: java.lang.String Source
- * Generated on: Tue May 28 23:59:52 ICT 2013
+ * Generated on: Sat Jun 01 01:50:25 ICT 2013
  * @See Album
  */
 	public List<Album> getAlbumBySource(String source);
@@ -123,7 +105,7 @@
  * @param: java.lang.String source
  * @param: int startposition
  * @param: int maxresults
- * Generated on: Tue May 28 23:59:52 ICT 2013
+ * Generated on: Sat Jun 01 01:50:25 ICT 2013
  * @See Album
  */
 	public List<Album> getAlbumBySource(String source, int startPosition, int maxResult);
@@ -131,7 +113,7 @@
  /**
  * @return Album
  * @param: java.lang.String Sourcetype
- * Generated on: Tue May 28 23:59:52 ICT 2013
+ * Generated on: Sat Jun 01 01:50:25 ICT 2013
  * @See Album
  */
 	public List<Album> getAlbumBySourcetype(String sourcetype);
@@ -141,7 +123,7 @@
  * @param: java.lang.String sourcetype
  * @param: int startposition
  * @param: int maxresults
- * Generated on: Tue May 28 23:59:52 ICT 2013
+ * Generated on: Sat Jun 01 01:50:25 ICT 2013
  * @See Album
  */
 	public List<Album> getAlbumBySourcetype(String sourcetype, int startPosition, int maxResult);
@@ -149,7 +131,7 @@
  /**
  * @return Album
  * @param: java.lang.String Description
- * Generated on: Tue May 28 23:59:52 ICT 2013
+ * Generated on: Sat Jun 01 01:50:25 ICT 2013
  * @See Album
  */
 	public List<Album> getAlbumByDescription(String description);
@@ -159,7 +141,7 @@
  * @param: java.lang.String description
  * @param: int startposition
  * @param: int maxresults
- * Generated on: Tue May 28 23:59:52 ICT 2013
+ * Generated on: Sat Jun 01 01:50:25 ICT 2013
  * @See Album
  */
 	public List<Album> getAlbumByDescription(String description, int startPosition, int maxResult);
@@ -167,7 +149,7 @@
  /**
  * @return Album
  * @param: java.util.Date Createdtime
- * Generated on: Tue May 28 23:59:52 ICT 2013
+ * Generated on: Sat Jun 01 01:50:25 ICT 2013
  * @See Album
  */
 	public List<Album> getAlbumByCreatedtime(Date createdtime);
@@ -177,7 +159,7 @@
  * @param: java.util.Date createdtime
  * @param: int startposition
  * @param: int maxresults
- * Generated on: Tue May 28 23:59:52 ICT 2013
+ * Generated on: Sat Jun 01 01:50:25 ICT 2013
  * @See Album
  */
 	public List<Album> getAlbumByCreatedtime(Date createdtime, int startPosition, int maxResult);
@@ -185,7 +167,7 @@
  /**
  * @return Album
  * @param: java.util.Date Modifytime
- * Generated on: Tue May 28 23:59:52 ICT 2013
+ * Generated on: Sat Jun 01 01:50:25 ICT 2013
  * @See Album
  */
 	public List<Album> getAlbumByModifytime(Date modifytime);
@@ -195,7 +177,7 @@
  * @param: java.util.Date modifytime
  * @param: int startposition
  * @param: int maxresults
- * Generated on: Tue May 28 23:59:52 ICT 2013
+ * Generated on: Sat Jun 01 01:50:25 ICT 2013
  * @See Album
  */
 	public List<Album> getAlbumByModifytime(Date modifytime, int startPosition, int maxResult);

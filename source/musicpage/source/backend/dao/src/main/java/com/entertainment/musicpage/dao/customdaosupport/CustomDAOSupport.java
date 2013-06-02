@@ -13,8 +13,11 @@ import org.hibernate.SessionFactory;
  public abstract class CustomDAOSupport implements Serializable {
  
  private static final long serialVersionUID = 1L;
- private static Session daoManager = new org.hibernate.cfg.Configuration()
-	.configure("hibernate.cfg.xml").buildSessionFactory().openSession();
+ private static Session daoManager;
+// = new org.hibernate.cfg.Configuration()
+//	.configure("hibernate.cfg.xml").buildSessionFactory().openSession();
+ private static SessionFactory sessFac = new org.hibernate.cfg.Configuration()
+	.configure("hibernate.cfg.xml").buildSessionFactory();
 
  public void anyMethodName(SessionFactory sessionFactory){
  	CustomDAOSupport.daoManager = sessionFactory.getCurrentSession();
@@ -22,6 +25,9 @@ import org.hibernate.SessionFactory;
  }
  
  public static Session getDAOManager() {
+	if(daoManager == null){
+			daoManager = sessFac.openSession();
+	} 
  	return daoManager;
  }
  

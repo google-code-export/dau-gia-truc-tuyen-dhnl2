@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50611
 File Encoding         : 65001
 
-Date: 2013-06-02 19:17:58
+Date: 2013-06-02 19:52:10
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -27,8 +27,7 @@ CREATE TABLE `album` (
   `description` varchar(5555) DEFAULT NULL,
   `createdTime` date NOT NULL,
   `modifyTime` date NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `indexit` (`source`(255),`id`) USING BTREE
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1341 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
@@ -1352,8 +1351,7 @@ DROP TABLE IF EXISTS `albumsong`;
 CREATE TABLE `albumsong` (
   `idAlbum` int(11) NOT NULL,
   `idSong` int(11) NOT NULL,
-  PRIMARY KEY (`idAlbum`,`idSong`),
-  KEY `indexit` (`idAlbum`,`idSong`) USING BTREE
+  PRIMARY KEY (`idAlbum`,`idSong`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
@@ -24212,8 +24210,7 @@ CREATE TABLE `song` (
   `description` varchar(5555) DEFAULT NULL,
   `createdTime` date NOT NULL,
   `modifyTime` date NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `indexit` (`source`(255),`id`) USING BTREE
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3569 DEFAULT CHARSET=utf8;
 
 -- ----------------------------

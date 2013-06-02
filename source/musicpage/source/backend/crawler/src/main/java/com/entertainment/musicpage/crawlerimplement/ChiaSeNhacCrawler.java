@@ -4,14 +4,11 @@ import java.util.List;
 import java.util.regex.Pattern;
 
 import org.apache.log4j.Logger;
-import org.jsoup.Connection.Response;
-import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import com.entertainment.musicpage.crawler.Crawler;
-import com.entertainment.musicpage.dao.error.DuplicateException;
 import com.entertainment.musicpage.dao.models.Album;
 import com.entertainment.musicpage.dao.models.Song;
 import com.entertainment.musicpage.daoimplement.CustomAlbumDAO;

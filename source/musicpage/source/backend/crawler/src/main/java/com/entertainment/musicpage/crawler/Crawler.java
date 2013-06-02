@@ -30,7 +30,19 @@ public abstract class Crawler implements Runnable{
         String popItem = null;
         Document doc= null;
         linksQueue.add(srcLik);
-            while ((popItem = linksQueue.poll()) != null) {
+        	START_CRAWL:
+            while ((popItem = linksQueue.peek()) != null) {
+            	if(toScanningQueue.size() >= 10){
+            		log.info(String.format("the toScanningQueue size aceed the limit %s",10));
+            		try {
+						Thread.sleep(1000);
+						continue START_CRAWL;
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+						log.info("error thread sleep");
+					}
+            		
+            	}
                 try {
 					doc = Jsoup.connect(popItem).get();
                     doc.setBaseUri(popItem);
@@ -38,7 +50,7 @@ public abstract class Crawler implements Runnable{
 					log.info("connect to ".concat(popItem));
 				} catch (IOException e) {
 					e.printStackTrace();
-					log.error(" popItem ".concat(popItem));
+					log.error(String.format("error crawling %s with popItem %s", e.toString(),popItem));
 				}
                 
                 
@@ -53,6 +65,9 @@ public abstract class Crawler implements Runnable{
                         scandedLinks.add(urll);
                     }
                 }
+                
+                //because it need to slow down when the queue is to large
+                linksQueue.poll();
                
             }
 	}

@@ -1,8 +1,10 @@
 package com.entertainment.musicpage.crawler.test;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
 import org.jsoup.Connection;
 import org.jsoup.Connection.Response;
@@ -97,5 +99,27 @@ public class CrawlerTest extends TestCase {
 		 System.out.println(doc.select("a").size());
 	}
 	
-	
+	/**
+	 * this test to support crawler object
+	 * because when crawl the database's speed add record to db is slower than Crawler scan throw website
+	 * so it need to thread sleep when the size of queue is large
+	 * @throws InterruptedException 
+	 */
+	public void testBreakAndLabel() throws InterruptedException{
+		
+		ArrayList<Integer> ll = new ArrayList<Integer>();
+		System.out.println("break to this OOO");
+		System.out.println("continoues ");
+		OUTER:
+		for (int i = 0; i < 100; i++) {
+			ll.add(new Random().nextInt(1000));
+			if(ll.size() == 10){
+				System.out.println("Size == 10");
+				Thread.sleep(1000);
+				continue OUTER;
+			}
+			
+			System.out.println(i+"");
+		}
+	}
 }

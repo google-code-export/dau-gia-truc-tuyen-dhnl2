@@ -36,7 +36,6 @@ public class CustomAlbumDAOImpl extends AlbumDAOImpl implements CustomAlbumDAO{
 		session. save(a);
 		
 		session.getTransaction().commit();
-		session.refresh(a);
 		Integer id = a.getId();
 		log.info("insert success Album with id ".concat(id+""));
 		return id;

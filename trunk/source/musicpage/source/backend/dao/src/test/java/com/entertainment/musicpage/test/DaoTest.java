@@ -1,6 +1,7 @@
 package com.entertainment.musicpage.test;
 
 import java.util.List;
+import java.util.Random;
 
 import com.entertainment.musicpage.dao.error.DuplicateException;
 import com.entertainment.musicpage.dao.models.AlbumsongId;
@@ -51,8 +52,34 @@ public class DaoTest extends TestCase{
 	
 	public void testInsertAlbumSong(){
 		CustomAlbumSongDAO customAlbumSongDao = new CustomAlbumSongDAOImpl();
-		AlbumsongId id = customAlbumSongDao.insertAlbumSong(1, 2);
+		AlbumsongId id = customAlbumSongDao.insertAlbumSong(new Random().nextInt(999999), new Random().nextInt(999999));
 		
 		System.out.println(id.toString());
+	}
+	
+	/**
+	 * this test for performances test
+	 */
+	public void testInsertMultiSong(){
+		for (int i = 0; i < 2500; i++) {
+			this.testInsertSong();
+		}
+	}
+	
+	/**
+	 * this test for performances test
+	 */
+	public void testInsertMultiAlbum(){
+		for (int i = 0; i < 2500; i++) {
+			this.testInsertAlbumSong();
+		}
+	}
+	
+	public void testPerformance(){
+		for (int i = 0; i < 2500; i++) {
+			this.testInsertAlbumSong();
+			this.testInsertSong();
+			this.testInsertSong();
+		}
 	}
 }

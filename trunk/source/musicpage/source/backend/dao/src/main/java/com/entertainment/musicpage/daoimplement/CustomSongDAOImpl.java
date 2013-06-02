@@ -33,7 +33,6 @@ public class CustomSongDAOImpl extends SongDAOImpl implements SongDAO,CustomSong
 		session. save(s);
 		
 		session.getTransaction().commit();
-		session.refresh(s);
 		Integer id = s.getId();
 		log.info("success insert song with id ".concat(id+""));
 		return id;

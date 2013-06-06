@@ -1,6 +1,6 @@
 package com.entertainment.musicpage.dao.models;
 // default package
-// Generated Jun 1, 2013 1:34:35 AM by Hibernate Tools 3.4.0.CR1
+// Generated Jun 6, 2013 11:46:43 PM by Hibernate Tools 3.4.0.CR1
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -55,7 +55,7 @@ public class AlbumHome {
 		}
 	}
 
-	public Album findById(int id) {
+	public Album findById(Integer id) {
 		log.debug("getting Album instance with id: " + id);
 		try {
 			Album instance = entityManager.find(Album.class, id);

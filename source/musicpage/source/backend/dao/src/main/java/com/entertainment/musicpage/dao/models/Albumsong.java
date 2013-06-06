@@ -1,6 +1,6 @@
 package com.entertainment.musicpage.dao.models;
 // default package
-// Generated Jun 1, 2013 1:34:35 AM by Hibernate Tools 3.4.0.CR1
+// Generated Jun 6, 2013 11:46:43 PM by Hibernate Tools 3.4.0.CR1
 
 import javax.persistence.AttributeOverride;
 import javax.persistence.AttributeOverrides;
@@ -16,10 +16,6 @@ import javax.persistence.Table;
 @Table(name = "albumsong", catalog = "musicpage")
 public class Albumsong implements java.io.Serializable {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	private AlbumsongId id;
 
 	public Albumsong() {

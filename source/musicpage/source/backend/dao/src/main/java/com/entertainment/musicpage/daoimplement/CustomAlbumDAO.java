@@ -12,4 +12,6 @@ public interface CustomAlbumDAO extends AlbumDAO{
 	public Integer insertAlbumWithoutDuplicated(String title, String source, String sourceType, String description) throws DuplicateException;
 	
 	public List<Album > findBySource(String source);
+	
+	public List<Album > findAllByLimit(int start,int limit);
 }

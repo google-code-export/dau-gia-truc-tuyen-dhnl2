@@ -1,13 +1,12 @@
 package com.entertainment.musicpage.dao.models;
 // default package
-// Generated Jun 1, 2013 1:34:35 AM by Hibernate Tools 3.4.0.CR1
-
-import static javax.persistence.GenerationType.IDENTITY;
+// Generated Jun 6, 2013 11:46:43 PM by Hibernate Tools 3.4.0.CR1
 
 import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
@@ -20,20 +19,21 @@ import javax.persistence.TemporalType;
 @Table(name = "album", catalog = "musicpage")
 public class Album implements java.io.Serializable {
 
-	private int id;
+	private Integer id;
 	private String title;
 	private String source;
 	private String sourceType;
 	private String description;
 	private Date createdTime;
 	private Date modifyTime;
+	private String urlImage;
+	private Byte indexUrlToDisplay;
 
 	public Album() {
 	}
 
-	public Album(int id, String title, String source, String sourceType,
+	public Album(String title, String source, String sourceType,
 			Date createdTime, Date modifyTime) {
-		this.id = id;
 		this.title = title;
 		this.source = source;
 		this.sourceType = sourceType;
@@ -41,25 +41,27 @@ public class Album implements java.io.Serializable {
 		this.modifyTime = modifyTime;
 	}
 
-	public Album(int id, String title, String source, String sourceType,
-			String description, Date createdTime, Date modifyTime) {
-		this.id = id;
+	public Album(String title, String source, String sourceType,
+			String description, Date createdTime, Date modifyTime,
+			String urlImage, Byte indexUrlToDisplay) {
 		this.title = title;
 		this.source = source;
 		this.sourceType = sourceType;
 		this.description = description;
 		this.createdTime = createdTime;
 		this.modifyTime = modifyTime;
+		this.urlImage = urlImage;
+		this.indexUrlToDisplay = indexUrlToDisplay;
 	}
 
 	@Id
 	@GeneratedValue(strategy = IDENTITY)
 	@Column(name = "id", unique = true, nullable = false)
-	public int getId() {
+	public Integer getId() {
 		return this.id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
@@ -117,6 +119,24 @@ public class Album implements java.io.Serializable {
 
 	public void setModifyTime(Date modifyTime) {
 		this.modifyTime = modifyTime;
+	}
+
+	@Column(name = "urlImage", length = 5555)
+	public String getUrlImage() {
+		return this.urlImage;
+	}
+
+	public void setUrlImage(String urlImage) {
+		this.urlImage = urlImage;
+	}
+
+	@Column(name = "indexUrlToDisplay")
+	public Byte getIndexUrlToDisplay() {
+		return this.indexUrlToDisplay;
+	}
+
+	public void setIndexUrlToDisplay(Byte indexUrlToDisplay) {
+		this.indexUrlToDisplay = indexUrlToDisplay;
 	}
 
 }

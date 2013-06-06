@@ -6,6 +6,7 @@ import java.util.List;
 import org.apache.log4j.Logger;
 import org.hibernate.Query;
 import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 import com.entertainment.musicpage.dao.dao.impl.AlbumDAOImpl;
 import com.entertainment.musicpage.dao.error.DuplicateException;
@@ -51,14 +52,33 @@ public class CustomAlbumDAOImpl extends AlbumDAOImpl implements CustomAlbumDAO{
 	}
 
 	public List<Album> findBySource(String source) {
-
+		
 		Query query = getDAOManager().createQuery(" select t from Album t where t.source = :source ");
 		query.setParameter("source", source);
 		List<Album> results = query.list();
+		log.info("findBySource success with src ".concat( source));
 		if (results !=null && results.size() > 0) {
 			return results;
 		}
 		return null;
 	}
 
+	public List<Album> findAllByLimit(int start, int amount) {
+		Query query = getDAOManager().createQuery(" select t from Album t");
+		query.setMaxResults(amount);
+		query.setFirstResult(start);
+		List<Album> results = query.list();
+		log.info(String.format("findAllByLimit with start %s amount %s", start,amount));
+		if (results !=null && results.size() > 0) {
+			return results;
+		}
+		return null;
+	}
+	
+	@Override
+	public void update(Album arg0) {
+		Transaction trs = getDAOManager().beginTransaction();
+		super.update(arg0);
+		trs.commit();
+	}
 }

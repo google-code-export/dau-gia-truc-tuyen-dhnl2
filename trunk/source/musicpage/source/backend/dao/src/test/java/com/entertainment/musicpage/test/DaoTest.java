@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Random;
 
 import com.entertainment.musicpage.dao.error.DuplicateException;
+import com.entertainment.musicpage.dao.models.Album;
 import com.entertainment.musicpage.dao.models.AlbumsongId;
 import com.entertainment.musicpage.dao.models.Song;
 import com.entertainment.musicpage.daoimplement.CustomAlbumDAO;
@@ -81,5 +82,19 @@ public class DaoTest extends TestCase{
 			this.testInsertSong();
 			this.testInsertSong();
 		}
+	}
+	
+	public void testSelectUpdate10ItemAlbum(){
+		CustomAlbumDAO aDao = new CustomAlbumDAOImpl();
+		List<Album >lA = aDao.findAllByLimit(10, 5);
+		
+		for (int i = 0; i < lA.size(); i++) {
+			Album a = lA.get(i);
+			System.out.println(a.getTitle());
+			a.setUrlImage("FUUUU");
+			aDao.update(a);
+			
+		}
+		assertNotNull(lA);
 	}
 }

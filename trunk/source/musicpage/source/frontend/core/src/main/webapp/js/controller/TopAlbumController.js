@@ -10,7 +10,7 @@ function TopAlbumController(){
 
     },
     this.createModel = function(){
-        var model = new TopAlbumModel();
+        var model = new TopAlbumModel(this);
         model.createOfflineData();
         return model;
     },

@@ -46,5 +46,9 @@ function IndexView() {
             ulListCategories.appendChild(li);
         }
     }
+
+    this.getMainNode = function(){
+        return "wrapper";
+    }
 }
 BaseView.inherits(IndexView);

@@ -5,10 +5,12 @@
 
 templateManager = {
     listTemplates:new Array(),
-    init:function(){
+    init:function(synchronousFunction){
         var self = this;
         $.get(templateUrl,function(data){
+
             self.listTemplates = data.split(",");
+            if(synchronousFunction instanceof Function) synchronousFunction();
             }
         )
     },
@@ -22,4 +24,4 @@ templateManager = {
     }
 }
        
-templateManager.init();
+

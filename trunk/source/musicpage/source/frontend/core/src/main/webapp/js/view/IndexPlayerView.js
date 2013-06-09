@@ -11,6 +11,7 @@ function IndexPlayerView(){
         var barPlay = $("#mediaPlayerPanel #process2");
         var parentWidth = parseInt(barPlay.parent().css("width"), 10);
         barPlay.css("width", 0);
+        this.updateListPlaying();
     }
     this.togglePlayButton = function(){
         $("#mediaPlayerPanel #play").removeClass("pause");
@@ -64,6 +65,27 @@ function IndexPlayerView(){
             barPlay.css("width", width )  ;
             barPlay.css("marginLeft", marginLeft )  ;
         }
+    }
+
+    this.getMainNode = function(){
+        return "indexPlayer";
+    }
+
+    this.updateListPlaying = function(){
+        var listSongsPlaying = this.model.playingSongsList;
+        var ulListSongsPlaying = $("#listSongsPlaying")[0];
+        ulListSongsPlaying.innerHTML = "";
+        for (var i = 0; i < listSongsPlaying.length; i++) {
+            var stringLi = templateManager.t("templatePlayingSongsList");
+            stringLi = stringLi.replace("#text1#", listSongsPlaying[i].title);
+            var li = $(stringLi)[0];
+            ulListSongsPlaying.appendChild(li);
+            $(li.children[4]).removeClass("undisplayed");
+            $(li.children[1]).removeClass("undisplayed");
+            $(li.children[2]).removeClass("undisplayed");
+            $(li.children[3]).removeClass("undisplayed");
+        }
+        $('#listSongsPlaying').jScrollPane();
     }
 }
 BaseView.inherits(IndexPlayerView)

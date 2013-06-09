@@ -8,3 +8,4 @@
 
 Pages = {}
 Pages.index = [IndexController,TopAlbumController, IndexPlayerController,VolumeController];
+Pages.index2 = [TopAlbumController,IndexPlayerController];

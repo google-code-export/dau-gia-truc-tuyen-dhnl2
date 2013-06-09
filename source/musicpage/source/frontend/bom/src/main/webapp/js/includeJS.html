@@ -27,7 +27,10 @@
 <script src="/core-musicpage/js/common/Utils.js"></script>
 <script>
 	onLoad = function(){
-		pagesManager.showPage(Pages.index);
-        eventManager.init();
+        templateManager.init(function(){
+            pagesManager.showPage(Pages.index);
+            eventManager.init();
+        });
+
 	}
 </script>

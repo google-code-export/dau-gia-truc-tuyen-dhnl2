@@ -1,4 +1,4 @@
-#mediaPlayer{
+#indexPlayer{
     float: right;
 	width: 100%;
 	position: relative;
@@ -146,6 +146,7 @@
         line-height: 25px;
         padding-top: 12px;
         float:left;
+        color: white;
     }
 
     #repeat {
@@ -170,5 +171,74 @@
     END wraperControlButtons
     -----------------------------------------------------------------
     */
+
+
+   /* Sidebar Right
+-----------------------------------------------------------------------------*/
+ .playingButton{
+    background: url("../img/playing/playButton.png");
+    right: 70px;
+}
+
+ .downloadButton{
+    background: url("../img/playing/download.png");
+    right: 50px;
+}
+
+ .addButton{
+    background: url("../img/playing/add.png");
+    right: 30px;
+}
+
+ .removeButton{
+    background: url("../img/playing/remove.png");
+    right: 10px;
+}
+ #listSongsPlaying .playingButton,
+ #listSongsPlaying .downloadButton,
+ #listSongsPlaying .addButton,
+ #listSongsPlaying .removeButton{
+    background-size: 100% 100%;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    margin-top: 5px;
+}
+ #listSongsPlaying .playingMark {
+    background: blue;
+    color: white;
+}
+
+ #listSongsPlaying{
+    height: 156px;
+}
+
+ #listSongsPlaying li{
+    border-top: solid rgb(48, 48, 48) 1px;
+    line-height: 30px;
+    text-indent: 30px;
+    -webkit-transition:2s;
+}
+ #listSongsPlaying li:last-child{
+    border-bottom: solid rgb(75, 75, 75) 1px;
+}
+
+ .jspTrack{
+    background: rgb(0, 0, 0);
+}
+
+ .jspDrag {
+    background: rgb(94, 94, 99);
+    border-radius: 8px;
+    margin: 0px 3px;
+}
+
+
+    #listSongsPlaying {
+        .selectedSong {
+            box-shadow: #FFF 0px 0px 30px 0px inset;
+            border-radius: 5px;
+        }
+    }
 
 }

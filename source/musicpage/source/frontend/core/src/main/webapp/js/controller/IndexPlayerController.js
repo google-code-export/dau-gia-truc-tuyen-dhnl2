@@ -7,7 +7,7 @@
  */
 function IndexPlayerController(){
     this.init = function(){
-        this.model.playingSongsList = pagesManager.controllers[IndexController].model.playingSongsList;
+//        this.model.playingSongsList = pagesManager.controllers[IndexController].model.playingSongsList;
         this.model.currentPlayIndex = 0;
         this.handlePlayButton = this.playButtonPausingState ;
         var self = this;

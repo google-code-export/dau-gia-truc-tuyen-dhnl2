@@ -12,6 +12,7 @@
 <script src="js/controller/TopAlbumController.js"></script>
 <script src="js/controller/IndexPlayerController.js"></script>
 <script src="js/controller/VolumeController.js"></script>
+<script src="js/controller/Index2Controller.js"></script>
 
 
 <script src="js/view/BaseView.js"></script>
@@ -19,6 +20,7 @@
 <script src="js/view/TopAlbumView.js"></script>
 <script src="js/view/IndexPlayerView.js"></script>
 <script src="js/view/VolumeView.js"></script>
+<script src="js/view/Index2View.js"></script>
 
 
 <script src="js/Conf.js"></script>
@@ -29,8 +31,11 @@
 
 <script>
 	onLoad = function(){
-		pagesManager.showPage(Pages.index);
-        eventManager.init();
+        templateManager.init(function(){
+            pagesManager.showPage(Pages.index2);
+            eventManager.init();
+        });
+
 	}
 </script>
 <script src="js/common/TemplateManager.js"></script>

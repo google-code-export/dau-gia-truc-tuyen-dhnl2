@@ -14,16 +14,22 @@ eventManager = {
         //TODO: Delay 200 to make effect of class active
         setTimeout(function(){
             var currentPage = pagesManager.currentPage;
-            for(var i = 0;i < currentPage.length;i++){
-                pagesManager.controllers[currentPage[i]].onClick(e);
+            if(currentPage){
+                for(var i = 0;i < currentPage.length;i++){
+                    pagesManager.controllers[currentPage[i]].onClick(e);
+                }
             }
+
         },200);
     },
 
     onKeyDown : function(e){
         var currentPage = pagesManager.currentPage;
-        for (var i = 0; i < currentPage.length; i++) {
-            pagesManager.controllers[currentPage[i]].onKeyDown(e);
+        if(currentPage){
+            for (var i = 0; i < currentPage.length; i++) {
+                pagesManager.controllers[currentPage[i]].onKeyDown(e);
+            }
         }
+
     }
 }

@@ -18,7 +18,7 @@ function TopAlbumView(){
     this.addNewTable = function(){
         // 12 col 5 row
         // w :71 h 105
-        var table  = $("<table border='1' ></table>");
+        var table  = $("<table border='0' ></table>");
         table.addClass(this.TABLE_CLASS);
         for (var i = 0 ; i<this.ROW_COUNT;i++){
             var tr = document.createElement("tr");
@@ -67,9 +67,6 @@ function TopAlbumView(){
                     }else{
                         var selector = s.replace("column",column+i).replace("row",row + j);
                         listObjectToRemove .push($(selector));
-                        console.log(selector);
-                        if($(selector).length==0)
-                            console.log("it is null " + selector);
                     }
                 }
             }
@@ -84,12 +81,13 @@ function TopAlbumView(){
         var listTD = $("."+classTable+" td");
 
         for(var i = 0;i < listTD.length ; i++){
-            var img = document.createElement("img");
-            img.src = model[i].src ;
-            img.width = "100%";
-            img.height = "100%";
-            $(listTD[i]).append(img);
-
+//            var img = document.createElement("img");
+//            img.src = model[i].src ;
+//            img.width = "100%";
+//            img.height = "100%";
+//            $(listTD[i]).append(img);
+            listTD[i].style.background = "url(ddd)".replace("ddd",model[i].src);
+            listTD[i].style.backgroundSize = "100%";
         }
     }
 
@@ -98,7 +96,7 @@ function TopAlbumView(){
         var ulListAlbumPosition = $("#listAlbumPosition")[0];
         ulListAlbumPosition.innerHTML = "";
         var widthListAlbum = $("#listAlbumPosition").width();
-        var rate = widthListAlbum/ listAlbum[0].boundWidth
+        var rate = widthListAlbum/ listAlbum[0].boundWidth;
         for(var i = 0; i< listAlbum.length; i++){
             var li = document.createElement("li");
             li.style.height = listAlbum[i].height*rate+"px";

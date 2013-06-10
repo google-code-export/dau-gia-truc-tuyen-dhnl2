@@ -1,10 +1,7 @@
 package com.entertainment.musicpage.crawler.test;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 
 import org.jsoup.Connection;
 import org.jsoup.Connection.Response;
@@ -122,4 +119,18 @@ public class CrawlerTest extends TestCase {
 			System.out.println(i+"");
 		}
 	}
+
+    public void testGoogleCrawlImage() throws IOException {
+        String url = "http://images.google.com/search?tbm=isch&q=javachamp";
+		Document doc;
+		doc = Jsoup.connect(url).userAgent("Mozilla/5.0 (Windows NT 6.1; WOW64; rv:5.0) Gecko/20100101 Firefox/5.0").get();
+        System.out.println(doc.toString());
+
+        //select links obtain original page
+        Elements links =  doc.select("a[href]");
+        for(Element l : links){
+            System.out.println(l.absUrl("href"));
+        }
+
+    }
 }

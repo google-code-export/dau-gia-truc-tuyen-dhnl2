@@ -133,4 +133,21 @@ public class CrawlerTest extends TestCase {
         }
 
     }
+/**
+	 * goal is get image album of chiasenhac. is not google :D
+	 * @throws IOException 
+	 */
+	public void testGetAlbumImage() throws IOException{
+		String url = "http://playlist.chiasenhac.com/nhac-hot/em-khong-quay-ve~yanbi-hoang-ton~1096075.html";
+		Document doc= null;
+		doc = Jsoup.connect(url).get();
+		Elements imgs =  doc.select("#fulllyric img");
+		System.out.println(imgs.size());
+		if(imgs.size() > 0){
+			Element l = imgs.get(0);
+			System.out.println(l.absUrl("src"));
+		}else {
+			System.out.println("not images");
+		}
+	}
 }

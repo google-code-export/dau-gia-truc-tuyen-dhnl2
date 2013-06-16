@@ -12,9 +12,11 @@ function TopAlbumView(){
     this.updateView = function(){
         this.addNewTable();
         this.mergeTable(null,this.TABLE_CLASS,this.model.listMerge);
+        this.addSearchTextBox($("."+this.TABLE_CLASS+" tr:eq(0) td:eq(4)"));
         //remove cells
         this.removeCellsByColSpanAndRowSpan(null,this.TABLE_CLASS,this.model.listMerge);
     }
+
     this.addNewTable = function(){
         // 12 col 5 row
         // w :71 h 105
@@ -40,8 +42,8 @@ function TopAlbumView(){
             var m = listMerge[i];
             var s = "."+classTable+" tr:eq(row) td:eq(column)".replace("row",m.row).replace("column",m.column);
             var td = $(s)[0];
-            td.rowSpan = m.rowSpan;
-            td.colSpan = m.colSpan;
+            if(m.rowSpan>1)td.rowSpan = m.rowSpan;
+            if(m.colSpan>1)td.colSpan = m.colSpan;
         }
     }
 
@@ -81,14 +83,25 @@ function TopAlbumView(){
         var listTD = $("."+classTable+" td");
 
         for(var i = 0;i < listTD.length ; i++){
-//            var img = document.createElement("img");
-//            img.src = model[i].src ;
-//            img.width = "100%";
-//            img.height = "100%";
-//            $(listTD[i]).append(img);
             listTD[i].style.background = "url(ddd)".replace("ddd",model[i].src);
             listTD[i].style.backgroundSize = "100%";
         }
+
+        this.removeImageAtSearchArea(null,this.TABLE_CLASS);
+    }
+    /**
+     *
+     * @param parrentElement
+     */
+    this.addSearchTextBox = function(parrentElement){
+        var searchDiv = templateManager.t("templateSearchBanner");
+        searchDiv = $(searchDiv);
+        $(parrentElement).append(searchDiv);
+    }
+
+    this.removeImageAtSearchArea = function(idTable,classTable){
+        var td = $("."+classTable+" input").parents("td");
+        td[0].style.backgroundImage = "";
     }
 
     this.setPositionForBanner = function(){

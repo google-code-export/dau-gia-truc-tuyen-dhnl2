@@ -10,5 +10,6 @@ Pages = {}
 Pages.index = [IndexController,TopAlbumController, IndexPlayerController,VolumeController];
 Pages.index2 = {
     controllers:[TopAlbumController,IndexPlayerController, RecommendSongsController],
-    ids:["indexPlayer","header","recommendSongs"]
+    ids:["indexPlayer","header","recommendSongs"],
+	focus:[]//focus to embed view into it
 };

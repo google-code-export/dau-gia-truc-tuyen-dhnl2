@@ -20,8 +20,9 @@ function RecommendSongsController(){
     },
     this.createModel = function(){
         //whenever controller is new, it will be called
-
-        return null;
+        var m = new RecommendSongsModel();
+        m.createOfflineData();
+        return m;
     },
     this.onClick = function(e){
 

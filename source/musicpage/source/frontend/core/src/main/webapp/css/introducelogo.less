@@ -1,0 +1,102 @@
+.clearFloat{
+  clear:both;
+}
+#introduceLogo{
+  .panelLeft {
+    width: 183px;
+    padding-left: 25px;
+    float: left;
+    .title {
+      text-shadow: 0px 0px 10px white;
+      font-weight: bold;
+      text-align: center;
+    }
+    .seperator {
+      border-bottom: 2px solid gray;
+      margin: 5px 0px 5px 0px;
+    }
+
+    ul{
+      .item {
+        padding-left: 10px;
+        clear: both;
+        div{
+          float: left;
+          line-height: 30px;
+          border: 1px solid gray;
+          padding-left: 10px;
+          padding-right: 10px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  .content{
+    float: left;
+    width: 80%;
+    border: 1px solid gray;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    .left{
+      ul{
+        li{
+          list-style: none;
+          position: relative;
+
+          .name .artist{
+            margin-left: 30px;
+          }
+          .microIcon .listenIcon .addIcon{
+            margin-right: 10px;
+          }
+
+          .microIcon{
+            background-image: url(http://localhost/core-musicpage/img/icon2/listening.png);
+            height: 20px;
+            width: 20px;
+          }
+
+          .listenIcon{
+            background-image: url(http://localhost/core-musicpage/img/icon2/listening.png);
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            top: 25%;
+            right: 10%;
+          }
+
+          .addIcon{
+            background-image: url(http://localhost/core-musicpage/img/icon2/add_to_list.png);
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            top: 25%;
+            right: 0%;
+          }
+          .seperator4{
+            width: 95%;
+            margin: 0px auto auto;
+            margin-bottom: 8px;
+          }
+        }
+      }
+      .floatLeftI {
+        float:left;
+      }
+      .borderBottomOneLine{
+        border-bottom: 1px solid #808080;
+      }
+      .widthNineTeenPercen {
+        width: 90%;
+      }
+      .backgroundSize100{
+        background-size: 100%!important;
+        background-position: center;
+        background-repeat: no-repeat;
+
+      }
+    }
+  }
+}

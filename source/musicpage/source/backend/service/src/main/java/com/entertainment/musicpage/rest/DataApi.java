@@ -1,6 +1,5 @@
 package com.entertainment.musicpage.rest;
 
-import java.net.URISyntaxException;
 import java.util.List;
 
 import javax.ws.rs.GET;
@@ -18,7 +17,7 @@ public class DataApi {
 	@GET
 	@Path("/randalbum")
 	@Produces(MediaType.APPLICATION_JSON)
-	public ResponseRandListAlbum printAccessToken() throws URISyntaxException {
+	public ResponseRandListAlbum printAccessToken() {
 		List<Album> l = new CustomAlbumDAOImpl().findRandNewsAlbum(0, 10);
 		ResponseRandListAlbum res = new ResponseRandListAlbum(l);
 		return res;

@@ -81,4 +81,16 @@ public class CustomAlbumDAOImpl extends AlbumDAOImpl implements CustomAlbumDAO{
 		super.update(arg0);
 		trs.commit();
 	}
+
+	public List<Album> findRandNewsAlbum(int start, int amount) {
+		Query query = getDAOManager().createQuery(" select t from Album t group by urlImage");
+		query.setMaxResults(amount);
+		query.setFirstResult(start);
+		List<Album> results = query.list();
+		log.info(String.format("findRandNewsAlbum with start %s amount %s", start,amount));
+		if (results !=null && results.size() > 0) {
+			return results;
+		}
+		return null;
+	}
 }

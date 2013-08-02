@@ -13,5 +13,7 @@ public interface CustomAlbumDAO extends AlbumDAO{
 	
 	public List<Album > findBySource(String source);
 	
-	public List<Album > findAllByLimit(int start,int limit);
+	public List<Album > findAllByLimit(int start,int amount);
+	
+	public List<Album> findRandNewsAlbum(int start, int amount);
 }

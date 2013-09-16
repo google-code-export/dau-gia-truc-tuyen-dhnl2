@@ -17,7 +17,7 @@ public class DataApi {
 	@GET
 	@Path("/randalbum")
 	@Produces(MediaType.APPLICATION_JSON)
-	public ResponseRandListAlbum printAccessToken() {
+	public ResponseRandListAlbum randomAlbum() {
 		List<Album> l = new CustomAlbumDAOImpl().findRandNewsAlbum(0, 10);
 		ResponseRandListAlbum res = new ResponseRandListAlbum(l);
 		return res;

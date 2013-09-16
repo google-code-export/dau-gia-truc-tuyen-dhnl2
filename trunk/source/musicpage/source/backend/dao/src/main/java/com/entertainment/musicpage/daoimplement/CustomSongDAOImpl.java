@@ -62,4 +62,16 @@ public class CustomSongDAOImpl extends SongDAOImpl implements SongDAO,CustomSong
 		
 	}
 	
+	public List<Song> findOrderById(int start, int amount) {
+		Query query = getDAOManager().createQuery(" select t from Song t order by t.id DESC");
+		query.setMaxResults(amount);
+		query.setFirstResult(start);
+		List<Song> results = query.list();
+		log.info(String.format("findOrderById with start %s amount %s", start,amount));
+		if (results !=null && results.size() > 0) {
+			return results;
+		}
+		return null;
+	}
+	
 }

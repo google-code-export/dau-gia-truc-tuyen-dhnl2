@@ -41,7 +41,14 @@
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
 		
-
+		<!-- GOAL : filter cross-origin -->
+		<dependency>
+			<groupId>com.thetransactioncompany</groupId>
+			<artifactId>cors-filter</artifactId>
+			<version>1.3.2</version>
+		</dependency>
+		            
+		            
 
 		<!-- JERSEY AND JSON -->
 		<dependency>

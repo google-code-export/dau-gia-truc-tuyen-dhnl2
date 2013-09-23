@@ -5,16 +5,27 @@ public class Product {
 	private String productCode;
 	private String description;
 	private int price;
+	private String urlImage;
+	
+	
+	public String getUrlImage() {
+		return urlImage;
+	}
+
+	public void setUrlImage(String urlImage) {
+		this.urlImage = urlImage;
+	}
 
 	
-	
+
 	public Product(String name, String productCode, String description,
-			int price) {
+			int price, String urlImage) {
 		super();
 		this.name = name;
 		this.productCode = productCode;
 		this.description = description;
 		this.price = price;
+		this.urlImage = urlImage;
 	}
 
 	public Product() {

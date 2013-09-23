@@ -15,7 +15,6 @@ import com.entertainment.musicpage.daoimplement.CustomSongDAO;
 import com.entertainment.musicpage.daoimplement.CustomSongDAOImpl;
 import com.entertainment.musicpage.dto.Product;
 import com.entertainment.musicpage.dto.ResponseShop;
-import com.thetransactioncompany.cors.CORSFilter;
 
 @Path("/shop")
 public class ShopApi {
@@ -31,7 +30,7 @@ public class ShopApi {
 		Iterator<Song> it = lSongs.iterator();
 		while(it.hasNext()){
 			Song s = it.next();
-			Product p = new Product(s.getTitle(), s.getCreatedTime().toString(), s.getDescription(), 99);
+			Product p = new Product(s.getTitle(), s.getCreatedTime().toString(), s.getDescription(), 99,"http://localhost:8081/shop/images/templatemo_image_04.jpg");
 			lProducts.add(p);
 		}
 		
